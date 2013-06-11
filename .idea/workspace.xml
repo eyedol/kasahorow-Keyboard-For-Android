@@ -6,70 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88c9db36-b0d7-4feb-b56d-ed887ba4b14d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AnySoftKeyboard/StoreStuff/MarketHugeIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AnySoftKeyboard/StoreStuff/MarketPromoImage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AnySoftKeyboard/default.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/.classpath" afterPath="$PROJECT_DIR$/AnySoftKeyboard/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/.project" afterPath="$PROJECT_DIR$/AnySoftKeyboard/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard-API/.project" afterPath="$PROJECT_DIR$/AnySoftKeyboard-API/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard-API/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard-API/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard-API/AnySoftKeyboard-API.iml" afterPath="$PROJECT_DIR$/AnySoftKeyboard-API/AnySoftKeyboard-API.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/AnySoftKeyboard.iml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/AnySoftKeyboard.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/tutorials/BaseTutorialActivity.java" afterPath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/tutorials/BaseTutorialActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/tutorials/ChangeLogActivity.java" afterPath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/tutorials/ChangeLogActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/MainForm.java" afterPath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/MainForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/tutorials/TipsActivity.java" afterPath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/tutorials/TipsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/tutorials/WelcomeHowToNoticeActivity.java" afterPath="$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/ui/tutorials/WelcomeHowToNoticeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/blacktheme_key.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/blacktheme_key.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/color/blacktheme_key_hint_color.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/color/blacktheme_key_hint_color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/color/blacktheme_key_keytext_color.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/color/blacktheme_key_keytext_color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/blacktheme_popupkey.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/blacktheme_popupkey.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/btn_keyboard_key_gingerbread.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/btn_keyboard_key_gingerbread.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_btn_key.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_btn_key.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_action_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_action_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_arrow_down_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_arrow_down_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_arrow_left_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_arrow_left_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_arrow_right_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_arrow_right_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_arrow_up_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_arrow_up_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_cancel_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_cancel_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_control_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_control_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_delete_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_delete_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_globe_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_globe_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_mic_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_mic_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_settings_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_settings_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_shift_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_shift_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_space_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_space_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_tab_set.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/dark_key_tab_set.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/proguard/dump.txt" afterPath="$PROJECT_DIR$/AnySoftKeyboard/proguard/dump.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/eng_16keys.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/eng_16keys.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_alt.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_alt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_alt_with_mic.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_alt_with_mic.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_iphone.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_iphone.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_iphone_with_mic.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_iphone_with_mic.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_regular.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_regular.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml-ar/ext_kbd_bottom_row_regular.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml-ar/ext_kbd_bottom_row_regular.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml-land/ext_kbd_bottom_row_regular.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml-land/ext_kbd_bottom_row_regular.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_regular_with_voice.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_regular_with_voice.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_nav.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_nav.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_normal.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_normal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_numbers.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_numbers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_numbers_alt.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_numbers_alt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_small.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_top_row_small.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/lean_dark_btn.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/lean_dark_btn.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/light_btn_key.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/drawable/light_btn_key.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/color/light_btn_key_text_color.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/color/light_btn_key_text_color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/popup_default_quick_text.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/popup_default_quick_text.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/prefs.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/prefs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/qwerty_with_symbols.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/qwerty_with_symbols.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/simple_alt_numbers.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/simple_alt_numbers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/simple_datetime.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/simple_datetime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/simple_numbers.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/simple_numbers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/simple_phone.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/simple_phone.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols_16keys.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols_16keys.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols_alt_16keys.xml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols_alt_16keys.xml" />
-    </list>
+    <list default="true" id="88c9db36-b0d7-4feb-b56d-ed887ba4b14d" name="Default" comment="" />
     <ignored path="kasahorow-Keyboard-For-Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
