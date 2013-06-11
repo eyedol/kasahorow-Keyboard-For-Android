@@ -1,0 +1,6 @@
+[submodule "AnySoftKeyboard"]
+	path = AnySoftKeyboard
+	url = git@github.com:eyedol/AnySoftKeyboard.git
+[submodule "AnySoftKeyboard-API"]
+	path = AnySoftKeyboard-API
+	url = git@github.com:eyedol/AnySoftKeyboard-API.git
