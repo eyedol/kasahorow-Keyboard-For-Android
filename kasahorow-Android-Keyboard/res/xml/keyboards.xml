@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboards>
+	<!--
+	id := a UUID (you may want to generate this using our simple Java program at:  /trunk/project/dict_creation (uuidgen_Windows.bat or uuidgen_Linux)
+	nameResId := the resource Id which holds the name of the keyboard. See strings.xml.
+	layoutResId := the resource Id which holds the layout definition of this keyboard. The sample is an English QWERTY keyboard.
+	*landscapeResId := the resource Id which holds the layout definition of this keyboard in landscape orientation (optional).
+	*physicalKeyboardMappingResId := a physical keyboard translation definition (optional). The sample is a Russian layout.
+	*iconResId := an icon to show when switching to this layout (optional).
+	*defaultDictionaryLocale := a locate identifier for this keyboard. E.g., English will be en, Hebrew will be iw, etc.
+	description := some text you would like to add.
+	index := the sort index of this keyboard in the Settings page.
+	
+	* are optional.
+	 -->
+	<Keyboard id="b4c08b0e-ec82-453f-a506-1495c15bd230" nameResId="@string/ak_keyboard"
+		layoutResId="@xml/ak_qwerty"
+		landscapeResId="@xml/ak_qwerty"
+		iconResId="@drawable/flag"
+		defaultDictionaryLocale="ak" 
+		description="Akan keyboard layout."
+		index="1"/>
+ 		
+		<Keyboard id="5e8ea8c4-a287-42af-9781-55e7c6f4d53a" nameResId="@string/ga_keyboard"
+		layoutResId="@xml/ga_qwerty"
+		landscapeResId="@xml/ga_qwerty"
+		iconResId="@drawable/flag"
+		defaultDictionaryLocale="ga" 
+		description="Ga keyboard layout."
+		index="2"/>
+ 		
+		<Keyboard id="f1533ec2-f971-42ed-9908-686b9426bf3f" nameResId="@string/ee_keyboard"
+		layoutResId="@xml/ee_qwerty"
+		landscapeResId="@xml/ee_qwerty"
+		iconResId="@drawable/flag"
+		defaultDictionaryLocale="ee" 
+		description="Ewe keyboard layout."
+		index="3"/> 
+
+		<Keyboard id="153987e5-0919-4a00-9326-87d23891e70d" nameResId="@string/ha_keyboard"
+		layoutResId="@xml/ha_qwerty"
+		landscapeResId="@xml/ha_qwerty"
+		iconResId="@drawable/flag"
+		defaultDictionaryLocale="ha" 
+		description="Hausa keyboard layout."
+		index="4"/> 
+		
+			<!-- you can add additional layouts. Just create additional Keyboard xml node. -->
+</Keyboards>
