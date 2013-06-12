@@ -20,7 +20,6 @@ After, you should have
 |-- AnySoftKeyboard
 |-- AnySoftKeyboard-API
 |-- kasahorow-Android-Keyboard
-|-- out
 `-- README.md
 
 ```
