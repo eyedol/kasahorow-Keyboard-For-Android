@@ -16,10 +16,13 @@ The recursive option is there to clone the submodules as well.
 After, you should have
 
 ```
+.
 |-- AnySoftKeyboard
 |-- AnySoftKeyboard-API
 |-- kasahorow-Android-Keyboard
-`-- out
+|-- out
+`-- README.md
+
 ```
 
 Update the main project and it dependencies. Issue the command below in `kasahorow-Android-Keyboard` as well as in `AnySoftKeyboard-API` and finally in `AnySoftKeyboard`
