@@ -184,6 +184,7 @@
         <item name="shadowRadius">5px</item>
     </style>
 
+    
     <style name="PlainDarkAnySoftKeyboard" parent="@style/AnyKeyboardBaseTheme">
         <item name="android:background">@drawable/dark_background</item>
         <item name="keyBackground">@drawable/dark_btn_key</item>
@@ -240,7 +241,8 @@
         <item name="keyBackground">@drawable/blacktheme_popupkey</item>
         <item name="keyTextColor">@color/blacktheme_popup_keytext_color</item>
     </style>
-
+    
+    <!--  Re-themed for kasahorow keyboard for Android -->
     <style name="PlainLightAnySoftKeyboard" parent="@style/AnyKeyboardBaseTheme">
         <item name="android:background">@drawable/light_background_tiled</item>
         <item name="keyBackground">@drawable/light_btn_key</item>
@@ -268,7 +270,8 @@
         <item name="keyBackground">@drawable/light_btn_key</item>
         <item name="keyTextColor">@color/light_btn_key_text_color</item>
     </style>
-
+    <!-- kasahorow keyboard for android theme ends here -->
+    
     <style name="MainKeyboardAnimation">
         <item name="android:windowEnterAnimation">@anim/input_method_fancy_enter</item>
         <item name="android:windowExitAnimation">@anim/input_method_fancy_exit</item>
