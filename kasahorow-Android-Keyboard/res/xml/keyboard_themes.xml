@@ -7,8 +7,8 @@
         iconsThemeRes="@style/KasahorowKeyboardForAndroidIconTheme"
         index="1"
         nameResId="@string/plain_afro_theme_name"
-        popupThemeRes="@style/PlainAfroKasahorowKeyboardForAndroidPopup"
-        themeRes="@style/PlainAfroKasahorowKeyboardForAndroid"
+        popupThemeRes="@style/AfroKasahorowKeyboardForAndroidPopup"
+        themeRes="@style/AfroKasahorowKeyboardForAndroid"
         themeScreenshot="@drawable/light_theme_screenshot" />
     <KeyboardTheme
         id="79809d30-2919-4ae6-a9ec-94fd4bb6bd92"
