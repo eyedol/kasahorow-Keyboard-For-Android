@@ -16,7 +16,7 @@
 	<Keyboard id="b4c08b0e-ec82-453f-a506-1495c15bd230" nameResId="@string/ak_keyboard"
 		layoutResId="@xml/ak_qwerty"
 		landscapeResId="@xml/ak_qwerty"
-		iconResId="@drawable/flag"
+		iconResId="@drawable/ak"
 		defaultDictionaryLocale="ak" 
 		description="Akan keyboard layout."
 		index="1"/>
@@ -24,7 +24,7 @@
 		<Keyboard id="5e8ea8c4-a287-42af-9781-55e7c6f4d53a" nameResId="@string/ga_keyboard"
 		layoutResId="@xml/ga_qwerty"
 		landscapeResId="@xml/ga_qwerty"
-		iconResId="@drawable/flag"
+		iconResId="@drawable/ga"
 		defaultDictionaryLocale="ga" 
 		description="Ga keyboard layout."
 		index="2"/>
@@ -32,7 +32,7 @@
 		<Keyboard id="f1533ec2-f971-42ed-9908-686b9426bf3f" nameResId="@string/ee_keyboard"
 		layoutResId="@xml/ee_qwerty"
 		landscapeResId="@xml/ee_qwerty"
-		iconResId="@drawable/flag"
+		iconResId="@drawable/ak"
 		defaultDictionaryLocale="ee" 
 		description="Ewe keyboard layout."
 		index="3"/> 
@@ -40,7 +40,7 @@
 		<Keyboard id="153987e5-0919-4a00-9326-87d23891e70d" nameResId="@string/ha_keyboard"
 		layoutResId="@xml/ha_qwerty"
 		landscapeResId="@xml/ha_qwerty"
-		iconResId="@drawable/flag"
+		iconResId="@drawable/ak"
 		defaultDictionaryLocale="ha" 
 		description="Hausa keyboard layout."
 		index="4"/> 
