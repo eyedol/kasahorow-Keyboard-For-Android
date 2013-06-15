@@ -710,6 +710,6 @@
     <string name="ak_dictionary">Akan</string>
     <string name="ha_keyboard">Hausa keyboard</string>
     <string name="ha_desc">Hausa keyboad layout.</string>
-    <string name="plain_afro_theme_name">Plain Afro Theme</string>
+    <string name="plain_afro_theme_name">Afro Theme</string>
     <string name="plain_afro_theme_description">Afro colors, simple graphics</string>
 </resources>
