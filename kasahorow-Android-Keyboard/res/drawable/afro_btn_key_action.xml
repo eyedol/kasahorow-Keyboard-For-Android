@@ -7,7 +7,7 @@
                      android:right="@dimen/key_right_inset"
                      android:bottom="@dimen/key_bottom_inset"
                      android:left="@dimen/key_left_inset"/>
-            <solid android:color="#6060B0"/>
+            <solid android:color="#891f02"/>
             <stroke android:width="1px" android:color="#222"/>
             <corners android:radius="@dimen/key_corner_radius"/>
         </shape>
