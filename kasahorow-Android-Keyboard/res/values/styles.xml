@@ -152,7 +152,7 @@
     <style name="LeanDarkPopup" parent="@style/AnyKeyboardPopupBaseTheme">
         <item name="android:background">@drawable/lean_dark_popup_keyboard_background</item>
         <item name="keyBackground">@drawable/lean_dark_btn_popup</item>
-<!--                 <item name="keyTextSize">@dimen/lean_key_text_size</item> -->
+        <!-- <item name="keyTextSize">@dimen/lean_key_text_size</item> -->
         <item name="keyTextStyle">normal</item>
         <item name="shadowRadius">0px</item>
     </style>
@@ -233,12 +233,10 @@
         <item name="keyTextColor">@color/blacktheme_popup_keytext_color</item>
     </style>
 
-    <!-- Re-themed for kasahorow keyboard for Android -->
     <style name="PlainLightAnySoftKeyboard" parent="@style/AnyKeyboardBaseTheme">
         <item name="android:background">@drawable/light_background_tiled</item>
         <item name="keyBackground">@drawable/light_btn_key</item>
         <item name="keyTextColor">@color/light_btn_key_text_color</item>
-        <item name="keyTextStyle">normal</item>
         <item name="hintTextColor">#FF222222</item>
         <item name="backgroundDimAmount">0.2</item>
         <item name="keyPreviewBackground">@drawable/light_btn_key_preview_background</item>
@@ -259,6 +257,61 @@
         <item name="keyBackground">@drawable/light_btn_key</item>
         <item name="keyTextColor">@color/light_btn_key_text_color</item>
     </style>
+
+    <!-- Theme for kasahorow keyboard for Android -->
+
+
+    <!-- kasahorow keyboard for android icon theme -->
+    <style name="KasahorowKeyboardForAndroidIconTheme">
+
+        <!-- should support normal, android:state_pressed, feedback, android:state_pressed+feedback, android:state_checked, state_checked+feedback -->
+        <item name="iconKeyShift">@drawable/dark_key_shift_set</item>
+        <!-- should support normal, android:state_pressed, feedback, android:state_pressed+feedback, android:state_checked, state_checked+feedback -->
+        <item name="iconKeyControl">@drawable/dark_key_control_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyBackspace">@drawable/dark_key_delete_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeySpace">@drawable/dark_key_space_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyTab">@drawable/dark_key_tab_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyCancel">@drawable/dark_key_cancel_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyGlobe">@drawable/dark_key_globe_set</item>
+        <!-- should support normal, key_type_feedback, action_done, action_done+key_type_feedback, action_search, action_search+key_type_feedback, action_go, action_go+key_type_feedback -->
+        <item name="iconKeyAction">@drawable/dark_key_action_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyMic">@drawable/dark_key_mic_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeySettings">@drawable/dark_key_settings_set</item>
+    </style>
+
+    <style name="PlainAfroKasahorowKeyboardForAndroid" parent="@style/AnyKeyboardBaseTheme">
+        <item name="android:background">@drawable/light_background_tiled</item>
+        <item name="keyBackground">@drawable/light_btn_key</item>
+        <item name="keyTextColor">@color/light_btn_key_text_color</item>
+        <item name="keyTextStyle">normal</item>
+        <item name="hintTextColor">#FF222222</item>
+        <item name="backgroundDimAmount">0.2</item>
+        <item name="keyPreviewBackground">@drawable/light_btn_key_preview_background</item>
+        <item name="keyPreviewTextColor">#FF000000</item>
+        <item name="suggestionNormalTextColor">@android:color/black</item>
+        <item name="suggestionRecommendedTextColor">@color/candidate_recommended</item>
+        <item name="suggestionOthersTextColor">@color/candidate_other</item>
+        <item name="suggestionTextSize">@dimen/candidate_font_height</item>
+        <item name="suggestionBackgroundImage">@drawable/light_background_suggestions</item>
+        <item name="suggestionDividerImage">@drawable/dark_suggestions_divider</item>
+        <item name="suggestionStripHeight">@dimen/candidate_strip_height</item>
+        <item name="keyHorizontalGap">@dimen/plain_theme_key_horizontal_gap</item>
+        <item name="keyVerticalGap">@dimen/plain_theme_key_vertical_gap</item>
+    </style>
+
+    <style name="PlainAfroKasahorowKeyboardForAndroidPopup" parent="@style/AnyKeyboardPopupBaseTheme">
+        <item name="android:background">@drawable/light_background_popup</item>
+        <item name="keyBackground">@drawable/light_btn_key</item>
+        <item name="keyTextColor">@color/light_btn_key_text_color</item>
+    </style>
+
     <!-- kasahorow keyboard for android theme ends here -->
 
     <style name="MainKeyboardAnimation">
