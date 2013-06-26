@@ -2,7 +2,7 @@
 <KeyboardThemes>
 
     <KeyboardTheme
-        id="bbeaca0e-71fe-4fbb-bdc1-34b709334dbb"
+        id="ac8ea510-ca66-11e1-9b23-0800200c9a66"
         description="@string/plain_afro_theme_description"
         iconsThemeRes="@style/KasahorowKeyboardForAndroidIconTheme"
         index="1"
@@ -20,7 +20,7 @@
         themeRes="@style/PlainLightAnySoftKeyboard"
         themeScreenshot="@drawable/light_theme_screenshot" />
     <KeyboardTheme
-        id="ac8ea510-ca66-11e1-9b23-0800200c9a66"
+        id="bbeaca0e-71fe-4fbb-bdc1-34b709334dbb"
         description="@string/lean_dark_keyboard_theme_description"
         iconsThemeRes="@style/AnyKeyboardBaseKeyIconTheme"
         index="3"
