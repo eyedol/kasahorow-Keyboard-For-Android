@@ -9,7 +9,7 @@
         nameResId="@string/plain_afro_theme_name"
         popupThemeRes="@style/AfroKasahorowKeyboardForAndroidPopup"
         themeRes="@style/AfroKasahorowKeyboardForAndroid"
-        themeScreenshot="@drawable/light_theme_screenshot" />
+        themeScreenshot="@drawable/afro_theme_screenshot" />
     <KeyboardTheme
         id="79809d30-2919-4ae6-a9ec-94fd4bb6bd92"
         description="@string/light_plain_keyboard_theme_description"
