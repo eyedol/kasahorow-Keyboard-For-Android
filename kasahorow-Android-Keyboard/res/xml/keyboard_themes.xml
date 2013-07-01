@@ -66,15 +66,6 @@
         themeScreenshot="@drawable/lean_dark_theme_screenshot" />
     <KeyboardTheme
         id="c971c5fe-a8a8-4fe8-a505-9c79c689d4fc"
-        description="@string/sandy_brown_keyboard_theme_description"
-        iconsThemeRes="@style/SandyBrownIconTheme"
-        index="8"
-        nameResId="@string/lean_dark_2_keyboard_theme_name"
-        popupThemeRes="@style/SandyBrownPopup"
-        themeRes="@style/SandyBrown"
-        themeScreenshot="@drawable/lean_dark_theme_screenshot" />
-    <KeyboardTheme
-        id="c971c5fe-a8a8-4fe8-a505-9c79c689d4fc"
         description="@string/plain_afro_theme_description"
         iconsThemeRes="@style/KasahorowKeyboardForAndroidIconTheme"
         index="8"
