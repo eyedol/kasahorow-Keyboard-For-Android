@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <array name="words_dict_array">
         <item>@raw/ak</item>
     </array>
+    <array name="en_words_dict_array">
+        <item>@raw/words_1</item>
+    </array>
+
 </resources>
