@@ -303,6 +303,52 @@
 
     <!-- kasahorow keyboard for android theme ends here -->
 
+
+    <!-- sandy brown theme -->
+    <style name="SandyBrownIconTheme">
+
+        <!-- should support normal, android:state_pressed, feedback, android:state_pressed+feedback, android:state_checked, state_checked+feedback -->
+        <item name="iconKeyShift">@drawable/sandy_brown_key_shift_set</item>
+        <!-- should support normal, android:state_pressed, feedback, android:state_pressed+feedback, android:state_checked, state_checked+feedback -->
+        <item name="iconKeyControl">@drawable/sandy_brown_key_control_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyBackspace">@drawable/sandy_brown_key_delete_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeySpace">@drawable/sandy_brown_key_space_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyTab">@drawable/sandy_brown_key_tab_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyCancel">@drawable/sandy_brown_key_cancel_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyGlobe">@drawable/sandy_brown_key_globe_set</item>
+        <!-- should support normal, key_type_feedback, action_done, action_done+key_type_feedback, action_search, action_search+key_type_feedback, action_go, action_go+key_type_feedback -->
+        <item name="iconKeyAction">@drawable/dark_key_action_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeyMic">@drawable/sandy_brown_key_mic_set</item>
+        <!-- should support normal, feedback -->
+        <item name="iconKeySettings">@drawable/sandy_brown_key_settings_set</item>
+    </style>
+    
+    <style name="SandyBrown" parent="@style/PlainLightAnySoftKeyboard">
+        <item name="android:background">@drawable/sandy_brown_background</item>
+        <item name="keyBackground">@drawable/sandy_brown_btn_key</item>
+        <item name="backgroundDimAmount">0.2</item>
+         <item name="keyTextSize">@dimen/key_text_size</item>
+        <item name="keyTextStyle">bold</item>
+        <item name="keyTextColor">#000</item>
+        <item name="keyPreviewBackground">@drawable/light_btn_key_preview_background</item>
+        <item name="suggestionBackgroundImage">@drawable/light_background_suggestions</item>
+        <item name="suggestionDividerImage">@drawable/dark_suggestions_divider</item>
+        <item name="keyTextColor">#fcf2e2</item>
+    </style>
+
+    <style name="SandyBrownPopup" parent="@style/AnyKeyboardPopupBaseTheme">
+        <item name="android:background">@drawable/sandy_brown_background_popup</item>
+        <item name="keyBackground">@drawable/sandy_brown_btn_key</item>
+        <item name="keyTextColor">@color/sandy_brown_btn_key_text_color</item>
+    </style>
+    <!-- kasa theme ends -->
+
     <style name="MainKeyboardAnimation">
         <item name="android:windowEnterAnimation">@anim/input_method_fancy_enter</item>
         <item name="android:windowExitAnimation">@anim/input_method_fancy_exit</item>
