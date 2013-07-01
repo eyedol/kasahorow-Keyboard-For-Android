@@ -328,18 +328,19 @@
         <!-- should support normal, feedback -->
         <item name="iconKeySettings">@drawable/sandy_brown_key_settings_set</item>
     </style>
-    
+
     <style name="SandyBrown" parent="@style/PlainLightAnySoftKeyboard">
         <item name="android:background">@drawable/sandy_brown_background</item>
         <item name="keyBackground">@drawable/sandy_brown_btn_key</item>
         <item name="backgroundDimAmount">0.2</item>
-         <item name="keyTextSize">@dimen/key_text_size</item>
+        <item name="keyTextSize">@dimen/key_text_size</item>
         <item name="keyTextStyle">bold</item>
-        <item name="keyTextColor">#000</item>
+        <item name="keyTextColor">@android:color/black</item>
         <item name="keyPreviewBackground">@drawable/light_btn_key_preview_background</item>
         <item name="suggestionBackgroundImage">@drawable/light_background_suggestions</item>
         <item name="suggestionDividerImage">@drawable/dark_suggestions_divider</item>
         <item name="keyTextColor">#fcf2e2</item>
+        <item name="keyboardNameTextColor">@android:color/black</item>
     </style>
 
     <style name="SandyBrownPopup" parent="@style/AnyKeyboardPopupBaseTheme">
