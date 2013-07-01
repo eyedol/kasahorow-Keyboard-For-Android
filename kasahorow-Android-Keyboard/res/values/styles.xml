@@ -172,13 +172,13 @@
         <item name="android:background">@drawable/gingerbread_main_background</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_gingerbread</item>
         <item name="keyPreviewBackground">@drawable/gingerbread_btn_key_preview_background</item>
-        <item name="shadowRadius">5px</item>
+        <item name="shadowRadius">5dp</item>
     </style>
 
     <style name="GingerbreadPopup" parent="@style/AnyKeyboardPopupBaseTheme">
         <item name="android:background">@drawable/keyboard_popup_panel_background</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_gingerbread_popup</item>
-        <item name="shadowRadius">5px</item>
+        <item name="shadowRadius">5dp</item>
     </style>
 
     <style name="PlainDarkAnySoftKeyboard" parent="@style/AnyKeyboardBaseTheme">
