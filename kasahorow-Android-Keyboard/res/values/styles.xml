@@ -334,7 +334,7 @@
         <item name="keyBackground">@drawable/sandy_brown_btn_key</item>
         <item name="backgroundDimAmount">0.2</item>
         <item name="keyTextSize">@dimen/key_text_size</item>
-        <item name="keyTextStyle">bold</item>
+        <item name="keyTextStyle">@string/font_name</item>
         <item name="keyTextColor">@android:color/black</item>
         <item name="keyPreviewBackground">@drawable/light_btn_key_preview_background</item>
         <item name="suggestionBackgroundImage">@drawable/light_background_suggestions</item>
