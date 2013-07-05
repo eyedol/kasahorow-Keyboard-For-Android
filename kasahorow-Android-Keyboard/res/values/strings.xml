@@ -607,4 +607,8 @@
     <string name="sandy_brown_keyboard_theme_name">Sandy Brown Theme</string>
     <string name="sandy_brown_keyboard_theme_description">Simple brown colors and graphics</string>
     <string name="font_name">GenBasB.ttf</string>
+    <string name="azerty_keyboard">AZERTY</string>
+    <string name="french_dictionary">French</string>
+    <string name="fr_desc">French keyboard layout</string>
+
 </resources>

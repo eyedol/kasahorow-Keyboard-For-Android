@@ -12,7 +12,7 @@
 	description := some text you would like to add.
 	index := the sort index of this keyboard in the Settings page.
 	
-	* are optional.
+	* are optional.
     -->
     <Keyboard
         id="b4c08b0e-ec82-453f-a506-1495c15bd230"
@@ -85,6 +85,14 @@
         nameResId="@string/eng_keyboard"
         physicalKeyboardMappingResId="@xml/physical"
         screenshotResId="@drawable/english_qwerty_with_symbols_screenshot" />
+    <Keyboard
+        id="362b0871-f09a-411b-9a2a-3eb6034a18ea"
+        defaultDictionaryLocale="fr"
+        description="@string/fr_desc"
+        index="8"
+        layoutResId="@xml/azerty"
+        nameResId="@string/azerty_keyboard"
+        sentenceSeparators=".,)" />
     <!-- you can add additional layouts. Just create additional Keyboard xml node. -->
 
 </Keyboards>

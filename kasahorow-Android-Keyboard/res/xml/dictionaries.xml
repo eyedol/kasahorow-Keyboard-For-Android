@@ -7,7 +7,7 @@
 	nameResId := the resource Id which holds the name of the dictionary. See strings.xml.
 	type := currently we only support binary dictionaries.
 	dictionaryAssertName := the binary data holder
-	description := some text you would like to add.
+	description := some text you would like to add.
     -->
     <Dictionary
         id="00dd1bf8-bac1-4b2c-98fe-b380df19f55a"
@@ -24,6 +24,13 @@
         dictionaryResourceId="@array/en_words_dict_array"
         locale="en"
         nameResId="@string/eng_dictionary"
+        type="binary_resource" />
+    <Dictionary
+        id="eea85d27-40be-46ff-81b1-39bffa2897c6"
+        description=""
+        dictionaryResourceId="@raw/fr_binary"
+        locale="fr"
+        nameResId="@string/french_dictionary"
         type="binary_resource" />
 
 </Dictionaries>
