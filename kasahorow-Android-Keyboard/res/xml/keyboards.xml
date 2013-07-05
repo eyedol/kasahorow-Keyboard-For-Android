@@ -12,7 +12,7 @@
 	description := some text you would like to add.
 	index := the sort index of this keyboard in the Settings page.
 	
-	* are optional.
+	* are optional.
     -->
     <Keyboard
         id="b4c08b0e-ec82-453f-a506-1495c15bd230"
