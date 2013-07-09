@@ -4,6 +4,8 @@ kasahorow Keyboard For Android
 kasahorow keyboard for Android. See http://kasahorow.com for more info. 
 This project is heavily based on [AnySoftKeyboard](https://github.com/AnySoftKeyboard/AnySoftKeyboard)
 
+![Kasahorow Keyboard on HTC One](https://lh5.googleusercontent.com/-TOyx-zjPMzQ/Udu4AwTKt4I/AAAAAAAAJP0/WT5v9CKiD0g/s640/framed_Screenshot_2013-07-09-15-22-30.png)
+
 Build
 ====
 
@@ -35,7 +37,3 @@ Using ant, in `kasahorow-Android-Keyboard` issue
 `ant debug`
 
 If you're an eclipse user, import all the projects into eclipse. Then build `kasahorow-Android-Keyboard` project not any of the library projects. Both `AnySoftKeyboard-API` and `AnySoftKeyboard` are library projects.
-
-Keyboard in Action
-==================
-![Kasahorow Keyboard on HTC One](https://lh5.googleusercontent.com/-TOyx-zjPMzQ/Udu4AwTKt4I/AAAAAAAAJP0/WT5v9CKiD0g/s640/framed_Screenshot_2013-07-09-15-22-30.png)
