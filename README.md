@@ -34,4 +34,4 @@ Using ant, in `kasahorow-Android-Keyboard` issue
 
 `ant debug`
 
-If you're an eclipse user, import all the projects into eclipse. Then build `kasahorow-Android-Keyboard` project not any of the library projects. Both `AnySoftKeyboard-API` and `AnySoftKeyboard` are the library projects.
+If you're an eclipse user, import all the projects into eclipse. Then build `kasahorow-Android-Keyboard` project not any of the library projects. Both `AnySoftKeyboard-API` and `AnySoftKeyboard` are library projects.
