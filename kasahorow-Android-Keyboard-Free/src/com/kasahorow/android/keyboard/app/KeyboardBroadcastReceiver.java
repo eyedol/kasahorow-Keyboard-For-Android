@@ -1,4 +1,4 @@
-package com.kasahorow.android.keyboard;
+package com.kasahorow.android.keyboard.app;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
