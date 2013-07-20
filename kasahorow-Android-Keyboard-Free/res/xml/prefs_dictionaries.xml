@@ -15,7 +15,7 @@
     <Preference android:title="@string/user_dict_editor">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="com.kasahorow.android.keyboard"
+            android:targetPackage="com.kasahorow.android.keyboard.app"
             android:targetClass="com.anysoftkeyboard.ui.settings.UserDictionaryEditorActivity"/>
     </Preference>
     <net.evendanan.pushingpixels.ListPreference

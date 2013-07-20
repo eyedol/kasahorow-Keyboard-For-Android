@@ -6,6 +6,7 @@
       <directory url="file://$PROJECT_DIR$/AnySoftKeyboard/gen" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/gen" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/AnySoftKeyboard-API/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>

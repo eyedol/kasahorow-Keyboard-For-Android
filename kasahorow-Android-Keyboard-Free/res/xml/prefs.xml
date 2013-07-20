@@ -20,7 +20,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
         <intent
                 android:action="android.intent.action.MAIN"
                 android:targetClass="com.anysoftkeyboard.ui.MainForm"
-                android:targetPackage="com.kasahorow.android.keyboard"/>
+                android:targetPackage="com.kasahorow.android.keyboard.app"/>
     </Preference>
 
     <PreferenceCategory
@@ -33,7 +33,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.Keyboards"
-                    android:targetPackage="com.kasahorow.android.keyboard"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app"/>
         </Preference>
 
         <Preference android:title="@string/special_dictionaries_group"
@@ -42,7 +42,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.Dictionaries"
-                    android:targetPackage="com.kasahorow.android.keyboard"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app"/>
         </Preference>
     </PreferenceCategory>
 
@@ -56,7 +56,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.KeyboardThemeSelector"
-                    android:targetPackage="com.kasahorow.android.keyboard"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app"/>
         </Preference>
 
         <Preference android:title="@string/quick_text_keys_group"
@@ -65,7 +65,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.QuickTextKeys"
-                    android:targetPackage="com.kasahorow.android.keyboard"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app"/>
         </Preference>
 
         <Preference android:title="@string/top_generic_row_group"
@@ -74,7 +74,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.TopRowSelector"
-                    android:targetPackage="com.kasahorow.android.keyboard"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app"/>
         </Preference>
 
         <Preference android:title="@string/bottom_generic_row_group"
@@ -83,7 +83,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.BottomRowSelector"
-                    android:targetPackage="com.kasahorow.android.keyboard"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app"/>
         </Preference>
 
         <Preference android:title="@string/extension_keyboard_group"
@@ -92,7 +92,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.ExtensionKeyboardSelector"
-                    android:targetPackage="com.kasahorow.android.keyboard"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app"/>
         </Preference>
 
         <net.evendanan.pushingpixels.ListPreference
@@ -336,7 +336,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.Tweaks"
-                    android:targetPackage="com.kasahorow.android.keyboard"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app.app"/>
         </Preference>
     </PreferenceCategory>
 
