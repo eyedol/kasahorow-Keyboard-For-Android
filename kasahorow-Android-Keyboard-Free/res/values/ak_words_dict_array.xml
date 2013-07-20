@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="ak_words_dict_array">
+        <item>@raw/ak</item>
+    </array>
+    
+</resources>
