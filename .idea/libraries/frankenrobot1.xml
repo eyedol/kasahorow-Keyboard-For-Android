@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="frankenrobot1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AnySoftKeyboard/libs/frankenrobot.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

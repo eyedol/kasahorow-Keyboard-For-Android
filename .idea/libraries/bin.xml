@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="bin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AnySoftKeyboard-API/bin/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AnySoftKeyboard-API/bin/anysoftkeyboard-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
