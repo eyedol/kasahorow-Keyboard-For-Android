@@ -336,7 +336,7 @@ See this thread  http://stackoverflow.com/questions/4360100/activitynotfoundexce
             <intent
                     android:action="android.intent.action.MAIN"
                     android:targetClass="com.anysoftkeyboard.ui.settings.Tweaks"
-                    android:targetPackage="com.kasahorow.android.keyboard.app.app"/>
+                    android:targetPackage="com.kasahorow.android.keyboard.app"/>
         </Preference>
     </PreferenceCategory>
 
