@@ -601,6 +601,8 @@
     <string name="ak_dictionary">Akan</string>
     <string name="ha_keyboard">Hausa keyboard</string>
     <string name="ha_desc">Hausa keyboad layout.</string>
+    <string name="yo_keyboard">Yoruba keyboard</string>
+    <string name="yo_desc">Yoruba keyboad layout.</string>
     <string name="plain_afro_theme_name">Afro Theme</string>
     <string name="plain_afro_theme_description">Afro colors, simple graphics</string>
     <string name="akan_dictionary">Akan Dictionary</string>
