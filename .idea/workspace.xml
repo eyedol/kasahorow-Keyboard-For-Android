@@ -32,6 +32,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -68,7 +69,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -81,7 +81,7 @@
       <file leaf-file-name="symbols.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/xml/symbols.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="91" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="259" max-vertical-offset="1029">
+            <state line="23" column="91" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="882">
               <folding />
             </state>
           </provider>
@@ -90,7 +90,7 @@
       <file leaf-file-name="symbols.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="55" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1029">
+            <state line="21" column="55" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="882">
               <folding />
             </state>
           </provider>
@@ -99,18 +99,25 @@
       <file leaf-file-name="KeyboardSwitcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/KeyboardSwitcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="55" selection-start="5870" selection-end="5870" vertical-scroll-proportion="0.0" vertical-offset="2694" max-vertical-offset="15519">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="152" column="55" selection-start="5870" selection-end="5870" vertical-scroll-proportion="0.0" vertical-offset="2718" max-vertical-offset="13554">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenericKeyboard.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GenericKeyboard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/GenericKeyboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="102" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.47727272" vertical-offset="0" max-vertical-offset="651">
+            <state line="21" column="58" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ext_kbd_bottom_row_ng.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_ng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.3317757" vertical-offset="2" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -119,7 +126,7 @@
       <file leaf-file-name="ExternalAnyKeyboard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/ExternalAnyKeyboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="0" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="7455">
+            <state line="73" column="0" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="6876">
               <folding />
             </state>
           </provider>
@@ -128,7 +135,7 @@
       <file leaf-file-name="AnySoftKeyboard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/AnySoftKeyboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="66" selection-start="2465" selection-end="2477" vertical-scroll-proportion="-4.724138" vertical-offset="787" max-vertical-offset="78813">
+            <state line="58" column="66" selection-start="2465" selection-end="2477" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="68328">
               <folding />
             </state>
           </provider>
@@ -137,7 +144,7 @@
       <file leaf-file-name="Keyboard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/Keyboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="22" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="19077" max-vertical-offset="19530">
+            <state line="67" column="22" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="17316">
               <folding />
             </state>
           </provider>
@@ -146,7 +153,7 @@
       <file leaf-file-name="symbols_alt.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols_alt.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1050">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -228,6 +235,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -444,8 +453,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,11 +470,11 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="test" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.kasahorow-Android-Keyboard-Free">
     <configuration default="false" name="kasahorow-Android-Keyboard-Free" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
@@ -682,9 +689,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967742" sideWeight="0.28710124" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38280165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967742" sideWeight="0.67128986" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -693,6 +699,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32871014" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -783,13 +790,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/layout/developer_logcat_layout.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols_alt.xml">
@@ -806,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/popup.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="453">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/qwerty.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6754967" vertical-offset="759" max-vertical-offset="1365">
@@ -822,17 +820,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols_16keys.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="488" selection-end="489" vertical-scroll-proportion="-0.31603774" vertical-offset="323" max-vertical-offset="798">
-          <folding />
-        </state>
+        <state line="9" column="51" selection-start="488" selection-end="489" vertical-scroll-proportion="-0.31603774" vertical-offset="323" max-vertical-offset="798" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/KeyboardSwitcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="55" selection-start="5870" selection-end="5870" vertical-scroll-proportion="0.0" vertical-offset="2694" max-vertical-offset="15519">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -866,14 +860,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/AnySoftKeyboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="66" selection-start="2465" selection-end="2477" vertical-scroll-proportion="-4.724138" vertical-offset="787" max-vertical-offset="78813">
+        <state line="58" column="66" selection-start="2465" selection-end="2477" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="68328">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/GenericKeyboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="102" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.47727272" vertical-offset="0" max-vertical-offset="651">
+        <state line="21" column="58" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_ng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.3317757" vertical-offset="2" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
