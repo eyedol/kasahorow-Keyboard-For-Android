@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <string name="ime_name">kasahorowKeyboardForAndroid</string>
-    <string name="settings_app_name">kasahorowKeyboardForAndroid Settings</string>
-    <string name="spell_checker_service_name">kasahorowKeyboardForAndroid Spell Checker</string>
-    <string name="spell_checker_settings">kasahorowKeyboardForAndroid Speller Settings</string>
+    <string name="ime_name">kasahorow</string>
+    <string name="settings_app_name">kasahorow Settings</string>
+    <string name="spell_checker_service_name">kasahorow Spell Checker</string>
+    <string name="spell_checker_settings">kasahorow Speller Settings</string>
     <string name="subtype_generic">speller-generic</string>
     <string name="copyright_text">Copyright © <xliff:g id="year">%s</xliff:g><xliff:g id="owner">%s</xliff:g></string>
     <string name="version_text"><xliff:g id="version_name">%s</xliff:g> (v<xliff:g id="version_number">%s</xliff:g>)</string>
@@ -16,12 +16,12 @@
     <!-- tips -->
     <string name="tips_notification_text">Click for tips!</string>
     <string name="tips_button">How to use</string>
-    <string name="tips_button_description">A few tips about how to use kasahorowKeyboardForAndroid</string>
-    <string name="tips_title">kasahorowKeyboardForAndroid tips</string>
+    <string name="tips_button_description">A few tips about how to use kasahorow</string>
+    <string name="tips_title">kasahorow tips</string>
     <string name="click_for_previous_tip">↓ Previous tip</string>
     <string name="click_for_next_tip">Next tip ↓</string>
     <!-- tip 1 -->
-    <string name="tip_1_welcome_to_ask">Welcome to kasahorowKeyboardForAndroid!</string>
+    <string name="tip_1_welcome_to_ask">Welcome to kasahorow!</string>
     <string name="tip_1_how_to_access_settings">To access the settings; long press the ENTER key. You\'ll find a world
         of customizations there!</string>
     <!-- tip 2 -->
@@ -48,7 +48,7 @@
     <string name="tip_5_key_feedback_test">Want to test the feedback?</string>
     <!-- tip 6 -->
     <string name="tip_6_bottom_rows">Bottom row</string>
-    <string name="tip_6_bottom_rows_tip">As the top row, the bottom row can also be replaced. kasahorowKeyboardForAndroid has
+    <string name="tip_6_bottom_rows_tip">As the top row, the bottom row can also be replaced. kasahorow has
         several types - with or without a mic, iPhone style, etc.</string>
     <string name="tip_6_top_generic_row_go_to_bottom_row_settings">Change bottom row now</string>
     <!-- tip 7 -->
@@ -62,25 +62,25 @@
     <string name="tip_7_voice_input_tip_note">* Requires Android 2.2+ and Internet connection to work.</string>
     <!-- tip 8 -->
     <string name="tip_8_suggestions">I complete you</string>
-    <string name="tip_8_suggestions_tip">Depending on you language support level, kasahorowKeyboardForAndroid can help you finish
-        your words and correct your typos. As you start typing, kasahorowKeyboardForAndroid will suggest words based on what you
+    <string name="tip_8_suggestions_tip">Depending on you language support level, kasahorow can help you finish
+        your words and correct your typos. As you start typing, kasahorow will suggest words based on what you
         already typed.</string>
     <string name="tip_8_suggestions_editor">If I don\'t know a word, you can teach me! Type that word, and click it in
         the suggestions strip. I\'ll remember it.\nYou can also edit those User-Words in our built-in editor. Look for
-        the editor in kasahorowKeyboardForAndroid Dictionary Settings.</string>
+        the editor in kasahorow Dictionary Settings.</string>
     <!-- tip 9 -->
     <string name="tip_9_suggestions_restart">Suggestions Restarting</string>
-    <string name="tip_9_suggestions_restart_tip">kasahorowKeyboardForAndroid provides word completion suggestions based on what you
-        typed. But, kasahorowKeyboardForAndroid can also provide suggestions on already typed words! Tap the word, and
-        kasahorowKeyboardForAndroid will refresh the suggestions strip.</string>
+    <string name="tip_9_suggestions_restart_tip">kasahorow provides word completion suggestions based on what you
+        typed. But, kasahorow can also provide suggestions on already typed words! Tap the word, and
+        kasahorow will refresh the suggestions strip.</string>
     <!-- main form -->
     <string name="main_tab_welcome">Welcome</string>
     <string name="main_tab_links">Links</string>
     <string name="main_tab_credits">Credits</string>
     <!-- welcome tab -->
-    <string name="how_to_pointer_title">Welcome to kasahorowKeyboardForAndroid</string>
+    <string name="how_to_pointer_title">Welcome to kasahorow</string>
     <string name="how_to_pointer_version_prefix">Version:</string>
-    <string name="how_to_pointer_not_app">kasahorowKeyboardForAndroid is not a regular application - it is a on-screen keyboard
+    <string name="how_to_pointer_not_app">kasahorow is not a regular application - it is a on-screen keyboard
         replacement.</string>
     <string name="how_to_pointer_go_to_links">For further information, go to the Links tab.</string>
     <!-- links tab -->
@@ -94,30 +94,30 @@
     <string name="main_tab_credits_additional_work_by">Additional coding work by:</string>
     <string name="main_tab_credits_localization_by">Localization efforts by:</string>
     <string name="main_tab_credits_GUI_by">UI images by:</string>
-    <string name="how_to_enable_dialog_title">Enable kasahorowKeyboardForAndroid\?</string>
-    <string name="how_to_enable_dialog_text">kasahorowKeyboardForAndroid is not activated yet. Do you want me to show you how to
+    <string name="how_to_enable_dialog_title">Enable kasahorow\?</string>
+    <string name="how_to_enable_dialog_text">kasahorow is not activated yet. Do you want me to show you how to
         activate?</string>
     <string name="how_to_enable_dialog_show_me">Show me!</string>
     <string name="how_to_enable_dialog_dont_show_me">Later</string>
     <string name="how_to_simple_howto_preface">Android requires that you (the user) will manually enable and activate
         external keyboards. Here is how:</string>
-    <string name="how_to_simple_howto_enable_ask">Step 1: Enable kasahorowKeyboardForAndroid (it will warn you about possible
-        key-logging, don\'t worry, kasahorowKeyboardForAndroid does not keep data, and does not send it anywhere) :</string>
-    <string name="how_to_simple_howto_enable_ask_button">Enable kasahorowKeyboardForAndroid</string>
+    <string name="how_to_simple_howto_enable_ask">Step 1: Enable kasahorow (it will warn you about possible
+        key-logging, don\'t worry, kasahorow does not keep data, and does not send it anywhere) :</string>
+    <string name="how_to_simple_howto_enable_ask_button">Enable kasahorow</string>
     <string name="how_to_simple_howto_press_back_to_return_tip">Press BACK once done, to get back to activation
         instructions</string>
-    <string name="how_to_simple_howto_switch_to_ask">Step 2: Select kasahorowKeyboardForAndroid as your active Input Method:</string>
-    <string name="how_to_simple_howto_switch_to_ask_button_after_step_1">Switch to kasahorowKeyboardForAndroid</string>
+    <string name="how_to_simple_howto_switch_to_ask">Step 2: Select kasahorow as your active Input Method:</string>
+    <string name="how_to_simple_howto_switch_to_ask_button_after_step_1">Switch to kasahorow</string>
     <string name="how_to_simple_howto_switch_to_ask_button_before_step_1">First do step 1</string>
-    <string name="how_to_simple_howto_go_to_settings">Step 3 (optional): kasahorowKeyboardForAndroid is very customizable. Change
+    <string name="how_to_simple_howto_go_to_settings">Step 3 (optional): kasahorow is very customizable. Change
         stuff! You can do that later by long-press the ENTER key.</string>
-    <string name="how_to_simple_howto_go_to_settings_button">kasahorowKeyboardForAndroid\'s settings</string>
+    <string name="how_to_simple_howto_go_to_settings_button">kasahorow\'s settings</string>
 
     <!-- notifications -->
-    <string name="ime_name_beta">kasahorowKeyboardForAndroid BETA</string>
+    <string name="ime_name_beta">kasahorow BETA</string>
     <string name="notification_text_testers">This is a beta version. Use with caution!</string>
     <string name="notification_text_changelog">Click to learn what\'s new.</string>
-    <string name="notification_title_how_to_enable">Welcome to kasahorowKeyboardForAndroid</string>
+    <string name="notification_title_how_to_enable">Welcome to kasahorow</string>
     <string name="notification_text_how_to_enable">Learn how to enable</string>
     <string name="testers_version">Testers build!</string>
 
@@ -137,7 +137,7 @@
     <string name="bottom_row_addons_settings">Bottom row settings</string>
     <string name="top_row_addons_settings">Top row settings</string>
     <string name="close_button">Close</string>
-    <string name="how_to_active_text">How to active kasahorowKeyboardForAndroid</string>
+    <string name="how_to_active_text">How to active kasahorow</string>
     <!-- Symbols that are commonly considered word separators in this language -->
     <!-- <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|-'`~&quot;1234567890</string> -->
     <!-- Indicates that a word has been added to the dictionary -->
@@ -148,7 +148,7 @@
     <string name="hint_double_tap_to_close">Again to remove suggestions</string>
     <string name="menu_insert_smiley">Insert emoticon</string>
     <string name="click_for_help">Help</string>
-    <string name="click_for_help_summary">Additional help about kasahorowKeyboardForAndroid</string>
+    <string name="click_for_help_summary">Additional help about kasahorow</string>
 
     <!-- settings - UI -->
     <string name="ui_group">User interface</string>
@@ -287,12 +287,12 @@
     <string name="camera_key_for_backspace_backword_support_off_summary">Half press on camera button deletes last
         character, full press deletes last word</string>
     <string name="special_dictionaries_group">Special dictionaries</string>
-    <string name="special_dictionaries_group_summary">Suggestion dictionaries used in kasahorowKeyboardForAndroid</string>
+    <string name="special_dictionaries_group_summary">Suggestion dictionaries used in kasahorow</string>
     <string name="use_user_dictionary">User-dictionary</string>
     <string name="use_user_dictionary_on_summary">Suggest user added words (double-click a typed-suggestion to add)</string>
     <string name="use_user_dictionary_off_summary"></string>
     <string name="always_use_fallback_user_dictionary">Use fallback User-dictionary</string>
-    <string name="always_use_fallback_user_dictionary_on_summary">Use only kasahorowKeyboardForAndroid\'s built-in User-dictionary mechanism (not recommended).</string>
+    <string name="always_use_fallback_user_dictionary_on_summary">Use only kasahorow\'s built-in User-dictionary mechanism (not recommended).</string>
     <string name="always_use_fallback_user_dictionary_off_summary">Try to use Android\'s built-in User-dictionary first (recommended).</string>
     <string name="use_auto_dictionary">Auto dictionary</string>
     <string name="use_auto_dictionary_dialog_title">Select learn method</string>
@@ -425,11 +425,11 @@
     <string name="auto_dict">Auto dictionary</string>
     <string name="auto_dict_summary">Add commonly used or selected words automatically to the dictionary</string>
     <string name="no_extrenal_packs_support_title">Unsupported</string>
-    <string name="no_extrenal_packs_support_message">For now, kasahorowKeyboardForAndroid does not allow external packs of this
+    <string name="no_extrenal_packs_support_message">For now, kasahorow does not allow external packs of this
         type.\nOnce API specifications have been determined, this feature will be opened.\nStay tuned.</string>
     <!-- settings - keyboard group -->
     <string name="keyboards_group">Keyboards</string>
-    <string name="keyboards_group_summary">Keyboard layouts for use in kasahorowKeyboardForAndroid</string>
+    <string name="keyboards_group_summary">Keyboard layouts for use in kasahorow</string>
     <string name="symbols_keyboard">123!#()</string>
     <string name="symbols_alt_keyboard">{}\_</string>
     <string name="symbols_alt_num_keyboard">123</string>
@@ -522,7 +522,7 @@
     <string name="change_symbols_regular">123</string>
     <string name="please_wait">Please wait</string>
     <string name="toast_lengthy_words_long_operation">Loading dictionary&#8230;</string>
-    <string name="toast_lengthy_start_up_operation">Starting kasahorowKeyboardForAndroid&#8230;</string>
+    <string name="toast_lengthy_start_up_operation">Starting kasahorow&#8230;</string>
     <string name="lengthy_creating_keyboard_operation">Creating keyboards&#8230;</string>
     <string name="select_keyboard_popup_title">Select keyboard</string>
     <!-- dictionaries -->
@@ -549,7 +549,7 @@
     <string name="tweak_workarounds_group">Workarounds</string>
     <string name="workaround_disable_rtl_fix">Disable Right-to-Left handling</string>
     <string name="workaround_disable_rtl_fix_summary_on">Use OS RTL handling (for SE phones)</string>
-    <string name="workaround_disable_rtl_fix_summary_off">Use kasahorowKeyboardForAndroid RTL handling</string>
+    <string name="workaround_disable_rtl_fix_summary_off">Use kasahorow RTL handling</string>
     <string name="settings_split_state_title">Split/Merge initial state</string>
     <string name="settings_split_state_summary">Define whether the keyboard is split as default. Now: %s</string>
     <string name="settings_split_state_merged_always">Start regular</string>
@@ -573,7 +573,7 @@
         through the menu.</string>
     <string name="user_dict_backup_success_title">Backup done!</string>
     <string name="user_dict_backup_success_text">Successfully stored your words on device storage at
-        /Android/data/com.menny.android.kasahorowKeyboardForAndroid/files/</string>
+        /Android/data/com.menny.android.kasahorow/files/</string>
     <string name="user_dict_backup_fail_title">Backup failed!</string>
     <string name="user_dict_backup_fail_text">Could not store your files! Is storage available?</string>
     <string name="user_dict_backup_fail_text_with_error">Failed to store words due to:<xliff:g id="error">%s</xliff:g></string>
@@ -589,15 +589,15 @@
     <string name="should_swap_punctuation_and_space_no">No</string>
     <string name="developer_tools">Developer tools</string>
     <string name="click_for_developer_features">Developer tools</string>
-    <string name="click_for_developer_features_summary">Various tools for kasahorowKeyboardForAndroid developers</string>
+    <string name="click_for_developer_features_summary">Various tools for kasahorow developers</string>
     <string name="failed_to_create_mem_dump">Failed to create memory dump file due to:<xliff:g id="message">%s</xliff:g></string>
     <string name="created_mem_dump_file">Created memory dump file at:<xliff:g id="file_path">%s</xliff:g></string>
     <string name="ak_keyboard">Akan keyboard</string>
     <string name="ak_desc">Akan keyboard layout.</string>
     <string name="ga_keyboard">Ga keyboard</string>
     <string name="ga_desc">Ga keyboard layout.</string>
-    <string name="ee_keyboard">Ewe keyboard</string>
-    <string name="ee_desc">Ewe keyboard layout.</string>
+    <string name="ee_keyboard">Gbe keyboard</string>
+    <string name="ee_desc">Gbe keyboard layout.</string>
     <string name="ak_dictionary">Akan</string>
     <string name="ha_keyboard">Hausa keyboard</string>
     <string name="ha_desc">Hausa keyboad layout.</string>

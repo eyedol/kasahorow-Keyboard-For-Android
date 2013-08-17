@@ -2,7 +2,7 @@
 <resources>
 
     <array name="en_words_dict_array">
-        <item>@raw/words_1</item>
+        <item>@raw/main_en</item>
     </array>
 
 </resources>
