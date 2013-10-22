@@ -38,4 +38,4 @@ Using ant, in `kasahorow-Android-Keyboard` issue
 
 If you're an eclipse user, import all the projects into eclipse. Then build `kasahorow-Android-Keyboard` project not any of the library projects. Both `AnySoftKeyboard-API` and `AnySoftKeyboard` are library projects.
 
-`AnySoftKeyboard` has been modified to a library project and support for custom fonts was added. If you plan to merge changes from the AnySoftKeyboard folks, take note, there might be merge conflicts because of the changes. Use tools like `meld` or `git mergetool` to resolve the conflicts. It usually minor conflicts so shouldn't be hard to fix.
+`AnySoftKeyboard` has been modified to a library project and support for custom fonts was added. If you plan to merge changes from the AnySoftKeyboard folks, take note, there might be merge conflicts because of the changes. Use tools like `meld` or `git mergetool` to resolve the conflicts. They're usually minor conflicts so shouldn't be hard to fix.
