@@ -16,7 +16,7 @@
     -->
     <Keyboard
         id="b4c08b0e-ec82-453f-a506-1495c15bd230"
-        defaultDictionaryLocale="ak"
+        defaultDictionaryLocale="aka"
         description="@string/ak_desc"
         iconResId="@drawable/ak"
         defaultEnabled="false"
@@ -26,7 +26,7 @@
         nameResId="@string/ak_keyboard" />
     <Keyboard
         id="5e8ea8c4-a287-42af-9781-55e7c6f4d53a"
-        defaultDictionaryLocale="ga"
+        defaultDictionaryLocale="gaa"
         description="@string/ga_desc"
         iconResId="@drawable/ga"
         index="2"
@@ -34,29 +34,38 @@
         layoutResId="@xml/ga_qwerty"
         nameResId="@string/ga_keyboard" />
     <Keyboard
+        id="cdbdf63d-5e32-4ca1-87f0-c797e1a3fbec"
+        defaultDictionaryLocale="kik"
+        description="@string/kik_desc"
+        iconResId="@drawable/kik"
+        index="3"
+        landscapeResId="@xml/kik_qwerty"
+        layoutResId="@xml/kik_qwerty"
+        nameResId="@string/kik_keyboard" />
+    <Keyboard
         id="f1533ec2-f971-42ed-9908-686b9426bf3f"
-        defaultDictionaryLocale="ee"
+        defaultDictionaryLocale="ewe"
         description="@string/ee_desc"
         iconResId="@drawable/ee"
-        index="3"
+        index="4"
         landscapeResId="@xml/ee_qwerty"
         layoutResId="@xml/ee_qwerty"
         nameResId="@string/ee_keyboard" />
     <Keyboard
         id="153987e5-0919-4a00-9326-87d23891e70d"
-        defaultDictionaryLocale="ha"
+        defaultDictionaryLocale="hau"
         description="@string/ha_desc"
         iconResId="@drawable/ha"
-        index="4"
+        index="5"
         landscapeResId="@xml/ha_qwerty"
         layoutResId="@xml/ha_qwerty"
         nameResId="@string/ha_keyboard" />
     <Keyboard
         id="89297ca8-549a-4344-9d9b-0d137f0d2179"
-        defaultDictionaryLocale="yo"
+        defaultDictionaryLocale="yor"
         description="@string/yo_desc"
         iconResId="@drawable/yo"
-        index="5"
+        index="6"
         landscapeResId="@xml/yo_qwerty"
         layoutResId="@xml/yo_qwerty"
         nameResId="@string/yo_keyboard" />
@@ -66,7 +75,7 @@
         defaultEnabled="false"
         description="QWERTY Latin keyboard"
         iconResId="@drawable/ic_stat_en"
-        index="6"
+        index="7"
         layoutResId="@xml/qwerty"
         nameResId="@string/eng_keyboard"
         physicalKeyboardMappingResId="@xml/physical"
@@ -77,7 +86,7 @@
         defaultEnabled="false"
         description="16 keys English layout"
         iconResId="@drawable/ic_stat_en"
-        index="7"
+        index="8"
         landscapeResId="@xml/qwerty"
         layoutResId="@xml/eng_16keys"
         nameResId="@string/eng_keyboard"
@@ -89,7 +98,7 @@
         defaultEnabled="false"
         description="QWERTY Latin keyboard with symbols (on long press)"
         iconResId="@drawable/ic_stat_en"
-        index="8"
+        index="9"
         landscapeResId="@xml/qwerty_with_symbols"
         layoutResId="@xml/qwerty_with_symbols"
         nameResId="@string/eng_keyboard"
@@ -99,7 +108,7 @@
         id="362b0871-f09a-411b-9a2a-3eb6034a18ea"
         defaultDictionaryLocale="fr"
         description="@string/fr_desc"
-        index="9"
+        index="10"
         layoutResId="@xml/azerty"
         nameResId="@string/azerty_keyboard"
         sentenceSeparators=".,)" />
