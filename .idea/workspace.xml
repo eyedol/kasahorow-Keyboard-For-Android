@@ -6,7 +6,10 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88c9db36-b0d7-4feb-b56d-ed887ba4b14d" name="Default" comment="" />
+    <list default="true" id="88c9db36-b0d7-4feb-b56d-ed887ba4b14d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard-API/AnySoftKeyboard-API.iml" afterPath="$PROJECT_DIR$/AnySoftKeyboard-API/AnySoftKeyboard-API.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnySoftKeyboard/AnySoftKeyboard.iml" afterPath="$PROJECT_DIR$/AnySoftKeyboard/AnySoftKeyboard.iml" />
+    </list>
     <ignored path="kasahorow-Keyboard-For-Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +25,6 @@
     <splitter proportion="0.5" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
-    <option name="USE_COMPILE_SERVER" value="false" />
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -81,7 +83,8 @@
       <file leaf-file-name="symbols.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/xml/symbols.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="30" selection-start="1211" selection-end="1213" vertical-scroll-proportion="-9.4" vertical-offset="179" max-vertical-offset="882">
+            <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="900">
+              <caret line="23" column="30" selection-start="1211" selection-end="1213" />
               <folding />
             </state>
           </provider>
@@ -90,7 +93,8 @@
       <file leaf-file-name="ext_kbd_bottom_row_ng.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_ng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="62" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="1530">
+            <state vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="1530">
+              <caret line="17" column="62" selection-start="1041" selection-end="1041" />
               <folding />
             </state>
           </provider>
@@ -99,7 +103,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="599" column="30" selection-start="44317" selection-end="44317" vertical-scroll-proportion="-13.2" vertical-offset="10452" max-vertical-offset="11142">
+            <state vertical-scroll-proportion="0.0" vertical-offset="10782" max-vertical-offset="11142">
+              <caret line="599" column="30" selection-start="44317" selection-end="44317" />
               <folding />
             </state>
           </provider>
@@ -108,7 +113,8 @@
       <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.36" vertical-offset="134" max-vertical-offset="7110">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7110">
+              <caret line="0" column="0" selection-start="0" selection-end="0" />
               <folding />
             </state>
           </provider>
@@ -117,8 +123,11 @@
       <file leaf-file-name="ak_qwerty.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/ak_qwerty.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="31" selection-start="293" selection-end="293" vertical-scroll-proportion="0.44554454" vertical-offset="0" max-vertical-offset="936">
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="936">
+              <caret line="10" column="31" selection-start="293" selection-end="293" />
+              <folding>
+                <element signature="e#221#240#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,7 +135,8 @@
       <file leaf-file-name="symbols.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/symbols.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="26" selection-start="1001" selection-end="1014" vertical-scroll-proportion="-6.52" vertical-offset="197" max-vertical-offset="882">
+            <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="882">
+              <caret line="20" column="26" selection-start="1001" selection-end="1014" />
               <folding />
             </state>
           </provider>
@@ -135,7 +145,8 @@
       <file leaf-file-name="sandy_brown_btn_key_text_color.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/color/sandy_brown_btn_key_text_color.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="32" selection-start="325" selection-end="331" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="252">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="252">
+              <caret line="5" column="32" selection-start="325" selection-end="331" />
               <folding />
             </state>
           </provider>
@@ -144,7 +155,8 @@
       <file leaf-file-name="dictionaries.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/dictionaries.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="15" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="756">
+            <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="756">
+              <caret line="36" column="15" selection-start="1416" selection-end="1416" />
               <folding />
             </state>
           </provider>
@@ -153,7 +165,8 @@
       <file leaf-file-name="en_words_dict_array.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/en_words_dict_array.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="234">
+            <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="234">
+              <caret line="4" column="26" selection-start="117" selection-end="117" />
               <folding />
             </state>
           </provider>
@@ -162,7 +175,8 @@
       <file leaf-file-name="ak_words_dict_array.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/ak_words_dict_array.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+              <caret line="0" column="0" selection-start="0" selection-end="0" />
               <folding />
             </state>
           </provider>
@@ -202,10 +216,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="19" />
-    <option name="width" value="1618" />
-    <option name="height" value="890" />
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1602" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -249,6 +263,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -264,169 +279,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard-Free" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard-Free" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard-Free" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard-Free" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard-Free" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="color" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Android-Keyboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kasahorow-Keyboard-For-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="AnySoftKeyboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -450,8 +308,8 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="a1f9ae89-2a4e-4ba3-a875-ad421ff0a00e">
-    <configuration default="false" name="kasahorow-Android-Keyboard-Free" type="AndroidTestRunConfigurationType" factoryName="Android Tests" id="dcc2eab5-f71d-4147-88f1-6d6127d732d9" temporary="true">
+  <component name="RunManager">
+    <configuration default="false" name="kasahorow-Android-Keyboard-Free" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true">
       <module name="kasahorow-Android-Keyboard-Free" />
       <option name="TESTING_TYPE" value="0" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
@@ -459,6 +317,7 @@
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -467,11 +326,13 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests" id="2dfc313f-9f84-491c-abe1-441ae396fe27">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
@@ -479,6 +340,7 @@
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -487,9 +349,11 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote" id="fafce132-23b9-4bf9-9f0c-040786f03bd2">
+    <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
@@ -497,7 +361,34 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet" id="e1f91153-0709-4d44-84bd-3be2a1277679">
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -510,7 +401,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application" id="3e2e2634-37d8-4b41-81ba-8cb8c6dff57f">
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -524,7 +415,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" id="02af5032-9371-4cc0-9f5c-b73200eee4bf">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -544,12 +435,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application" id="fe380245-1ab3-4947-b32f-8fb5c0a8cfd8">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="kasahorow-Android-Keyboard" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -558,14 +451,18 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="kasahorow-Android-Keyboard" type="AndroidRunConfigurationType" factoryName="Android Application" id="a1f9ae89-2a4e-4ba3-a875-ad421ff0a00e">
+    <configuration default="false" name="kasahorow-Android-Keyboard" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="kasahorow-Android-Keyboard" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -574,16 +471,20 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="kasahorow-Android-Keyboard-Free" type="AndroidRunConfigurationType" factoryName="Android Application" id="1e691a16-771f-45ee-81c9-e0ca0c1ddf56">
+    <configuration default="false" name="kasahorow-Android-Keyboard-Free" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="kasahorow-Android-Keyboard-Free" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -592,26 +493,17 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="a1f9ae89-2a4e-4ba3-a875-ad421ff0a00e" />
-      <item index="1" class="java.lang.String" itemvalue="1e691a16-771f-45ee-81c9-e0ca0c1ddf56" />
-      <item index="2" class="java.lang.String" itemvalue="dcc2eab5-f71d-4147-88f1-6d6127d732d9" />
+      <item index="0" class="java.lang.String" itemvalue="Android Application.kasahorow-Android-Keyboard" />
+      <item index="1" class="java.lang.String" itemvalue="Android Application.kasahorow-Android-Keyboard-Free" />
+      <item index="2" class="java.lang.String" itemvalue="Android Tests.kasahorow-Android-Keyboard-Free" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="dcc2eab5-f71d-4147-88f1-6d6127d732d9" />
-      </list>
-    </recent_temporary>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -653,36 +545,43 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="19" width="1618" height="890" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="27" width="1602" height="874" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32737276" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967742" sideWeight="0.28710124" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29353234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38280165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967742" sideWeight="0.67128986" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15310077" sideWeight="0.6371191" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15275995" sideWeight="0.6371191" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3628809" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32871014" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29353234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -696,113 +595,210 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/HardKeyboardSequenceHandler.java">
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/xml/symbols.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="941" selection-end="941" vertical-scroll-proportion="-2.7704546" vertical-offset="1345" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="55" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1029">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/ExternalAnyKeyboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="3235" selection-end="3235" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="7455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/AnySoftKeyboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="66" selection-start="2465" selection-end="2477" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="68328">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/GenericKeyboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="58" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+        <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="900">
+          <caret line="23" column="30" selection-start="1211" selection-end="1213" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_ng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="62" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/dictionaries.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="15" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/ak_words_dict_array.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/en_words_dict_array.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="234">
+        <state vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="1530">
+          <caret line="17" column="62" selection-start="1041" selection-end="1041" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="599" column="30" selection-start="44317" selection-end="44317" vertical-scroll-proportion="-13.2" vertical-offset="10452" max-vertical-offset="11142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/color/sandy_brown_btn_key_text_color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="325" selection-end="331" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/xml/symbols.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="1211" selection-end="1213" vertical-scroll-proportion="-9.4" vertical-offset="179" max-vertical-offset="882">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/xml/ak_qwerty.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="290" selection-end="293" vertical-scroll-proportion="0.44554454" vertical-offset="0" max-vertical-offset="936">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10782" max-vertical-offset="11142">
+          <caret line="599" column="30" selection-start="44317" selection-end="44317" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.36" vertical-offset="134" max-vertical-offset="7110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/symbols.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="26" selection-start="1001" selection-end="1014" vertical-scroll-proportion="-6.52" vertical-offset="197" max-vertical-offset="882">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7110">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/ak_qwerty.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="293" selection-end="293" vertical-scroll-proportion="0.44554454" vertical-offset="0" max-vertical-offset="936">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="936">
+          <caret line="10" column="31" selection-start="293" selection-end="293" />
+          <folding>
+            <element signature="e#221#240#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/symbols.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="882">
+          <caret line="20" column="26" selection-start="1001" selection-end="1014" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/color/sandy_brown_btn_key_text_color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="252">
+          <caret line="5" column="32" selection-start="325" selection-end="331" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/dictionaries.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="756">
+          <caret line="36" column="15" selection-start="1416" selection-end="1416" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/en_words_dict_array.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="234">
+          <caret line="4" column="26" selection-start="117" selection-end="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/ak_words_dict_array.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/HardKeyboardSequenceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7704546" vertical-offset="1345" max-vertical-offset="1785">
+          <caret line="26" column="13" selection-start="941" selection-end="941" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/symbols.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1029">
+          <caret line="21" column="55" selection-start="1126" selection-end="1126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/ExternalAnyKeyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="7455">
+          <caret line="73" column="0" selection-start="3235" selection-end="3235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/AnySoftKeyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="68328">
+          <caret line="58" column="66" selection-start="2465" selection-end="2477" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/src/com/anysoftkeyboard/keyboards/GenericKeyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+          <caret line="21" column="58" selection-start="773" selection-end="773" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnySoftKeyboard/res/xml/ext_kbd_bottom_row_ng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="1530">
+          <caret line="17" column="62" selection-start="1041" selection-end="1041" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/dictionaries.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="756">
+          <caret line="36" column="15" selection-start="1416" selection-end="1416" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/ak_words_dict_array.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="537">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/en_words_dict_array.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="234">
+          <caret line="4" column="26" selection-start="117" selection-end="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10782" max-vertical-offset="11142">
+          <caret line="599" column="30" selection-start="44317" selection-end="44317" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/color/sandy_brown_btn_key_text_color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="252">
+          <caret line="5" column="32" selection-start="325" selection-end="331" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/xml/symbols.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="900">
+          <caret line="23" column="30" selection-start="1211" selection-end="1213" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/xml/ak_qwerty.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44554454" vertical-offset="0" max-vertical-offset="936">
+          <caret line="10" column="31" selection-start="290" selection-end="293" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard-Free/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7110">
+          <caret line="0" column="0" selection-start="0" selection-end="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/symbols.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="882">
+          <caret line="20" column="26" selection-start="1001" selection-end="1014" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kasahorow-Android-Keyboard/res/xml/ak_qwerty.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="936">
+          <caret line="10" column="31" selection-start="293" selection-end="293" />
+          <folding>
+            <element signature="e#221#240#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,67 @@
+apply plugin: 'android'
+
+def versionMajor = 1
+def versionMinor = 0
+def versionPatch = 2
+def versionBuild = 0
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+	
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+
+        versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+
+    }
+
+    productFlavors {
+      	paid {
+            packageName "com.kasahorow.android.keyboard.app.paid"
+            versionCode rootProject.ext.versionCode
+            versionName rootProject.ext.versionName
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('release.keystore')
+        }
+	
+    buildTypes {
+        debug {
+            packageNameSuffix '.dev'
+            versionNameSuffix '-dev'
+        }
+
+        release {
+	    signingConfig signingConfigs.release
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+	encoding = "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+// get signing config from gradle.properties file
+if (project.hasProperty('storePassword')
+        && project.hasProperty('keyAlias')
+        && project.hasProperty('keyPassword')) {
+    android.signingConfigs.release.storePassword = storePassword
+    android.signingConfigs.release.keyAlias = keyAlias
+    android.signingConfigs.release.keyPassword = keyPassword
+} else {
+    android.buildTypes.release.signingConfig = null
+}
