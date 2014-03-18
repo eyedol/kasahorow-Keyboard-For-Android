@@ -1,1 +1,2 @@
 include ':AnySoftKeyboard'
+include ':kasahorow-Android-Keyboard'

@@ -6,8 +6,8 @@ def versionPatch = 2
 def versionBuild = 0
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
 	
     defaultConfig {
         minSdkVersion 14
@@ -21,8 +21,6 @@ android {
     productFlavors {
       	paid {
             packageName "com.kasahorow.android.keyboard.app.paid"
-            versionCode rootProject.ext.versionCode
-            versionName rootProject.ext.versionName
         }
     }
 
@@ -30,7 +28,8 @@ android {
         release {
             storeFile file('release.keystore')
         }
-	
+    }
+
     buildTypes {
         debug {
             packageNameSuffix '.dev'
@@ -49,7 +48,7 @@ android {
     }
 
     compileOptions {
-	encoding = "UTF-8"
+	    encoding = "UTF-8"
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
