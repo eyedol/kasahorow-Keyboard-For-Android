@@ -1,4 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9.+'
+    }
+}
+
 apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':AnySoftKeyboard')
+}
 
 def versionMajor = 1
 def versionMinor = 0
@@ -7,7 +24,7 @@ def versionBuild = 0
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.3"
+    buildToolsVersion '19.0.3'
 	
     defaultConfig {
         minSdkVersion 14
@@ -18,12 +35,12 @@ android {
 
     }
 
-    productFlavors {
+ /*  productFlavors {
       	paid {
             packageName "com.kasahorow.android.keyboard.app.paid"
         }
     }
-
+*/
     signingConfigs {
         release {
             storeFile file('release.keystore')
@@ -35,9 +52,8 @@ android {
             packageNameSuffix '.dev'
             versionNameSuffix '-dev'
         }
-
         release {
-	    signingConfig signingConfigs.release
+            signingConfig signingConfigs.release
             runProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }

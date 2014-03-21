@@ -23,7 +23,7 @@
     <uses-configuration android:reqTouchScreen="stylus"/>
 
     <application
-            android:name=".AnyApplication"
+            android:name="com.menny.android.anysoftkeyboard.AnyApplication"
             android:allowBackup="true"
             android:backupAgent="com.anysoftkeyboard.backup.AnyBackupAgent"
             android:hardwareAccelerated="true"
@@ -40,7 +40,7 @@
 
         <!-- this is the IME with the pointer to the settings ui (xml/method) -->
         <service
-                android:name=".SoftKeyboard"
+                android:name="com.menny.android.anysoftkeyboard.SoftKeyboard"
                 android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod"/>
