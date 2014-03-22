@@ -33,7 +33,7 @@ After, you should have
 
 ### Debug Build
 
-To make a debug  build, in the project's root directory issue
+To make a debug  build, in the project's root directory, issue
 
 `./gradlew assembleDebug`
 
@@ -41,13 +41,14 @@ This should build an unsigned apk for testing and debugging purposes.
 
 ### Release Build
 
-To make a release build for distribution at the app store, in the project's root directory issue,
+To make a release build for distribution at the app store, in the project's root directory, issue
 
 `./gradlew build`
 
 This should build a signed and an aligned apk for distribution. This project has been configured so the private key and credentials are read from `gradle.properties` file. For a successful release build make sure you've the properties below defined in your `gradle.properties` file and your private key is in the root directory of the project. 
 
 **gradle.properties**
+
 ```
 storePassword="store_password"
 keyAlias="key_alias"
