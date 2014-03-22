@@ -45,10 +45,15 @@ android {
         debug {
             packageNameSuffix '.dev'
             versionNameSuffix '-dev'
+
+            zipAlign true
+            debuggable true
         }
         release {
             signingConfig signingConfigs.release
-            runProguard true
+            zipAlign true
+
+            runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
