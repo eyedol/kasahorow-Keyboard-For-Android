@@ -19,7 +19,7 @@
             themeRes="@style/AfroKasahorowKeyboardForAndroid"
             themeScreenshot="@drawable/afro_theme_screenshot"/>
     <KeyboardTheme
-            id="ac8ea510-ca66-11e1-9b23-0800200c9a66"
+            id="8b1f1bf9-f08a-474c-868d-e7b1f8ff95ba"
             nameResId="@string/lean_dark_keyboard_theme_name"
             themeRes="@style/LeanDark"
             popupThemeRes="@style/LeanDarkPopup"
