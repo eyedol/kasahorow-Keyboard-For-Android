@@ -35,12 +35,6 @@ android {
 
     }
 
- /*  productFlavors {
-      	paid {
-            packageName "com.kasahorow.android.keyboard.app.paid"
-        }
-    }
-*/
     signingConfigs {
         release {
             storeFile file('release.keystore')

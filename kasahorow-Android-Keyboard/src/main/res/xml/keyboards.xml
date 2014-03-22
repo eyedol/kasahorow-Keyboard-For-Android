@@ -9,7 +9,7 @@
             index="1"
             landscapeResId="@xml/ak_qwerty"
             layoutResId="@xml/ak_qwerty"
-            nameResId="@string/ak_keyboard" />
+            nameResId="@string/ak_keyboard"/>
     <Keyboard
             id="cdbdf63d-5e32-4ca1-87f0-c797e1a3fbec"
             defaultDictionaryLocale="kik"
@@ -18,7 +18,7 @@
             index="3"
             landscapeResId="@xml/kik_qwerty"
             layoutResId="@xml/kik_qwerty"
-            nameResId="@string/kik_keyboard" />
+            nameResId="@string/kik_keyboard"/>
     <Keyboard
             id="5e8ea8c4-a287-42af-9781-55e7c6f4d53a"
             defaultDictionaryLocale="gaa"
@@ -27,7 +27,7 @@
             index="2"
             landscapeResId="@xml/ga_qwerty"
             layoutResId="@xml/ga_qwerty"
-            nameResId="@string/ga_keyboard" />
+            nameResId="@string/ga_keyboard"/>
     <Keyboard
             id="f1533ec2-f971-42ed-9908-686b9426bf3f"
             defaultDictionaryLocale="ewe"
@@ -36,7 +36,7 @@
             index="4"
             landscapeResId="@xml/ee_qwerty"
             layoutResId="@xml/ee_qwerty"
-            nameResId="@string/ee_keyboard" />
+            nameResId="@string/ee_keyboard"/>
     <Keyboard
             id="153987e5-0919-4a00-9326-87d23891e70d"
             defaultDictionaryLocale="hau"
@@ -45,7 +45,7 @@
             index="5"
             landscapeResId="@xml/ha_qwerty"
             layoutResId="@xml/ha_qwerty"
-            nameResId="@string/ha_keyboard" />
+            nameResId="@string/ha_keyboard"/>
     <Keyboard
             id="89297ca8-549a-4344-9d9b-0d137f0d2179"
             defaultDictionaryLocale="yor"
@@ -54,7 +54,7 @@
             index="6"
             landscapeResId="@xml/yo_qwerty"
             layoutResId="@xml/yo_qwerty"
-            nameResId="@string/yo_keyboard" />
+            nameResId="@string/yo_keyboard"/>
     <Keyboard
             id="c7535083-4fe6-49dc-81aa-c5438a1a343a"
             defaultDictionaryLocale="en"
@@ -65,29 +65,44 @@
             layoutResId="@xml/qwerty"
             nameResId="@string/eng_keyboard"
             physicalKeyboardMappingResId="@xml/physical"
-            screenshotResId="@drawable/english_qwerty_screenshot" />
-    <Keyboard nameResId="@string/eng_keyboard" iconResId="@drawable/ic_stat_en"
-              layoutResId="@xml/qwerty" id="c7535083-4fe6-49dc-81aa-c5438a1a343a"
-              defaultDictionaryLocale="en" description="QWERTY Latin keyboard"
-              index="1" defaultEnabled="true"
-              physicalKeyboardMappingResId="@xml/physical"
-              screenshotResId="@drawable/english_qwerty_screenshot"
+            screenshotResId="@drawable/english_qwerty_screenshot"/>
+    <Keyboard
+            nameResId="@string/eng_keyboard"
+            iconResId="@drawable/ic_stat_en"
+            layoutResId="@xml/qwerty"
+            id="c7535083-4fe6-49dc-81aa-c5438a1a343a"
+            defaultDictionaryLocale="en"
+            description="QWERTY Latin keyboard"
+            index="1"
+            defaultEnabled="true"
+            physicalKeyboardMappingResId="@xml/physical"
+            screenshotResId="@drawable/english_qwerty_screenshot"
             />
-    <Keyboard nameResId="@string/eng_keyboard"
-              iconResId="@drawable/ic_stat_en" layoutResId="@xml/eng_16keys"
-              landscapeResId="@xml/qwerty" id="12335055-4aa6-49dc-8456-c7d38a1a5123"
-              defaultDictionaryLocale="en" description="16 keys English layout"
-              index="2" defaultEnabled="false"
-              physicalKeyboardMappingResId="@xml/physical"
-              screenshotResId="@drawable/english_16keys_screenshot"
+    <Keyboard
+            nameResId="@string/eng_keyboard"
+            iconResId="@drawable/ic_stat_en"
+            layoutResId="@xml/eng_16keys"
+            landscapeResId="@xml/qwerty"
+            id="12335055-4aa6-49dc-8456-c7d38a1a5123"
+            defaultDictionaryLocale="en"
+            description="16 keys English layout"
+            index="2"
+            defaultEnabled="false"
+            physicalKeyboardMappingResId="@xml/physical"
+            screenshotResId="@drawable/english_16keys_screenshot"
             />
-    <Keyboard nameResId="@string/eng_keyboard" iconResId="@drawable/ic_stat_en"
-              layoutResId="@xml/qwerty_with_symbols" landscapeResId="@xml/qwerty_with_symbols"
-              id="34CC76A3-91B3-4204-BB1B-421BA8FC8430"
-              defaultDictionaryLocale="en" description="QWERTY Latin keyboard with symbols (on long press)"
-              index="3" defaultEnabled="false"
-              physicalKeyboardMappingResId="@xml/physical"
-              screenshotResId="@drawable/english_qwerty_with_symbols_screenshot"
+    <Keyboard
+            nameResId="@string/eng_keyboard"
+            iconResId="@drawable/ic_stat_en"
+            layoutResId="@xml/qwerty_with_symbols"
+            landscapeResId="@xml/qwerty_with_symbols"
+            id="34CC76A3-91B3-4204-BB1B-421BA8FC8430"
+            defaultDictionaryLocale="en"
+            description="QWERTY Latin keyboard with symbols (on long press)"
+            index="3"
+            defaultEnabled="false"
+            physicalKeyboardMappingResId="@xml/physical"
+            screenshotResId="@drawable/english_qwerty_with_symbols_screenshot"
             />
 
 </Keyboards>
