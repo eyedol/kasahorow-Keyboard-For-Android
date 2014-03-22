@@ -45,10 +45,9 @@ To make a release build for distribution at the app store, in the project's root
 
 `./gradlew build`
 
-This should build a signed and an aligned apk for distribution. This project has been configured so the private key and credentials are read from `gradle.properties` file. For a successful release build make sure you've the properties below defined in your `gradle.properties` file and your private key is in the root directory of the project. 
+This should build a signed and an aligned apk for distribution. This project has been configured so the private key and credentials are read from `gradle.properties` file. For a successful release build make sure you've the properties below defined in your `gradle.properties` file and your private key is in the root directory of the project. It should be named `release.keystore`
 
 **gradle.properties**
-
 ```
 storePassword="store_password"
 keyAlias="key_alias"
