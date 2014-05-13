@@ -45,7 +45,7 @@ To make a release build for distribution at the app store, in the project's root
 
 `./gradlew build`
 
-This should build a signed and an aligned apk for distribution. This project has been configured so the private key and credentials are read from `gradle.properties` file. For a successful release build make sure you've the properties below defined in your `gradle.properties` file and your private key is in the root directory of the project. It should be named `release.keystore`
+This should build a signed and an aligned apk for distribution. This project has been configured so the private key and credentials are read from `gradle.properties` file. For a successful release build make sure you've the properties below defined in your `gradle.properties` file. Place your `gradle.properties` file in the root directory of your project. Also ensure that your private key is placed in the `kasahorow-Android-Keyboard` directory. Your private key should be explicitly named `release.keystore`. 
 
 **gradle.properties**
 ```
