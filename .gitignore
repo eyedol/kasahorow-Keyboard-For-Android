@@ -34,3 +34,6 @@ build
 gradle.properties
 
 *.py
+
+# Private key
+*.keystore
