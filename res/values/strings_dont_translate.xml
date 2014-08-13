@@ -27,4 +27,5 @@
         <item>\@</item>
         <item>_</item>
     </string-array>
+    <string name="donation_link">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9989122</string>
 </resources>	

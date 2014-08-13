@@ -50,7 +50,7 @@ public class AboutAnySoftKeyboardFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9989122
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9989122"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.donation_link)));
                 getActivity().startActivity(intent);
             }
         });

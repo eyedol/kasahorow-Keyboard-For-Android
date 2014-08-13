@@ -105,6 +105,9 @@ android {
             setRoot('src/test')
         }
 
+        kasahorow {
+            java.srcDirs = ['src/kasahorow/java']
+        }
     }
 
     productFlavors {

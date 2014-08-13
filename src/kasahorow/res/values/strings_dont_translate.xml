@@ -2,4 +2,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools"
            tools:ignore="MissingTranslation">
     <string name="main_site_url">http://gplus.to/kasahorow</string>
+    <string name="donation_link">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=EUVYV4RCY9UJ2</string>
+
 </resources>	
