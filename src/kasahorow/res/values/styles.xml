@@ -206,13 +206,12 @@
         <item name="keyBackground">@drawable/sandy_brown_btn_key</item>
         <item name="backgroundDimAmount">0.2</item>
         <item name="keyTextSize">@dimen/key_text_size</item>
-        <!-- <item name="keyTextStyle">@string/font_name</item> -->
         <item name="keyPreviewBackground">@drawable/light_btn_key_preview_background</item>
         <item name="suggestionBackgroundImage">@drawable/light_background_suggestions</item>
         <item name="suggestionDividerImage">@drawable/dark_suggestions_divider</item>
         <item name="keyTextColor">#fcf2e2</item>
         <item name="keyboardNameTextColor">@android:color/black</item>
-        <item name="keyTextStyle">@string/typeface_gentium</item>
+        <item name="keyTextStyle">@string/typeface_droidserif_regular</item>
     </style>
 
     <style name="SandyBrownPopup" parent="@style/AnyKeyboardPopupBaseTheme">
@@ -233,7 +232,7 @@
         <item name="keyboardNameTextColor">#F666</item>
         <item name="hintTextSize">0px</item>
 
-        <item name="keyTextStyle">normal</item>
+        <item name="keyTextStyle">@string/typeface_droidserif_regular</item>
         <item name="shadowRadius">0px</item>
     </style>
 
@@ -249,7 +248,7 @@
 
     <style name="LeanDark2" parent="@style/LeanDark">
         <item name="keyTextSize">@dimen/lean_key_text_size</item>
-        <item name="keyTextStyle">bold</item>
+        <item name="keyTextStyle">@string/typeface_droidserif_regular</item>
         <item name="hintTextSize">@dimen/key_hint_text_size</item>
     </style>
 
@@ -264,6 +263,7 @@
         <item name="keyPreviewBackground">@drawable/dark_btn_key_preview_background</item>
         <item name="keyHorizontalGap">@dimen/plain_theme_key_horizontal_gap</item>
         <item name="keyVerticalGap">@dimen/plain_theme_key_vertical_gap</item>
+        <item name="keyTextStyle">@string/typeface_droidserif_regular</item>
     </style>
 
     <style name="PlainDarkAnySoftKeyboardPopup" parent="@style/AnyKeyboardPopupBaseTheme">
