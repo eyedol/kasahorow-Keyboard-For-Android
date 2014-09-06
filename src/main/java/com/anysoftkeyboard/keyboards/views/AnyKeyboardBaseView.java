@@ -70,6 +70,7 @@ import com.anysoftkeyboard.keyboards.KeyboardSupport;
 import com.anysoftkeyboard.keyboards.KeyboardSwitcher;
 import com.anysoftkeyboard.theme.KeyboardTheme;
 import com.anysoftkeyboard.theme.KeyboardThemeFactory;
+import com.anysoftkeyboard.utils.FontUtil;
 import com.anysoftkeyboard.utils.IMEUtil.GCUtils;
 import com.anysoftkeyboard.utils.IMEUtil.GCUtils.MemRelatedOperation;
 import com.anysoftkeyboard.utils.Log;
@@ -893,20 +894,28 @@ public class AnyKeyboardBaseView extends View implements
                             + mBackgroundDimAmount);
                     break;
                 case R.attr.keyTextStyle:
-                    int textStyle = remoteTypedArray.getInt(remoteTypedArrayIndex, 0);
-                    switch (textStyle) {
-                        case 0:
-                            mKeyTextStyle = Typeface.DEFAULT;
-                            break;
-                        case 1:
-                            mKeyTextStyle = Typeface.DEFAULT_BOLD;
-                            break;
-                        case 2:
-                            mKeyTextStyle = Typeface.defaultFromStyle(Typeface.ITALIC);
-                            break;
-                        default:
-                            mKeyTextStyle = Typeface.defaultFromStyle(textStyle);
-                            break;
+                    // Hack:: to include custom font if it's set in the style
+                    // file
+                    String txtStyle = remoteTypedArray.getString(remoteTypedArrayIndex);
+                    Typeface tf = FontUtil.getFont(getContext(), txtStyle);
+                    if (tf != null) {
+                        mKeyTextStyle = tf;
+                    } else {
+                        int textStyle = remoteTypedArray.getInt(remoteTypedArrayIndex, 0);
+                        switch (textStyle) {
+                            case 0:
+                                mKeyTextStyle = Typeface.DEFAULT;
+                                break;
+                            case 1:
+                                mKeyTextStyle = Typeface.DEFAULT_BOLD;
+                                break;
+                            case 2:
+                                mKeyTextStyle = Typeface.defaultFromStyle(Typeface.ITALIC);
+                                break;
+                            default:
+                                mKeyTextStyle = Typeface.defaultFromStyle(textStyle);
+                                break;
+                        }
                     }
                     Log.d(TAG, "AnySoftKeyboardTheme_keyTextStyle " + mKeyTextStyle);
                     break;

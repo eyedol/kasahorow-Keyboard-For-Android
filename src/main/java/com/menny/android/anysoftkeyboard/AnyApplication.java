@@ -22,6 +22,7 @@ import android.content.ComponentName;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.preference.PreferenceManager;
 
 import com.anysoftkeyboard.Configuration;
@@ -36,6 +37,8 @@ import com.anysoftkeyboard.utils.Log;
 import net.evendanan.frankenrobot.Diagram;
 import net.evendanan.frankenrobot.FrankenRobot;
 import net.evendanan.frankenrobot.Lab;
+
+import cat.ppicas.customtypeface.CustomTypeface;
 
 
 public class AnyApplication extends Application implements OnSharedPreferenceChangeListener {
@@ -72,6 +75,11 @@ public class AnyApplication extends Application implements OnSharedPreferenceCha
         msCloudBackupRequester = msFrank.embody(new CloudBackupRequesterDiagram(getApplicationContext()));
 
         TutorialsProvider.showDragonsIfNeeded(getApplicationContext());
+
+        // Register a Typeface creating first the object, and then registering the object
+        // with a name.
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/gentium.ttf");
+        CustomTypeface.getInstance().registerTypeface("gentium", typeface);
     }
 
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {

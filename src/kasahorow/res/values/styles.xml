@@ -212,6 +212,7 @@
         <item name="suggestionDividerImage">@drawable/dark_suggestions_divider</item>
         <item name="keyTextColor">#fcf2e2</item>
         <item name="keyboardNameTextColor">@android:color/black</item>
+        <item name="keyTextStyle">@string/typeface_gentium</item>
     </style>
 
     <style name="SandyBrownPopup" parent="@style/AnyKeyboardPopupBaseTheme">
