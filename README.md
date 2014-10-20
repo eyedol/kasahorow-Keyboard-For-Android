@@ -11,23 +11,31 @@ Build
 
 Clone the repository
 
-`git clone --recursive git://github.com/eyedol/kasahorow-Keyboard-For-Android.git`
+`git clone git://github.com/eyedol/kasahorow-Keyboard-For-Android.git`
 
-The recursive option is there to clone the submodules as well.
 
 After, you should have
 
 ```
 .
-|-- AnySoftKeyboard
+|-- AndroidManifest.xml
+|-- build
 |-- build.gradle
+|-- buildSrc
 |-- dictionaries
 |-- gradle
 |-- gradlew
 |-- gradlew.bat
-|-- kasahorow-Android-Keyboard
+|-- install_apk.sh
+|-- keyboard_keystore
+|-- proguard-rules.txt
 |-- README.md
-`-- settings.gradle
+|-- res
+|-- shippable.yml
+|-- src
+|-- StoreStuff
+`-- temp_jni
+
 
 ```
 
@@ -55,4 +63,3 @@ keyPassword="key_password"
 supportEmailAddress="support@emailaddress.com"
 ```
 
-`AnySoftKeyboard` has been modified to a library project and support for custom fonts was added. If you plan to merge changes from the AnySoftKeyboard folks, take note, there might be merge conflicts because of the changes. Use tools like `meld` or `git mergetool` to resolve the conflicts. They're usually minor conflicts so shouldn't be hard to fix.

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:key="special_dictionaries_group">
+
+    <Preference
+        android:key="summary"
+        android:summary="@string/special_dictionaries_group_summary" />
+
+    <net.evendanan.pushingpixels.SwitchPreference
+        android:defaultValue="true"
+        android:key="candidates_on"
+        android:persistent="true"
+        android:title="@string/candidates_on"
+        android:summaryOn="@string/candidates_on_summary"
+        android:summaryOff="@string/candidates_off_summary"/>
+
+    <CheckBoxPreference
+        android:key="@string/settings_key_use_user_dictionary"
+        android:title="@string/use_user_dictionary"
+        android:persistent="true"
+        android:defaultValue="@bool/settings_default_user_dictionary"
+        android:summaryOn="@string/use_user_dictionary_on_summary"
+        android:summaryOff="@string/use_user_dictionary_off_summary"
+        android:dependency="candidates_on"/>
+    <Preference android:title="@string/user_dict_editor"
+        android:key="@string/user_dict_editor_key"
+        android:dependency="candidates_on">
+    </Preference>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="candidates_on"
+        android:key="quick_fix"
+        android:persistent="true"
+        android:summaryOff=""
+        android:summaryOn="@string/quick_fix_summary"
+        android:title="@string/quick_fix"/>
+    <Preference android:title="@string/abbreviation_dict_editor"
+        android:key="@string/abbreviation_dict_editor_key"
+        android:dependency="quick_fix">
+    </Preference>
+
+    <net.evendanan.pushingpixels.ListPreference
+        android:key="@string/settings_key_auto_dictionary_threshold"
+        android:defaultValue="@string/settings_default_auto_dictionary_add_threshold"
+        android:dialogTitle="@string/use_auto_dictionary_dialog_title"
+        android:entries="@array/auto_dictionary_threshold_types"
+        android:entryValues="@array/auto_dictionary_threshold_values"
+        android:summary="@string/use_auto_dictionary_summary"
+        android:title="@string/use_auto_dictionary"
+        android:dependency="candidates_on"/>
+    <CheckBoxPreference
+        android:key="@string/settings_key_use_contacts_dictionary"
+        android:title="@string/use_contacts_dictionary"
+        android:persistent="true"
+        android:defaultValue="@bool/settings_default_contacts_dictionary"
+        android:summaryOn="@string/use_contacts_dictionary_on_summary"
+        android:summaryOff="@string/use_contacts_dictionary_off_summary"
+        android:dependency="candidates_on"/>
+
+</PreferenceScreen>

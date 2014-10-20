@@ -1,16 +1,167 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+        mavenLocal()
         mavenCentral()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.9.+'
+        classpath 'com.android.tools.build:gradle:0.12.+'
+        classpath 'org.robolectric:robolectric-gradle-plugin:0.11.+'
+        classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.10.+'
     }
 }
 
-allprojects {
+apply plugin: 'android-sdk-manager'
+apply plugin: 'com.android.application'
+apply plugin: 'robolectric'
+
+version utils.Utils.buildVersionName(1, 2, false)
+group 'net.evendanan'
+
+def localproperties.LocalPropertiesFile localExtraProperties = new localproperties.LocalPropertiesFile(new File(projectDir, 'local.extra.properties'))
+def localproperties.LocalPropertiesFile localSigningProperties = new localproperties.LocalPropertiesFile(new File(projectDir, 'local.signing.properties'))
+
+android {
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        versionCode 125
+        versionName project.version
+
+        minSdkVersion 7
+        targetSdkVersion 20
+        //adding additional fields to the BuildConfig class.
+
+        //extra details - from local
+        def String support_email_address = localExtraProperties.getValueWithConsoleFallback('CRASH_REPORT_EMAIL', 'ooops@example.com', 'Support email address')
+        println 'crash report email is: '+support_email_address
+
+        buildConfigField "String", "CRASH_REPORT_EMAIL_ADDRESS", '"'+support_email_address+'"'
+
+        testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    signingConfigs {
+        release {
+            def String keystore_file = localSigningProperties.getValueWithConsoleFallback('STORE_FILE', 'Key-Store file name')
+            def String keystore_password = localSigningProperties.getValueWithConsoleFallback('STORE_PASSWORD', 'Key-Store file password')
+            def String key_alias = localSigningProperties.getValueWithConsoleFallback('KEY_ALIAS', 'App key alias')
+            def String key_alias_password = localSigningProperties.getValueWithConsoleFallback('KEY_PASSWORD', 'App key password')
+
+            if (    utils.Utils.isEmpty(keystore_file) || utils.Utils.isEmpty(keystore_password) ||
+                    utils.Utils.isEmpty(key_alias) || utils.Utils.isEmpty(key_alias_password)) {
+                //missing signing details, so I'll use debug signingConfigs details.
+                println "Missing release build-type signing details, I'll use DEBUG signing for the release."
+                storeFile signingConfigs.debug.storeFile
+                storePassword signingConfigs.debug.storePassword
+                keyAlias signingConfigs.debug.keyAlias
+                keyPassword signingConfigs.debug.keyPassword
+            } else {
+                println 'For signing, will use key-store file '+keystore_file+', with key '+key_alias
+                storeFile file(keystore_file)
+                storePassword keystore_password
+                keyAlias key_alias
+                keyPassword key_alias_password
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            zipAlign true
+
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+
+        debug {
+            signingConfig signingConfigs.release
+            zipAlign true
+            debuggable true
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+        }
+        robolectric {
+            setRoot('src/test')
+        }
+    }
+
+    productFlavors {
+        kasahorow {
+            applicationId "com.kasahorow.android.keyboard.app"
+        }
+    }
+}
+
+robolectric {
+    include '**/*Test.class'
+    exclude '**/espresso/**/*.class'
+
+    // configure max heap size of the test JVM
+    maxHeapSize = "2048m"
+}
+
+dependencies {
     repositories {
         mavenCentral()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
     }
+    compile 'net.evendanan.anysoftkeyboard:api:1.2.3@aar'
+    compile 'net.evendanan:frankenrobot:1.1.3@aar'
+    compile 'com.android.support:support-v4:20.+'
+    compile 'com.android.support:appcompat-v7:20.+'
+    compile 'com.android.support:support-annotations:+'
+    androidTestCompile 'junit:junit:4.11'
+
+    androidTestCompile('org.robolectric:robolectric:2.4-SNAPSHOT') {
+        exclude module: 'classworlds'
+        exclude module: 'maven-artifact'
+        exclude module: 'maven-artifact-manager'
+        exclude module: 'maven-error-diagnostics'
+        exclude module: 'maven-model'
+        exclude module: 'maven-plugin-registry'
+        exclude module: 'maven-profile'
+        exclude module: 'maven-project'
+        exclude module: 'maven-settings'
+        exclude module: 'nekohtml'
+        exclude module: 'plexus-container-default'
+        exclude module: 'plexus-interpolation'
+        exclude module: 'plexus-utils'
+        exclude module: 'wagon-file'
+        exclude module: 'wagon-http-lightweight'
+        exclude module: 'wagon-http-shared'
+        exclude module: 'wagon-provider-api'
+    }
+    androidTestCompile 'org.mockito:mockito-core:1.9.5'
+    androidTestCompile 'com.squareup:fest-android:1.0.+'
 }
 
+apply plugin: 'idea'
+
+idea {
+    module {
+        testOutputDir = file('build/test-classes/debug')
+    }
+}

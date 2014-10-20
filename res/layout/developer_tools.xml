@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Ask.Text.Title"
+            android:id="@+id/dev_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/Ask.Text.SubTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Memory"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/memory_dump_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:text="Dump to SD-Card"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/dev_share_mem_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:enabled="false"
+                android:text="Send"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Ask.Text.SubTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Tracing"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/dev_flip_trace_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:text="Enable tracing"
+                tools:ignore="HardcodedText" />
+
+            <ProgressBar
+                android:id="@+id/dev_tracing_running_progress_bar"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true" />
+
+            <Button
+                android:id="@+id/dev_share_trace_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:enabled="false"
+                android:text="Send"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Ask.Text.SubTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="LogCat"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+
+            <Button
+                android:id="@+id/show_logcat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:text="Show LogCat"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/share_logcat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:enabled="true"
+                android:text="Send"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
