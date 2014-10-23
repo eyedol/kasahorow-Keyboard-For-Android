@@ -48,7 +48,7 @@ public class MainFragment extends Fragment {
             //See: https://github.com/AnySoftKeyboard/AnySoftKeyboard/issues/285
             FragmentManager fragmentManager = getChildFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.change_log_fragment, new ChangeLogFragment.CardedChangeLogFragment())
+                    //.replace(R.id.change_log_fragment, new ChangeLogFragment.CardedChangeLogFragment())
                     .replace(R.id.tip_fragment, new TipsFragment.RandomTipFragment())
                     .commit();
         }
