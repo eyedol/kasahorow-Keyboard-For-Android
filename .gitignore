@@ -38,4 +38,4 @@ local.signing.properties
 *.py
 
 # Private key
-*.keystore
+*keystore*
