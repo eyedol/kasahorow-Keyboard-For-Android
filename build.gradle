@@ -43,7 +43,7 @@ android {
         //adding additional fields to the BuildConfig class.
 
         //extra details - from local
-        def String support_email_address = localExtraProperties.getValueWithConsoleFallback('CRASH_REPORT_EMAIL', 'code@kasahorow.com', 'Support email address')
+        def String support_email_address = localExtraProperties.getValueWithConsoleFallback('CRASH_REPORT_EMAIL', 'sample@example.com', 'Support email address')
         println 'crash report email is: '+support_email_address
 
         buildConfigField "String", "CRASH_REPORT_EMAIL_ADDRESS", '"'+support_email_address+'"'
