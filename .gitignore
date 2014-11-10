@@ -32,6 +32,8 @@ proguard/
 build
 .DS_Store
 gradle.properties
+local.extra.properties
+local.signing.properties
 
 *.py
 
