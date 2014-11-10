@@ -59,7 +59,7 @@ KEY_ALIAS=key_alias
 KEY_PASSWORD=key_password
 ```
 
-A typical content of `local.signing.properties` using the debug key for release signing
+A typical `local.signing.properties` content. Used the Android debug key details.
 ```
 STORE_FILE=/home/username/.android/debug.keystore
 STORE_PASSWORD=android
