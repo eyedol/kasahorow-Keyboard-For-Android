@@ -104,5 +104,25 @@
             physicalKeyboardMappingResId="@xml/physical"
             screenshotResId="@drawable/english_qwerty_with_symbols_screenshot"
             />
-
+    <Keyboard
+            nameResId="@string/eng_keyboard"
+            iconResId="@drawable/ic_stat_en"
+            layoutResId="@xml/qwerty_with_symbols"
+            landscapeResId="@xml/qwerty_with_symbols"
+            id="34CC76A3-91B3-4204-BB1B-421BA8FC8430"
+            defaultDictionaryLocale="en"
+            description="QWERTY Latin keyboard with symbols (on long press)"
+            index="3"
+            defaultEnabled="false"
+            physicalKeyboardMappingResId="@xml/physical"
+            screenshotResId="@drawable/english_qwerty_with_symbols_screenshot"
+            />
+    <Keyboard
+            id="362b0871-f09a-411b-9a2a-3eb6034a18ea"
+            defaultDictionaryLocale="fr"
+            description="@string/fr_desc"
+            index="9"
+            layoutResId="@xml/azerty"
+            nameResId="@string/azerty_keyboard"
+            sentenceSeparators=".,)" />
 </Keyboards>
