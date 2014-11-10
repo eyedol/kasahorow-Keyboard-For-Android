@@ -7,7 +7,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.12.+'
+        classpath 'com.android.tools.build:gradle:0.14.0'
         classpath 'org.robolectric:robolectric-gradle-plugin:0.11.+'
         classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.10.+'
     }
@@ -84,15 +84,15 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.release
-            zipAlign true
+            zipAlignEnabled true
 
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
 
         debug {
             signingConfig signingConfigs.release
-            zipAlign true
+            zipAlignEnabled true
             debuggable true
         }
     }
