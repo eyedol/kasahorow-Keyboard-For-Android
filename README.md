@@ -49,17 +49,29 @@ This should build an unsigned apk for testing and debugging purposes.
 
 ### Release Build
 
-To make a release build for distribution at the app store, in the project's root directory, issue
+To make a release build for distribution at the app store, make sure you have these files `local.signing.properties` and `local.extra.properties` in the root of the project.
 
-`./gradlew build`
-
-This should build a signed and an aligned apk for distribution. This project has been configured so the private key and credentials are read from `gradle.properties` file. For a successful release build make sure you've the properties below defined in your `gradle.properties` file. Place your `gradle.properties` file in the root directory of your project. Also ensure that your private key is placed in the `kasahorow-Android-Keyboard` directory. Your private key should be explicitly named `release.keystore`. 
-
-**gradle.properties**
+**local.signing.properties**
 ```
-storePassword="store_password"
-keyAlias="key_alias"
-keyPassword="key_password"
-supportEmailAddress="support@emailaddress.com"
+STORE_FILE=signing_key_file
+STORE_PASSWORD=store_password
+KEY_ALIAS=key_alias
+KEY_PASSWORD=key_password
 ```
 
+A typical content of `local.signing.properties` using the debug key for release signing
+```
+STORE_FILE=/home/username/.android/debug.keystore
+STORE_PASSWORD=android
+KEY_ALIAS=androiddebugkey
+KEY_PASSWORD=android
+```
+
+**local.extra.properties**
+```
+CRASH_REPORT_EMAIL=crashreportemail@example.com
+```
+
+Then in the project's root directory, issue
+
+`./gradlew assemble`
