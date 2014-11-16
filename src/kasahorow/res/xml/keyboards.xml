@@ -87,4 +87,10 @@
             layoutResId="@xml/azerty"
             nameResId="@string/azerty_keyboard"
             sentenceSeparators=".,)" />
+    
+    <!-- To add a new layout, duplicate one of the child elements and make sure to change the id to a unique one,
+    the index should follow the order and the layoutResId should point to the right layout. If there is a
+    different layout for the landscape mode let landscapeResId point to it. Update the other properties
+    accordingly. -->
+
 </Keyboards>
