@@ -1,1 +1,1 @@
-':libraries:pay-me'
+include ':libraries:pay-me'

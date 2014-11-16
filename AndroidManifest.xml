@@ -11,7 +11,7 @@
 
     <!-- Need this for in-app billing -->
     <uses-permission android:name="com.android.vending.BILLING" />
-    
+
     <uses-permission android:name="android.permission.VIBRATE"/>
     <!-- required for the user dictionary (long press a word in the suggestions bar) -->
     <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
