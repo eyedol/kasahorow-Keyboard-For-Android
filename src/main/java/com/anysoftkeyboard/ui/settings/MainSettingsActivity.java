@@ -16,6 +16,7 @@
 
 package com.anysoftkeyboard.ui.settings;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.anysoftkeyboard.buydictionary.BuyDictionaryFragment;
 import com.anysoftkeyboard.keyboards.KeyboardFactory;
 import com.anysoftkeyboard.theme.KeyboardTheme;
 import com.anysoftkeyboard.theme.KeyboardThemeFactory;
@@ -206,6 +208,12 @@ public class MainSettingsActivity extends FragmentChauffeurActivity {
         mDrawerRootLayout.closeDrawers();
         addFragmentToUi(new AboutAnySoftKeyboardFragment(), FragmentUiContext.RootFragment);
     }
+
+    public void onNavigateToBuyDictionary(View v) {
+        mDrawerRootLayout.closeDrawers();
+        addFragmentToUi(new BuyDictionaryFragment(),FragmentUiContext.RootFragment);
+    }
+
 
     public void setFullScreen(boolean fullScreen) {
         if (fullScreen) {
