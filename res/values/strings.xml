@@ -793,4 +793,18 @@
     <string name="tutorial_menu_open_menu">The icon opens Settings</string>
     <string name="tutorial_menu_close_menu">And also closes it</string>
     <string name="main_fragment_go_to_settings_button">Go to Settings</string>
+
+    <!-- Buy dictionaries -->
+    <string name="buy_dictionary">Duy a dictionary</string>
+    <string name="buy_dictionary_summary">Using Google Play Store\'s secure in-app payment.</string>
+    <string name="ui_dialog_donate_message">Please select the dictionary you want to buy:</string>
+    <string name="ui_buy_dictionary">%1$s dictionary successful, thank you!</string>
+    <string name="ui_buy_dictionary_failure_message">Failed to buy %1$s dictionary</string>
+    <string name="buy_dictionaries">Buy dictionaries</string>
+
+    <!-- purchase errors -->
+    <string name="buy_dictionary_error_iab_unavailable">In-app billing is not available</string>
+    <string name="buy_dictionary_error_unavailable">not available</string>
+    <string name="buy_dictionary_error_canceled">canceled</string>
+    <string name="buy_dictionary_error_already_owned">you have already bought the %1$s dictionary</string>
 </resources>
