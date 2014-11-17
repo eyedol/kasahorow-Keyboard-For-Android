@@ -1,6 +1,6 @@
 package com.anysoftkeyboard.buydictionary;
 
-import com.anysoftkeyboard.buydictionary.BuyDictionaryActivity.DuyDictionaryStatusListener.State;
+import com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.DuyDictionaryStatusListener.State;
 import com.github.jberkel.pay.me.IabHelper;
 import com.github.jberkel.pay.me.IabResult;
 import com.github.jberkel.pay.me.listener.OnConsumeFinishedListener;
@@ -22,8 +22,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -32,14 +36,14 @@ import java.util.Comparator;
 import java.util.List;
 
 import static com.github.jberkel.pay.me.Response.BILLING_UNAVAILABLE;
-import static com.anysoftkeyboard.buydictionary.BuyDictionaryActivity.Billing.ALL_SKUS;
-import static com.anysoftkeyboard.buydictionary.BuyDictionaryActivity.Billing.PUBLIC_KEY;
-import static com.anysoftkeyboard.buydictionary.BuyDictionaryActivity.Billing.GOOD_PREFIX;
+import static com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.Billing.ALL_SKUS;
+import static com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.Billing.PUBLIC_KEY;
+import static com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.Billing.GOOD_PREFIX;
 
 /**
  * Activity for buying a premium dictionary
  */
-public class BuyDictionaryActivity extends Activity implements
+public class BuyDictionaryFragment extends Fragment implements
         QueryInventoryFinishedListener,
         OnIabPurchaseFinishedListener {
 
@@ -49,12 +53,15 @@ public class BuyDictionaryActivity extends Activity implements
 
     private IabHelper mIabHelper;
 
-    private static final String TAG = BuyDictionaryActivity.class.getSimpleName();
+    private static final String TAG = BuyDictionaryFragment.class.getSimpleName();
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.buydictionary, container, false);
+    }
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.buydictionary);
-        mIabHelper = new IabHelper(this, PUBLIC_KEY);
+        mIabHelper = new IabHelper(getActivity(), PUBLIC_KEY);
         mIabHelper.enableDebugLogging(DEBUG_IAB);
 
         mIabHelper.startSetup(new OnIabSetupFinishedListener() {
@@ -72,19 +79,19 @@ public class BuyDictionaryActivity extends Activity implements
                     toastLong(message);
                     log("Problem setting up in-app billing: " + result);
 
-                    finish();
+                    getActivity().finish();
                 } else if (mIabHelper != null) {
                     List<String> moreSkus = new ArrayList<>();
                     Collections.addAll(moreSkus, ALL_SKUS);
                     mIabHelper
-                            .queryInventoryAsync(true, moreSkus, null, BuyDictionaryActivity.this);
+                            .queryInventoryAsync(true, moreSkus, null, BuyDictionaryFragment.this);
                 }
             }
         });
     }
 
     @Override
-    protected void onDestroy() {
+    public void onDestroy() {
         super.onDestroy();
         if (mIabHelper != null) {
             mIabHelper.dispose();
@@ -118,16 +125,16 @@ public class BuyDictionaryActivity extends Activity implements
             }
         }
 
-        if (!isFinishing() && !userHasDonated(inventory)) {
+        if (!getActivity().isFinishing() && !userHasDonated(inventory)) {
             showSelectDialog(skuDetailsList);
         } else {
-            finish();
+            getActivity().finish();
         }
     }
 
 
     private void showSelectDialog(List<SkuDetails> skuDetails) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         final List<SkuDetails> skus = new ArrayList<>(skuDetails);
         Collections.sort(skus, SkuComparator.INSTANCE);
@@ -152,25 +159,25 @@ public class BuyDictionaryActivity extends Activity implements
         builder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                mIabHelper.launchPurchaseFlow(BuyDictionaryActivity.this,
+                mIabHelper.launchPurchaseFlow(getActivity(),
                         skus.get(which).getSku(),
                         ItemType.INAPP,
                         PURCHASE_REQUEST,
-                        BuyDictionaryActivity.this,
+                        BuyDictionaryFragment.this,
                         null);
             }
         });
         builder.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                finish();
+                getActivity().finish();
             }
         });
 
         builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
             @Override
             public void onCancel(DialogInterface dialog) {
-                finish();
+                getActivity().finish();
             }
         });
 
@@ -213,7 +220,7 @@ public class BuyDictionaryActivity extends Activity implements
 
             toastLong(getString(R.string.ui_buy_dictionary_failure_message, message));
         }
-        finish();
+        getActivity().finish();
     }
 
     private static boolean userHasDonated(Inventory inventory) {
@@ -300,11 +307,11 @@ public class BuyDictionaryActivity extends Activity implements
     }
 
     protected void toastLong(int message) {
-        Toast.makeText(this, getText(message), Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), getText(message), Toast.LENGTH_LONG).show();
     }
 
     protected void toastLong(CharSequence message) {
-        Toast.makeText(this, message.toString(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), message.toString(), Toast.LENGTH_LONG).show();
     }
 
     protected void log(String message) {

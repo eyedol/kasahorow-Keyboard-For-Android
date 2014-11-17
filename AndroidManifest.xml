@@ -123,6 +123,12 @@
             android:icon="@drawable/ic_launcher"
             android:theme="@style/Theme.AskApp.Popup.NoTitle"
             android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <!-- Buy dictionary -->
+        <activity
+                android:theme="@style/Theme.AskApp"
+                android:name="com.anysoftkeyboard.buydictionary.BuyDictionaryFragment"
+                android:label="@string/buy_dictionary" />
     </application>
 
 </manifest>
