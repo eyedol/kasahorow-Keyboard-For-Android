@@ -599,4 +599,25 @@
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginBottom">8dp</item>
     </style>
+
+    <!-- Custom styling for list view. Added by the kasahorow team -->
+    <style name="ListView" parent="@android:style/Widget.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollingCache">true</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+
+    <style name="EmptyList">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:color">#FF000000</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
 </resources>
