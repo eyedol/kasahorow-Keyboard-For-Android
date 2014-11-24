@@ -15,7 +15,6 @@ import com.github.jberkel.pay.me.model.TestSkus;
 import com.menny.android.anysoftkeyboard.BuildConfig;
 import com.menny.android.anysoftkeyboard.R;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -125,7 +124,7 @@ public class BuyDictionaryFragment extends Fragment implements
             }
         }
 
-        if (!getActivity().isFinishing() && !userHasDonated(inventory)) {
+        if (!getActivity().isFinishing() && !userHasBoughtDictionary(inventory)) {
             showSelectDialog(skuDetailsList);
         } else {
             getActivity().finish();
@@ -223,7 +222,7 @@ public class BuyDictionaryFragment extends Fragment implements
         getActivity().finish();
     }
 
-    private static boolean userHasDonated(Inventory inventory) {
+    private static boolean userHasBoughtDictionary(Inventory inventory) {
         for (String sku : ALL_SKUS) {
             if (inventory.hasPurchase(sku)) {
                 return true;
@@ -267,7 +266,7 @@ public class BuyDictionaryFragment extends Fragment implements
                         public void onQueryInventoryFinished(IabResult result, Inventory inv) {
                             try {
                                 if (result.isSuccess()) {
-                                    final State s = userHasDonated(inv) ? State.BOUGHT
+                                    final State s = userHasBoughtDictionary(inv) ? State.BOUGHT
                                             : State.NOT_BOUGHT;
                                     l.userDonationState(s);
                                 } else {
