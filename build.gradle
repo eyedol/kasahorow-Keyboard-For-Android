@@ -7,9 +7,9 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.14.1'
-        classpath 'org.robolectric:robolectric-gradle-plugin:0.12.0'
-        classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.10.+'
+        classpath 'com.android.tools.build:gradle:0.14.+'
+        classpath 'org.robolectric:robolectric-gradle-plugin:0.13.+'
+        classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.12.+'
     }
 }
 
@@ -55,7 +55,11 @@ android {
         def String support_email_address = localExtraProperties.getValueWithConsoleFallback('CRASH_REPORT_EMAIL', 'sample@example.com', 'Support email address')
         println 'crash report email is: '+support_email_address
 
+        def String public_license_key = localExtraProperties.getValueWithConsoleFallback('PUBLIC_LICENSE_KEY', '', 'Public license key')
+        println 'Public license key is :'+public_license_key
+
         buildConfigField "String", "CRASH_REPORT_EMAIL_ADDRESS", '"'+support_email_address+'"'
+        buildConfigField "String", "PUBLIC_LICENSE_KEY", '"'+public_license_key+'"'
 
         testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
     }

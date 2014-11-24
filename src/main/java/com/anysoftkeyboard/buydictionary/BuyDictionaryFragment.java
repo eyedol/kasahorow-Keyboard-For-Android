@@ -335,7 +335,7 @@ public class BuyDictionaryFragment extends Fragment implements
 
     public static class Billing {
 
-        public static final String PUBLIC_KEY = "dkdladkaldadksdfas";
+        public static final String PUBLIC_KEY = BuildConfig.PUBLIC_LICENSE_KEY;
 
         public static final String GOOD_PREFIX = "dictionary.";
 
