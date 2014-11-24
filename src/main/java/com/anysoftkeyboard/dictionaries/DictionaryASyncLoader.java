@@ -1,19 +1,21 @@
 package com.anysoftkeyboard.dictionaries;
 
-import android.os.AsyncTask;
 import com.anysoftkeyboard.utils.Log;
+
+import android.os.AsyncTask;
 
 import java.lang.ref.WeakReference;
 
 /**
- * A generic AsyncTask to load AnySoftKeyboard's dictionary object.
- * User: menny
- * Date: 3/19/13
- * Time: 11:52 AM
+ * A generic AsyncTask to load AnySoftKeyboard's dictionary object. User: menny Date: 3/19/13 Time:
+ * 11:52 AM
  */
 public class DictionaryASyncLoader extends AsyncTask<Dictionary, Void, Dictionary> {
+
     private static final String TAG = "ASK_DictionaryASyncLoader";
+
     private final WeakReference<Listener> mListener;
+
     private Exception mException = null;
 
     public DictionaryASyncLoader(Listener listener) {
@@ -44,7 +46,9 @@ public class DictionaryASyncLoader extends AsyncTask<Dictionary, Void, Dictionar
             }
 
             Listener listener = mListener.get();
-            if (listener == null) return;
+            if (listener == null) {
+                return;
+            }
             if (mException == null) {
                 listener.onDictionaryLoadingDone(dictionary);
             } else {
@@ -54,6 +58,7 @@ public class DictionaryASyncLoader extends AsyncTask<Dictionary, Void, Dictionar
     }
 
     public static interface Listener {
+
         void onDictionaryLoadingDone(Dictionary dictionary);
 
         void onDictionaryLoadingFailed(Dictionary dictionary, Exception exception);

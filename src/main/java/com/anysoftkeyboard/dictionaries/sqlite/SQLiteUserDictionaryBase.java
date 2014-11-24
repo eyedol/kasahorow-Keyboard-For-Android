@@ -16,18 +16,21 @@
 
 package com.anysoftkeyboard.dictionaries.sqlite;
 
-import android.content.ContentResolver;
-import android.content.Context;
-import android.database.ContentObserver;
-import android.database.sqlite.SQLiteException;
 import com.anysoftkeyboard.dictionaries.BTreeDictionary;
 import com.anysoftkeyboard.dictionaries.WordsCursor;
 import com.anysoftkeyboard.utils.Log;
 
+import android.content.ContentResolver;
+import android.content.Context;
+import android.database.ContentObserver;
+import android.database.sqlite.SQLiteException;
+
 public abstract class SQLiteUserDictionaryBase extends BTreeDictionary {
+
     private static final String TAG = "SQLiteUserDictionaryBase";
 
     private volatile WordsSQLiteConnection mStorage;
+
     private final String mLocale;
 
     protected SQLiteUserDictionaryBase(String dictionaryName, Context context, String locale) {
@@ -43,8 +46,9 @@ public abstract class SQLiteUserDictionaryBase extends BTreeDictionary {
     @Override
     public final WordsCursor getWordsCursor() {
         try {
-            if (mStorage == null)
+            if (mStorage == null) {
                 mStorage = createStorage(mLocale);
+            }
 
             return mStorage.getWordsCursor();
         } catch (SQLiteException e) {
@@ -52,12 +56,14 @@ public abstract class SQLiteUserDictionaryBase extends BTreeDictionary {
             final String dbFile = mStorage.getDbFilename();
             try {
                 mStorage.close();
-            } catch (SQLiteException swallow) {}
-            Log.w(TAG, "Caught an SQL exception while read database (message: '" + e.getMessage() + "'). I'll delete the database '" + dbFile + "'...");
+            } catch (SQLiteException swallow) {
+            }
+            Log.w(TAG, "Caught an SQL exception while read database (message: '" + e.getMessage()
+                    + "'). I'll delete the database '" + dbFile + "'...");
             try {
                 mContext.deleteDatabase(dbFile);
-            } catch(Exception okToFailEx){
-                Log.w(TAG, "Failed to delete database file "+dbFile+"!");
+            } catch (Exception okToFailEx) {
+                Log.w(TAG, "Failed to delete database file " + dbFile + "!");
                 okToFailEx.printStackTrace();
             }
             mStorage = null;// will re-create the storage.
@@ -71,25 +77,29 @@ public abstract class SQLiteUserDictionaryBase extends BTreeDictionary {
 
     @Override
     protected final void AddWordToStorage(String word, int frequency) {
-        if (mStorage != null)
+        if (mStorage != null) {
             mStorage.addWord(word, frequency);
+        }
     }
 
     @Override
     protected final void deleteWordFromStorage(String word) {
-        if (mStorage != null)
+        if (mStorage != null) {
             mStorage.deleteWord(word);
+        }
     }
 
     @Override
-    protected final void registerObserver(ContentObserver dictionaryContentObserver, ContentResolver contentResolver) {
+    protected final void registerObserver(ContentObserver dictionaryContentObserver,
+            ContentResolver contentResolver) {
         //nothing to do here, the storage is internal and cannot be changed from the outside.
     }
 
     @Override
     protected void closeStorage() {
-        if (mStorage != null)
+        if (mStorage != null) {
             mStorage.close();
+        }
         mStorage = null;
     }
 }

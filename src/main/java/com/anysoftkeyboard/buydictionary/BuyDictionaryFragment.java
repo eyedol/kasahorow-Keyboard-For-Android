@@ -1,6 +1,6 @@
 package com.anysoftkeyboard.buydictionary;
 
-import com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.DuyDictionaryStatusListener.State;
+import com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.BuyDictionaryStatusListener.State;
 import com.github.jberkel.pay.me.IabHelper;
 import com.github.jberkel.pay.me.IabResult;
 import com.github.jberkel.pay.me.listener.OnConsumeFinishedListener;
@@ -225,6 +225,7 @@ public class BuyDictionaryFragment extends Fragment implements
     private static boolean userHasBoughtDictionary(Inventory inventory) {
         for (String sku : ALL_SKUS) {
             if (inventory.hasPurchase(sku)) {
+                
                 return true;
             }
         }
@@ -237,7 +238,7 @@ public class BuyDictionaryFragment extends Fragment implements
         }
     }
 
-    public static interface DuyDictionaryStatusListener {
+    public static interface BuyDictionaryStatusListener {
 
         public enum State {
             BOUGHT,
@@ -246,13 +247,13 @@ public class BuyDictionaryFragment extends Fragment implements
             NOT_AVAILABLE
         }
 
-        void userDonationState(State s);
+        void userBoughtDictionaryState(State s);
     }
 
     public static void checkUserHasBoughtDictionary(Context c,
-            final DuyDictionaryStatusListener l) {
+            final BuyDictionaryStatusListener l) {
         if (Build.VERSION.SDK_INT < 8) {
-            l.userDonationState(State.NOT_AVAILABLE);
+            l.userBoughtDictionaryState(State.NOT_AVAILABLE);
             return;
         }
 
@@ -268,9 +269,9 @@ public class BuyDictionaryFragment extends Fragment implements
                                 if (result.isSuccess()) {
                                     final State s = userHasBoughtDictionary(inv) ? State.BOUGHT
                                             : State.NOT_BOUGHT;
-                                    l.userDonationState(s);
+                                    l.userBoughtDictionaryState(s);
                                 } else {
-                                    l.userDonationState(State.UNKNOWN);
+                                    l.userBoughtDictionaryState(State.UNKNOWN);
                                 }
                             } finally {
                                 helper.dispose();
@@ -278,7 +279,7 @@ public class BuyDictionaryFragment extends Fragment implements
                         }
                     });
                 } else {
-                    l.userDonationState(
+                    l.userBoughtDictionaryState(
                             result.getResponse() == BILLING_UNAVAILABLE ? State.NOT_AVAILABLE
                                     : State.UNKNOWN);
                     helper.dispose();
@@ -338,9 +339,9 @@ public class BuyDictionaryFragment extends Fragment implements
 
         public static final String GOOD_PREFIX = "dictionary.";
 
-        public static final String SKU_AKAN_DICTIONARY = "dictionary.akan";
+        public static final String SKU_AKAN_DICTIONARY = "dictionary.aka";
 
-        public static final String SKU_GA_DICTIONARY = "dictionary.ga";
+        public static final String SKU_GA_DICTIONARY = "dictionary.gaa";
 
         public static final String SKU_EWE_DICTIONARY = "dictionary.ewe";
 
