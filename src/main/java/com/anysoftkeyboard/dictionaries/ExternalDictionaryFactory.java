@@ -123,9 +123,11 @@ public class ExternalDictionaryFactory extends AddOnsFactory<DictionaryAddOnAndB
                     "External dictionary does not include all mandatory details! Will not create dictionary.");
             return null;
         } else {
-            final DictionaryAddOnAndBuilder creator;
-            /*setIsDictionaryBought(context, language);
-            if (!language.equalsIgnoreCase("en") && mIsBought) {
+            DictionaryAddOnAndBuilder creator = null;
+
+            // Make sure dictionary is purchased before creating it
+            setIsDictionaryBought(context, language);
+            if(mIsBought) {
                 if (dictionaryResourceId == AddOn.INVALID_RES_ID) {
                     creator = new DictionaryAddOnAndBuilder(askContext, context, prefId, nameId,
                             description, sortIndex, language, assets, initialSuggestionsId);
@@ -134,16 +136,6 @@ public class ExternalDictionaryFactory extends AddOnsFactory<DictionaryAddOnAndB
                             description, sortIndex, language, dictionaryResourceId, autoTextResId,
                             initialSuggestionsId);
                 }
-                return creator;
-            }*/
-
-            if (dictionaryResourceId == AddOn.INVALID_RES_ID) {
-                creator = new DictionaryAddOnAndBuilder(askContext, context, prefId, nameId,
-                        description, sortIndex, language, assets, initialSuggestionsId);
-            } else {
-                creator = new DictionaryAddOnAndBuilder(askContext, context, prefId, nameId,
-                        description, sortIndex, language, dictionaryResourceId, autoTextResId,
-                        initialSuggestionsId);
             }
 
             return creator;

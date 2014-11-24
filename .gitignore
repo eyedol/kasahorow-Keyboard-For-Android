@@ -39,3 +39,6 @@ local.signing.properties
 
 # Private key
 *keystore*
+
+# Remove binary dictionaries
+src/kasahorow/res/raw/*.dict

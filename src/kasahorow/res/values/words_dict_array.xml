@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    You may use the simple Java application at https://github.com/AnySoftKeyboard/AnySoftKeyboardTools/tree/master/makedict
+    to generate the raw binary data.
+!-->
+<resources>
+    <array name="words_dict_array">
+        <item>@raw/aka</item>
+    </array>
+</resources>
