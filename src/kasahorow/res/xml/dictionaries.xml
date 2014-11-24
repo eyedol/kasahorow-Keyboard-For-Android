@@ -16,6 +16,5 @@
             nameResId="@string/eng_dictionary"
             type="binary_resource"
             dictionaryResourceId="@array/words_dict_array"
-
             description="@string/akan_dictionary"/>
 </Dictionaries>

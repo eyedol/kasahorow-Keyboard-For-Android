@@ -21,12 +21,15 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -34,15 +37,15 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import static com.github.jberkel.pay.me.Response.BILLING_UNAVAILABLE;
 import static com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.Billing.ALL_SKUS;
-import static com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.Billing.PUBLIC_KEY;
 import static com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.Billing.GOOD_PREFIX;
+import static com.anysoftkeyboard.buydictionary.BuyDictionaryFragment.Billing.PUBLIC_KEY;
+import static com.github.jberkel.pay.me.Response.BILLING_UNAVAILABLE;
 
 /**
  * Activity for buying a premium dictionary
  */
-public class BuyDictionaryFragment extends Fragment implements
+public class BuyDictionaryFragment extends ListFragment implements
         QueryInventoryFinishedListener,
         OnIabPurchaseFinishedListener {
 
@@ -54,10 +57,16 @@ public class BuyDictionaryFragment extends Fragment implements
 
     private static final String TAG = BuyDictionaryFragment.class.getSimpleName();
 
+    private List<SkuDetails> mSkuDetailsList = new ArrayList<>();
+
+    private DictionaryListAdapter mDictionaryListAdapter;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
         return inflater.inflate(R.layout.buydictionary, container, false);
     }
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mIabHelper = new IabHelper(getActivity(), PUBLIC_KEY);
@@ -106,10 +115,9 @@ public class BuyDictionaryFragment extends Fragment implements
             return;
         }
 
-        List<SkuDetails> skuDetailsList = new ArrayList<>();
         for (SkuDetails d : inventory.getSkuDetails()) {
             if (d.getSku().startsWith(GOOD_PREFIX)) {
-                skuDetailsList.add(d);
+                mSkuDetailsList.add(d);
             }
         }
         if (DEBUG_IAB) {
@@ -125,63 +133,38 @@ public class BuyDictionaryFragment extends Fragment implements
         }
 
         if (!getActivity().isFinishing() && !userHasBoughtDictionary(inventory)) {
-            showSelectDialog(skuDetailsList);
+            setUpDictionariesForPurchase();
+            //showSelectDialog(mSkuDetailsList);
         } else {
             getActivity().finish();
         }
     }
 
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        mIabHelper.launchPurchaseFlow(getActivity(),
+                mDictionaryListAdapter.getItem(position).getSku(),
+                ItemType.INAPP,
+                PURCHASE_REQUEST,
+                BuyDictionaryFragment.this,
+                null);
 
-    private void showSelectDialog(List<SkuDetails> skuDetails) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+    }
 
-        final List<SkuDetails> skus = new ArrayList<>(skuDetails);
-        Collections.sort(skus, SkuComparator.INSTANCE);
-        //noinspection ConstantConditions
+    private void setUpDictionariesForPurchase() {
+        Collections.sort(mSkuDetailsList, SkuComparator.INSTANCE);
+
+        // Noinspection ConstantConditions
         if (DEBUG_IAB) {
-            skus.add(TestSkus.PURCHASED);
-            skus.add(TestSkus.CANCELED);
-            skus.add(TestSkus.UNAVAILABLE);
-            skus.add(TestSkus.REFUNDED);
-        }
-        String[] items = new String[skus.size()];
-        for (int i = 0; i < skus.size(); i++) {
-            final SkuDetails sku = skus.get(i);
-
-            String item = sku.getTitle();
-            if (!TextUtils.isEmpty(sku.getPrice())) {
-                item += "  " + sku.getPrice();
-            }
-            items[i] = item;
+            mSkuDetailsList.add(TestSkus.PURCHASED);
+            mSkuDetailsList.add(TestSkus.CANCELED);
+            mSkuDetailsList.add(TestSkus.UNAVAILABLE);
+            mSkuDetailsList.add(TestSkus.REFUNDED);
         }
 
-        builder.setItems(items, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mIabHelper.launchPurchaseFlow(getActivity(),
-                        skus.get(which).getSku(),
-                        ItemType.INAPP,
-                        PURCHASE_REQUEST,
-                        BuyDictionaryFragment.this,
-                        null);
-            }
-        });
-        builder.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                getActivity().finish();
-            }
-        });
+        mDictionaryListAdapter = new DictionaryListAdapter(getActivity(), mSkuDetailsList);
+        setListAdapter(mDictionaryListAdapter);
 
-        builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
-            @Override
-            public void onCancel(DialogInterface dialog) {
-                getActivity().finish();
-            }
-        });
-
-        builder.setTitle(R.string.ui_dialog_donate_message)
-                .show();
     }
 
     @Override
@@ -225,7 +208,7 @@ public class BuyDictionaryFragment extends Fragment implements
     private static boolean userHasBoughtDictionary(Inventory inventory) {
         for (String sku : ALL_SKUS) {
             if (inventory.hasPurchase(sku)) {
-                
+
                 return true;
             }
         }
@@ -350,5 +333,65 @@ public class BuyDictionaryFragment extends Fragment implements
                 SKU_GA_DICTIONARY,
                 SKU_EWE_DICTIONARY,
         };
+    }
+
+    private class DictionaryListAdapter extends BaseAdapter {
+
+        private final LayoutInflater mInflater;
+
+        private final List<SkuDetails> mItems;
+
+        public DictionaryListAdapter(Context context, List<SkuDetails> items) {
+            mInflater = LayoutInflater.from(context);
+            mItems = items;
+        }
+
+        @Override
+        public int getCount() {
+            return mItems.size();
+        }
+
+        @Override
+        public SkuDetails getItem(int i) {
+            return mItems.get(i);
+        }
+
+        @Override
+        public long getItemId(int i) {
+            return i;
+        }
+
+        @Override
+        public View getView(int position, View view, ViewGroup viewGroup) {
+            Widgets widgets;
+            if (view == null) {
+                view = mInflater.inflate(R.layout.list_dictionary_item, null);
+                widgets = new Widgets(view);
+                view.setTag(widgets);
+            } else {
+                widgets = (Widgets) view.getTag();
+            }
+
+            // Initialize view with content
+            widgets.title.setText(getItem(position).getTitle());
+            widgets.price.setText(getItem(position).getPrice());
+
+            return view;
+        }
+
+        public class Widgets {
+
+            TextView title;
+
+            TextView price;
+
+            public Widgets(View convertView) {
+
+                title = (TextView) convertView
+                        .findViewById(R.id.dictionary_title);
+                price = (TextView) convertView
+                        .findViewById(R.id.dictionary_price);
+            }
+        }
     }
 }
