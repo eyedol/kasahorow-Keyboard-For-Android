@@ -2,7 +2,7 @@
 <Keyboards>
     <Keyboard
             id="b4c08b0e-ec82-453f-a506-1495c15bd230"
-            defaultDictionaryLocale="ak"
+            defaultDictionaryLocale="aka"
             description="@string/ak_desc"
             iconResId="@drawable/ak"
             defaultEnabled="false"
