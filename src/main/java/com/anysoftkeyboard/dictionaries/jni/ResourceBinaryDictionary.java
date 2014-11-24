@@ -16,15 +16,15 @@
 
 package com.anysoftkeyboard.dictionaries.jni;
 
-import android.content.Context;
-import android.content.res.Resources;
-import android.content.res.TypedArray;
-
 import com.anysoftkeyboard.WordComposer;
 import com.anysoftkeyboard.dictionaries.Dictionary;
 import com.anysoftkeyboard.utils.IMEUtil.GCUtils;
 import com.anysoftkeyboard.utils.IMEUtil.GCUtils.MemRelatedOperation;
 import com.anysoftkeyboard.utils.Log;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,27 +39,38 @@ import java.util.Arrays;
 public class ResourceBinaryDictionary extends Dictionary {
 
     /**
-     * There is difference between what java and native code can handle. This
-     * value should only be used in BinaryDictionary.java It is necessary to
-     * keep it at this value because some languages e.g. German have really long
-     * words.
+     * There is difference between what java and native code can handle. This value should only be
+     * used in BinaryDictionary.java It is necessary to keep it at this value because some languages
+     * e.g. German have really long words.
      */
     private static final int MAX_WORD_LENGTH = 48;
+
     private static final String TAG = "ASK_ResBinDict";
+
     private static final int MAX_ALTERNATIVES = 16;
+
     private static final int MAX_WORDS = 18;
+
     private static final boolean ENABLE_MISSED_CHARACTERS = true;
+
     private final Context mAppContext;
+
     private final int mDictResId;
+
     private volatile int mNativeDict;
+
     private int mDictLength;
+
     private final int[] mInputCodes = new int[MAX_WORD_LENGTH * MAX_ALTERNATIVES];
+
     private final char[] mOutputChars = new char[MAX_WORD_LENGTH * MAX_WORDS];
+
     private final int[] mFrequencies = new int[MAX_WORDS];
 
-    /** NOTE!
-     * Keep a reference to the native dict direct buffer in Java to avoid
-     * unexpected de-allocation of the direct buffer. */
+    /**
+     * NOTE! Keep a reference to the native dict direct buffer in Java to avoid unexpected
+     * de-allocation of the direct buffer.
+     */
     private ByteBuffer mNativeDictDirectBuffer;
 
     static {
@@ -94,7 +105,9 @@ public class ResourceBinaryDictionary extends Dictionary {
 
     private native boolean isValidWordNative(int nativeData, char[] word, int wordLength);
 
-    private native int getSuggestionsNative(int dict, int[] inputCodes, int codesSize, char[] outputChars, int[] frequencies, int maxWordLength, int maxWords, int maxAlternatives, int skipPos, int[] nextLettersFrequencies, int nextLettersSize);
+    private native int getSuggestionsNative(int dict, int[] inputCodes, int codesSize,
+            char[] outputChars, int[] frequencies, int maxWordLength, int maxWords,
+            int maxAlternatives, int skipPos, int[] nextLettersFrequencies, int nextLettersSize);
 
     @Override
     protected void loadAllResources() {
@@ -108,8 +121,9 @@ public class ResourceBinaryDictionary extends Dictionary {
             Log.d(TAG, "type " + dictResType);
             TypedArray a = pkgRes.obtainTypedArray(mDictResId);
             resId = new int[a.length()];
-            for (int index = 0; index < a.length(); index++)
+            for (int index = 0; index < a.length(); index++) {
                 resId[index] = a.getResourceId(index, 0);
+            }
 
             a.recycle();
         }
@@ -139,11 +153,13 @@ public class ResourceBinaryDictionary extends Dictionary {
                 // NOTE: the resource file can not be larger than 1MB
                 is[i] = mAppContext.getResources().openRawResource(resId[i]);
                 final int dictSize = is[i].available();
-                Log.d(TAG, "Will load a resource dictionary id " + resId[i] + " whose size is " + dictSize + " bytes.");
+                Log.d(TAG, "Will load a resource dictionary id " + resId[i] + " whose size is "
+                        + dictSize + " bytes.");
                 total += dictSize;
             }
 
-            mNativeDictDirectBuffer = ByteBuffer.allocateDirect(total).order(ByteOrder.nativeOrder());
+            mNativeDictDirectBuffer = ByteBuffer.allocateDirect(total)
+                    .order(ByteOrder.nativeOrder());
             int got = 0;
             for (int i = 0; i < resId.length; i++) {
                 got += Channels.newChannel(is[i]).read(mNativeDictDirectBuffer);
@@ -151,7 +167,8 @@ public class ResourceBinaryDictionary extends Dictionary {
             if (got != total) {
                 Log.e(TAG, "Read " + got + " bytes, expected " + total);
             } else {
-                mNativeDict = openNative(mNativeDictDirectBuffer, TYPED_LETTER_MULTIPLIER, FULL_WORD_FREQ_MULTIPLIER);
+                mNativeDict = openNative(mNativeDictDirectBuffer, TYPED_LETTER_MULTIPLIER,
+                        FULL_WORD_FREQ_MULTIPLIER);
                 mDictLength = total;
             }
         } catch (IOException e) {
@@ -172,22 +189,30 @@ public class ResourceBinaryDictionary extends Dictionary {
 
     @Override
     public void getWords(final WordComposer codes, final WordCallback callback/*, int[] nextLettersFrequencies*/) {
-        if (mNativeDict == 0 || isClosed()) return;
+        if (mNativeDict == 0 || isClosed()) {
+            return;
+        }
         final int codesSize = codes.length();
         // Won't deal with really long words.
-        if (codesSize > MAX_WORD_LENGTH - 1) return;
+        if (codesSize > MAX_WORD_LENGTH - 1) {
+            return;
+        }
 
         Arrays.fill(mInputCodes, -1);
         for (int i = 0; i < codesSize; i++) {
             int[] alternatives = codes.getCodesAt(i);
-            System.arraycopy(alternatives, 0, mInputCodes, i * MAX_ALTERNATIVES, Math.min(alternatives.length, MAX_ALTERNATIVES));
+            System.arraycopy(alternatives, 0, mInputCodes, i * MAX_ALTERNATIVES,
+                    Math.min(alternatives.length, MAX_ALTERNATIVES));
         }
         Arrays.fill(mOutputChars, (char) 0);
         Arrays.fill(mFrequencies, 0);
 
         int[] nextLettersFrequencies = null;
 
-        int count = getSuggestionsNative(mNativeDict, mInputCodes, codesSize, mOutputChars, mFrequencies, MAX_WORD_LENGTH, MAX_WORDS, MAX_ALTERNATIVES, -1, nextLettersFrequencies, nextLettersFrequencies != null ? nextLettersFrequencies.length : 0);
+        int count = getSuggestionsNative(mNativeDict, mInputCodes, codesSize, mOutputChars,
+                mFrequencies, MAX_WORD_LENGTH, MAX_WORDS, MAX_ALTERNATIVES, -1,
+                nextLettersFrequencies,
+                nextLettersFrequencies != null ? nextLettersFrequencies.length : 0);
 
         // If there aren't sufficient suggestions, search for words by allowing
         // wild cards at
@@ -198,29 +223,38 @@ public class ResourceBinaryDictionary extends Dictionary {
         // completions.
         if (ENABLE_MISSED_CHARACTERS && count < 5) {
             for (int skip = 0; skip < codesSize; skip++) {
-                int tempCount = getSuggestionsNative(mNativeDict, mInputCodes, codesSize, mOutputChars, mFrequencies, MAX_WORD_LENGTH, MAX_WORDS, MAX_ALTERNATIVES, skip, null, 0);
+                int tempCount = getSuggestionsNative(mNativeDict, mInputCodes, codesSize,
+                        mOutputChars, mFrequencies, MAX_WORD_LENGTH, MAX_WORDS, MAX_ALTERNATIVES,
+                        skip, null, 0);
                 count = Math.max(count, tempCount);
-                if (tempCount > 0) break;
+                if (tempCount > 0) {
+                    break;
+                }
             }
         }
 
         boolean requestContinue = true;
         for (int j = 0; j < count && requestContinue; j++) {
-            if (mFrequencies[j] < 1) break;
+            if (mFrequencies[j] < 1) {
+                break;
+            }
             int start = j * MAX_WORD_LENGTH;
             int len = 0;
             while (mOutputChars[start + len] != 0) {
                 len++;
             }
             if (len > 0) {
-                requestContinue = callback.addWord(mOutputChars, start, len, mFrequencies[j]/*, mDicTypeId, DataType.UNIGRAM*/, this);
+                requestContinue = callback.addWord(mOutputChars, start, len, mFrequencies[j]/*, mDicTypeId, DataType.UNIGRAM*/,
+                        this);
             }
         }
     }
 
     @Override
     public boolean isValidWord(CharSequence word) {
-        if (word == null || mNativeDict == 0) return false;
+        if (word == null || mNativeDict == 0) {
+            return false;
+        }
         char[] chars = word.toString().toCharArray();
         return isValidWordNative(mNativeDict, chars, chars.length);
     }

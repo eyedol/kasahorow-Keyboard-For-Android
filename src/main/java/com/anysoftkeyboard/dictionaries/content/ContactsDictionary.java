@@ -16,15 +16,15 @@
 
 package com.anysoftkeyboard.dictionaries.content;
 
+import com.anysoftkeyboard.dictionaries.BTreeDictionary;
+import com.anysoftkeyboard.dictionaries.WordsCursor;
+
 import android.annotation.TargetApi;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.database.ContentObserver;
 import android.database.Cursor;
 import android.provider.ContactsContract.Contacts;
-
-import com.anysoftkeyboard.dictionaries.BTreeDictionary;
-import com.anysoftkeyboard.dictionaries.WordsCursor;
 
 @TargetApi(7)
 public class ContactsDictionary extends BTreeDictionary {
@@ -46,12 +46,14 @@ public class ContactsDictionary extends BTreeDictionary {
             //stared contacts are really high
             Cursor cursor = getCursor();
             final boolean isStarred = cursor.getInt(INDEX_STARRED) > 0;
-            if (isStarred)
+            if (isStarred) {
                 return MAX_WORD_FREQUENCY;// WOW! important!
+            }
             //times contacted will be our frequency
             final int frequencyContacted = cursor.getInt(INDEX_TIMES);
             //A contact is a valid word in a language, and it usually very frequent.
-            final int minimumAdjustedFrequencyContacted = Math.max(MINIMUM_CONTACT_WORD_FREQUENCY, frequencyContacted);
+            final int minimumAdjustedFrequencyContacted = Math
+                    .max(MINIMUM_CONTACT_WORD_FREQUENCY, frequencyContacted);
             //but no more than the max allowed
             return Math.min(minimumAdjustedFrequencyContacted, MAX_WORD_FREQUENCY);
         }
@@ -59,9 +61,11 @@ public class ContactsDictionary extends BTreeDictionary {
 
     protected static final String TAG = "ASK CDict";
 
-    private static final String[] PROJECTION = {Contacts._ID, Contacts.DISPLAY_NAME, Contacts.STARRED, Contacts.TIMES_CONTACTED};
+    private static final String[] PROJECTION = {Contacts._ID, Contacts.DISPLAY_NAME,
+            Contacts.STARRED, Contacts.TIMES_CONTACTED};
 
     private static final int INDEX_STARRED = 2;
+
     private static final int INDEX_TIMES = 3;
 
     public ContactsDictionary(Context context) {
@@ -69,8 +73,10 @@ public class ContactsDictionary extends BTreeDictionary {
     }
 
     @Override
-    protected void registerObserver(ContentObserver dictionaryContentObserver, ContentResolver contentResolver) {
-        contentResolver.registerContentObserver(Contacts.CONTENT_URI, true, dictionaryContentObserver);
+    protected void registerObserver(ContentObserver dictionaryContentObserver,
+            ContentResolver contentResolver) {
+        contentResolver
+                .registerContentObserver(Contacts.CONTENT_URI, true, dictionaryContentObserver);
     }
 
     @Override
@@ -113,7 +119,9 @@ public class ContactsDictionary extends BTreeDictionary {
                 if (wordLen < MAX_WORD_LENGTH && wordLen > 1) {
                     int oldFrequency = getWordFrequency(word);
                     if (oldFrequency < frequency)//I had it better!
+                    {
                         super.addWordFromStorage(word, frequency);
+                    }
                 }
             }
         }

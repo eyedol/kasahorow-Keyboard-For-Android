@@ -23,6 +23,7 @@ import com.anysoftkeyboard.WordComposer;
  * strokes.
  */
 abstract public class Dictionary {
+
     private static final String TAG = "ASK_DICT";
 
     public static final int MAX_WORD_FREQUENCY = 255;
@@ -48,9 +49,10 @@ abstract public class Dictionary {
      * @see #getWords(WordComposer, WordCallback)
      */
     public interface WordCallback {
+
         /**
-         * Adds a word to a list of suggestions. The word is expected to be ordered based on
-         * the provided frequency.
+         * Adds a word to a list of suggestions. The word is expected to be ordered based on the
+         * provided frequency.
          *
          * @param word       the character array containing the word
          * @param wordOffset starting offset of the word in the character array
@@ -59,12 +61,16 @@ abstract public class Dictionary {
          *                   can exceed those limits
          * @return true if the word was added, false if no more words are required
          */
-        boolean addWord(char[] word, int wordOffset, int wordLength, int frequency, Dictionary from);
+        boolean addWord(char[] word, int wordOffset, int wordLength, int frequency,
+                Dictionary from);
     }
 
     private volatile boolean mLoadingResources = true;
+
     protected final Object mResourceMonitor = new Object();
+
     private final String mDictionaryName;
+
     private volatile boolean mClosed = false;
 
     protected Dictionary(String dictionaryName) {
@@ -76,8 +82,8 @@ abstract public class Dictionary {
     }
 
     /**
-     * Searches for words in the dictionary that match the characters in the composer. Matched
-     * words are added through the callback object.
+     * Searches for words in the dictionary that match the characters in the composer. Matched words
+     * are added through the callback object.
      *
      * @param composer the key sequence to match
      * @param callback the callback object to send matched words to as possible candidates
@@ -94,15 +100,16 @@ abstract public class Dictionary {
     abstract public boolean isValidWord(CharSequence word);
 
     /**
-     * Compares the contents of the character array with the typed word and returns true if they
-     * are the same.
+     * Compares the contents of the character array with the typed word and returns true if they are
+     * the same.
      *
      * @param word      the array of characters that make up the word
      * @param length    the number of valid characters in the character array
      * @param typedWord the word to compare with
      * @return true if they are the same, false otherwise.
      */
-    static protected final boolean same(final char[] word, final int length, final CharSequence typedWord) {
+    static protected final boolean same(final char[] word, final int length,
+            final CharSequence typedWord) {
         if (typedWord.length() != length) {
             return false;
         }
@@ -115,8 +122,9 @@ abstract public class Dictionary {
     }
 
     public final void close() {
-        if (mClosed)
+        if (mClosed) {
             return;
+        }
         mClosed = true;
         synchronized (mResourceMonitor) {
             closeAllResources();
@@ -130,13 +138,15 @@ abstract public class Dictionary {
     protected abstract void closeAllResources();
 
     public final void loadDictionary() {
-        if (mClosed)
+        if (mClosed) {
             return;
+        }
         synchronized (mResourceMonitor) {
             try {
                 mLoadingResources = true;
-                if (mClosed)
+                if (mClosed) {
                     return;
+                }
                 loadAllResources();
             } finally {
                 mLoadingResources = false;

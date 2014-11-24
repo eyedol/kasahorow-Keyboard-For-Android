@@ -16,11 +16,13 @@
 
 package com.anysoftkeyboard.dictionaries;
 
-import android.content.res.Resources;
-import android.content.res.XmlResourceParser;
 import com.anysoftkeyboard.utils.XmlUtils;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
+
+import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
 
 import java.io.IOException;
 
@@ -36,12 +38,17 @@ public class AutoText {
     // };
 
     private static final int TRIE_C = 0;
+
     private static final int TRIE_OFF = 1;
+
     private static final int TRIE_CHILD = 2;
+
     private static final int TRIE_NEXT = 3;
 
     private static final int TRIE_SIZEOF = 4;
+
     private static final char TRIE_NULL = (char) -1;
+
     private static final int TRIE_ROOT = 0;
 
     private static final int INCREMENT = 1024;
@@ -63,7 +70,9 @@ public class AutoText {
     // 14K of trie) but may need to be revisited.
 
     private char[] mTrie;
+
     private char mTrieUsed;
+
     private String mText;
     //private Locale mLocale;
     //private int mSize;
@@ -159,7 +168,7 @@ public class AutoText {
             boolean found = false;
 
             for (; mTrie[herep] != TRIE_NULL;
-                 herep = mTrie[herep] + TRIE_NEXT) {
+                    herep = mTrie[herep] + TRIE_NEXT) {
                 if (c == mTrie[mTrie[herep] + TRIE_C]) {
                     // There is a node for this letter, and this is the
                     // end, so fill in the right hand side fields.

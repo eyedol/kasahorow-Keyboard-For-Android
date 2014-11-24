@@ -16,21 +16,24 @@
 
 package com.anysoftkeyboard.dictionaries;
 
-import android.database.ContentObserver;
 import com.anysoftkeyboard.utils.Log;
+
 import net.evendanan.frankenrobot.Diagram;
+
+import android.database.ContentObserver;
 
 import java.lang.ref.WeakReference;
 
 /**
- * User: menny
- * Date: 3/10/13
- * Time: 11:48 PM
+ * User: menny Date: 3/10/13 Time: 11:48 PM
  */
 public class DictionaryContentObserver extends ContentObserver {
 
-    public static final class DictionaryContentObserverDiagram extends Diagram<DictionaryContentObserver> {
+    public static final class DictionaryContentObserverDiagram
+            extends Diagram<DictionaryContentObserver> {
+
         private final BTreeDictionary mOwningDictionary;
+
         public DictionaryContentObserverDiagram(BTreeDictionary owningDictionary) {
             mOwningDictionary = owningDictionary;
         }
@@ -41,6 +44,7 @@ public class DictionaryContentObserver extends ContentObserver {
     }
 
     private final static String TAG = "DictionaryContentObserver";
+
     private final WeakReference<BTreeDictionary> mDictionary;
 
     public DictionaryContentObserver(DictionaryContentObserverDiagram diagram) {
@@ -51,7 +55,9 @@ public class DictionaryContentObserver extends ContentObserver {
     @Override
     public void onChange(boolean self) {
         BTreeDictionary dictionary = mDictionary.get();
-        if (dictionary == null) return;
+        if (dictionary == null) {
+            return;
+        }
         if (self) {
             Log.i(TAG, "I wont notify about self change.");
             return;
