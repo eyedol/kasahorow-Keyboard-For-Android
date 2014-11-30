@@ -81,7 +81,7 @@
             id="0f70c4df-7f03-4647-a8f9-70b7715a377f"
             defaultDictionaryLocale="ibo"
             description="@string/ibo_desc"
-            iconResId=""
+            iconResId="@drawable/ibo"
             index="8"
             landscapeResId="@xml/ibo_qwerty"
             layoutResId="@xml/ibo_qwerty"
