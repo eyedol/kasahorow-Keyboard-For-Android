@@ -20,7 +20,7 @@
         <Key
                 android:codes="101"
                 android:keyLabel="e"
-                android:popupCharacters="₵"/>
+                android:popupCharacters="₦"/>
         <Key
                 android:codes="114"
                 android:keyLabel="r"
