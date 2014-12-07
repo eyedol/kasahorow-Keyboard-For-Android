@@ -98,11 +98,21 @@
             nameResId="@string/kik_keyboard"/>
 
     <Keyboard
+            id="fdf0c017-150e-44d1-b567-7e2fef208b24"
+            defaultDictionaryLocale="wol"
+            description="@string/wol_desc"
+            iconResId="@drawable/wol"
+            index="10"
+            landscapeResId="@xml/wol_qwerty"
+            layoutResId="@xml/wol_qwerty"
+            nameResId="@string/wol_keyboard"/>
+
+    <Keyboard
             id="89297ca8-549a-4344-9d9b-0d137f0d2179"
             defaultDictionaryLocale="yor"
             description="@string/yo_desc"
             iconResId="@drawable/yo"
-            index="10"
+            index="11"
             landscapeResId="@xml/yo_qwerty"
             layoutResId="@xml/yo_qwerty"
             nameResId="@string/yo_keyboard"/>
