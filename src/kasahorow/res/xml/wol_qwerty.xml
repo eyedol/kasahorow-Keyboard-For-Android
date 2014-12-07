@@ -76,7 +76,7 @@
                 android:popupCharacters=""/>
         <Key
                 android:codes="241"
-                android:keyLabel="ŋ"
+                android:keyLabel="ñ"
                 android:popupCharacters="h"/>
         <Key
                 android:codes="106"
