@@ -16,11 +16,12 @@
 
 package com.anysoftkeyboard.dictionaries;
 
-import android.content.Context;
 import com.anysoftkeyboard.addons.AddOnImpl;
 import com.anysoftkeyboard.dictionaries.jni.BinaryDictionary;
 import com.anysoftkeyboard.dictionaries.jni.ResourceBinaryDictionary;
 import com.anysoftkeyboard.utils.Log;
+
+import android.content.Context;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,15 +35,20 @@ public class DictionaryAddOnAndBuilder extends AddOnImpl {
     private static final String TAG = "ASK DAOB";
 
     private final String mLanguage;
+
     private final String mAssetsFilename;
+
     private final int mDictionaryResId;
+
     private final int mAutoTextResId;
+
     private final int mInitialSuggestionsResId;
 
     private DictionaryAddOnAndBuilder(Context askContext, Context packageContext, String id,
-                                      int nameResId, String description, int sortIndex, String dictionaryLanguage,
-                                      String assetsFilename, int dictResId, int autoTextResId, int initialSuggestionsResId) {
-        super(askContext, packageContext, DICTIONARY_PREF_PREFIX + id, nameResId, description, sortIndex);
+            int nameResId, String description, int sortIndex, String dictionaryLanguage,
+            String assetsFilename, int dictResId, int autoTextResId, int initialSuggestionsResId) {
+        super(askContext, packageContext, DICTIONARY_PREF_PREFIX + id, nameResId, description,
+                sortIndex);
         mLanguage = dictionaryLanguage;
         mAssetsFilename = assetsFilename;
         mDictionaryResId = dictResId;
@@ -51,13 +57,17 @@ public class DictionaryAddOnAndBuilder extends AddOnImpl {
     }
 
     public DictionaryAddOnAndBuilder(Context askContext, Context packageContext, String id,
-                                     int nameResId, String description, int sortIndex, String dictionaryLanguage, String assetsFilename, int initialSuggestionsResId) {
-        this(askContext, packageContext, id, nameResId, description, sortIndex, dictionaryLanguage, assetsFilename, INVALID_RES_ID, INVALID_RES_ID, initialSuggestionsResId);
+            int nameResId, String description, int sortIndex, String dictionaryLanguage,
+            String assetsFilename, int initialSuggestionsResId) {
+        this(askContext, packageContext, id, nameResId, description, sortIndex, dictionaryLanguage,
+                assetsFilename, INVALID_RES_ID, INVALID_RES_ID, initialSuggestionsResId);
     }
 
     public DictionaryAddOnAndBuilder(Context askContext, Context packageContext, String id,
-                                     int nameResId, String description, int sortIndex, String dictionaryLanguage, int dictionaryResId, int autoTextResId, int initialSuggestionsResId) {
-        this(askContext, packageContext, id, nameResId, description, sortIndex, dictionaryLanguage, null, dictionaryResId, autoTextResId, initialSuggestionsResId);
+            int nameResId, String description, int sortIndex, String dictionaryLanguage,
+            int dictionaryResId, int autoTextResId, int initialSuggestionsResId) {
+        this(askContext, packageContext, id, nameResId, description, sortIndex, dictionaryLanguage,
+                null, dictionaryResId, autoTextResId, initialSuggestionsResId);
     }
 
     public String getLanguage() {
@@ -69,10 +79,12 @@ public class DictionaryAddOnAndBuilder extends AddOnImpl {
     }
 
     public Dictionary createDictionary() throws Exception {
-        if (mDictionaryResId == INVALID_RES_ID)
-            return new BinaryDictionary(getName(), getPackageContext().getAssets().openFd(mAssetsFilename));
-        else
+        if (mDictionaryResId == INVALID_RES_ID) {
+            return new BinaryDictionary(getName(),
+                    getPackageContext().getAssets().openFd(mAssetsFilename));
+        } else {
             return new ResourceBinaryDictionary(getName(), getPackageContext(), mDictionaryResId);
+        }
     }
 
     public AutoText createAutoText() {
@@ -92,11 +104,14 @@ public class DictionaryAddOnAndBuilder extends AddOnImpl {
         if (mInitialSuggestionsResId == INVALID_RES_ID) {
             return null;
         } else {
-            String[] initialSuggestions = getPackageContext().getResources().getStringArray(mInitialSuggestionsResId);
+            String[] initialSuggestions = getPackageContext().getResources()
+                    .getStringArray(mInitialSuggestionsResId);
             if (initialSuggestions != null) {
-                List<CharSequence> suggestionsList = new ArrayList<CharSequence>(initialSuggestions.length);
-                for (String suggestion : initialSuggestions)
+                List<CharSequence> suggestionsList = new ArrayList<CharSequence>(
+                        initialSuggestions.length);
+                for (String suggestion : initialSuggestions) {
                     suggestionsList.add(suggestion);
+                }
 
                 return suggestionsList;
             } else {

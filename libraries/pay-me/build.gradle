@@ -1,0 +1,52 @@
+apply plugin: 'android-sdk-manager'
+apply plugin: 'android-library'
+apply plugin: 'robolectric'
+
+
+dependencies {
+    androidTestCompile 'junit:junit:4.11'
+    androidTestCompile('org.robolectric:robolectric:3.0-SNAPSHOT') {
+        exclude module: 'classworlds'
+        exclude module: 'maven-artifact'
+        exclude module: 'maven-artifact-manager'
+        exclude module: 'maven-error-diagnostics'
+        exclude module: 'maven-model'
+        exclude module: 'maven-plugin-registry'
+        exclude module: 'maven-profile'
+        exclude module: 'maven-project'
+        exclude module: 'maven-settings'
+        exclude module: 'nekohtml'
+        exclude module: 'plexus-container-default'
+        exclude module: 'plexus-interpolation'
+        exclude module: 'plexus-utils'
+        exclude module: 'wagon-file'
+        exclude module: 'wagon-http-lightweight'
+        exclude module: 'wagon-http-shared'
+        exclude module: 'wagon-provider-api'
+    }
+    androidTestCompile 'org.mockito:mockito-core:1.9.5'
+    androidTestCompile 'com.squareup:fest-android:1.0.+'
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "21.0.2"
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 20
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            aidl.srcDirs = ['src/main/java']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}

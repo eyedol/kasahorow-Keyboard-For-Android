@@ -16,27 +16,34 @@
 
 package com.anysoftkeyboard.dictionaries;
 
-import android.content.Context;
-
 import com.anysoftkeyboard.dictionaries.content.ContactsDictionary;
 import com.anysoftkeyboard.dictionaries.sqlite.AutoDictionary;
 import com.anysoftkeyboard.utils.Log;
 import com.menny.android.anysoftkeyboard.AnyApplication;
 
+import android.content.Context;
+
 public class DictionaryFactory {
 
     private static final String TAG = "ASK DictFactory";
+
     private AutoDictionary mAutoDictionary = null;
+
     private String mUserDictionaryLocale = null;
+
     private EditableDictionary mUserDictionary = null;
 
     public DictionaryFactory() {
     }
 
     private static boolean equalsString(String a, String b) {
-        if (a == null && b == null) return true;
-        else if (a == null || b == null) return false;
-        else return a.equals(b);
+        if (a == null && b == null) {
+            return true;
+        } else if (a == null || b == null) {
+            return false;
+        } else {
+            return a.equals(b);
+        }
     }
 
     public synchronized EditableDictionary createUserDictionary(Context context, String locale) {
@@ -61,8 +68,11 @@ public class DictionaryFactory {
         return new ContactsDictionary(context.getApplicationContext());
     }
 
-    public synchronized AutoDictionary createAutoDictionary(Context context, String currentAutoDictionaryLocale) {
-        if (AnyApplication.getConfig().getAutoDictionaryInsertionThreshold() < 0) return null;
+    public synchronized AutoDictionary createAutoDictionary(Context context,
+            String currentAutoDictionaryLocale) {
+        if (AnyApplication.getConfig().getAutoDictionaryInsertionThreshold() < 0) {
+            return null;
+        }
 
         if (mAutoDictionary != null && !mAutoDictionary.isClosed()) {
             if (equalsString(mAutoDictionary.getLocale(), currentAutoDictionaryLocale)) {

@@ -20,6 +20,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class WordsCursor {
+
     private final Cursor mCursor;
 
     public WordsCursor(Cursor cursor) {
@@ -31,7 +32,9 @@ public class WordsCursor {
     }
 
     public void close() {
-        if (!mCursor.isClosed()) mCursor.close();
+        if (!mCursor.isClosed()) {
+            mCursor.close();
+        }
     }
 
     public int getCurrentWordId() {
@@ -41,11 +44,13 @@ public class WordsCursor {
     public String getCurrentWord() {
         return mCursor.getString(1);
     }
+
     public int getCurrentWordFrequency() {
         return mCursor.getInt(2);
     }
 
     public static class SqliteWordsCursor extends WordsCursor {
+
         private final SQLiteDatabase mDb;
 
         public SqliteWordsCursor(SQLiteDatabase db, Cursor cursor) {
@@ -56,8 +61,9 @@ public class WordsCursor {
         @Override
         public void close() {
             super.close();
-            if (mDb.isOpen())
+            if (mDb.isOpen()) {
                 mDb.close();
+            }
         }
     }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Dictionaries>
+    <!--
+        id := a UUID (you may want to generate this using this simple online tool at http://www.famkruithof.net/uuid/uuidgen)
+        locale := a locale identifier for this dictionary. E.g., English will be en, Akan will be aka, etc.
+        nameResId := the resource Id which holds the name of the dictionary. See strings.xml.
+        type := currently we only support binary dictionaries. Should be binary_resource
+        dictionaryResourceId := the binary data holder. A corresponding item should be added to res/words_dict_array.xml
+        autoTextResourceId := the auto suggestions shown to the user. Should match common phrases.
+        description := simple description for the dictionary.
+    -->
+    <Dictionary
+            id="00dd1bf8-bac1-4b2c-98fe-b380df19f55a"
+            locale="aka"
+            nameResId="@string/aka_dictionary"
+            type="binary_resource"
+            dictionaryResourceId="@array/words_dict_array"
+            description="@string/akan_dictionary"/>
+</Dictionaries>

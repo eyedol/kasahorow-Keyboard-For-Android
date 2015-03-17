@@ -16,28 +16,29 @@
 
 package com.anysoftkeyboard.dictionaries;
 
-import android.content.Context;
-import android.text.TextUtils;
-
 import com.anysoftkeyboard.WordComposer;
 import com.anysoftkeyboard.dictionaries.sqlite.AbbreviationsDictionary;
 import com.anysoftkeyboard.utils.IMEUtil;
 import com.anysoftkeyboard.utils.Log;
 import com.menny.android.anysoftkeyboard.R;
 
+import android.content.Context;
+import android.text.TextUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * This class loads a dictionary and provides a list of suggestions for a given
- * sequence of characters. This includes corrections and completions.
+ * This class loads a dictionary and provides a list of suggestions for a given sequence of
+ * characters. This includes corrections and completions.
  */
 public class Suggest implements Dictionary.WordCallback {
 
     private static final String TAG = "ASK Suggest";
 
     private Dictionary mMainDict;
+
     private AutoText mAutoText;
 
     private int mMinimumWordSizeToStartCorrecting = 2;
@@ -55,25 +56,34 @@ public class Suggest implements Dictionary.WordCallback {
     private int mPrefMaxSuggestions = 12;
 
     private final List<CharSequence> mDefaultInitialSuggestions;
+
     private List<CharSequence> mInitialSuggestions = new ArrayList<>();
 
     private int[] mPriorities = new int[mPrefMaxSuggestions];
+
     private List<CharSequence> mSuggestions = new ArrayList<>();
+
     // private boolean mIncludeTypedWordIfValid;
     private List<CharSequence> mStringPool = new ArrayList<>();
+
     // private Context mContext;
     private boolean mHaveCorrection;
+
     private CharSequence mOriginalWord;
+
     private final List<String> mExplodedAbbreviations = new ArrayList<>();
+
     private String mLowerOriginalWord;
 
     // TODO: Remove these member variables by passing more context to addWord()
     // callback method
     private boolean mIsFirstCharCapitalized;
+
     private boolean mIsAllUpperCase;
 
     // private int mCorrectionMode = CORRECTION_FULL;
     private boolean mAutoTextEnabled = true;
+
     private boolean mMainDictionaryEnabled = true;
 
     public Suggest(Context context) {
@@ -88,8 +98,9 @@ public class Suggest implements Dictionary.WordCallback {
         if (initialSuggestions != null) {
             mDefaultInitialSuggestions = new ArrayList<>(
                     initialSuggestions.length);
-            for (String suggestion : initialSuggestions)
+            for (String suggestion : initialSuggestions) {
                 mDefaultInitialSuggestions.add(suggestion);
+            }
         } else {
             mDefaultInitialSuggestions = new ArrayList<>(0);
         }
@@ -101,12 +112,13 @@ public class Suggest implements Dictionary.WordCallback {
     }
 
     /**
-     * Sets an optional user dictionary resource to be loaded. The user
-     * dictionary is consulted before the main dictionary, if set.
+     * Sets an optional user dictionary resource to be loaded. The user dictionary is consulted
+     * before the main dictionary, if set.
      */
     public void setUserDictionary(Dictionary userDictionary) {
-        if (mUserDictionary != userDictionary && mUserDictionary != null)
+        if (mUserDictionary != userDictionary && mUserDictionary != null) {
             mUserDictionary.close();
+        }
 
         mUserDictionary = userDictionary;
     }
@@ -143,10 +155,12 @@ public class Suggest implements Dictionary.WordCallback {
             }
             mAutoText = dictionaryBuilder.createAutoText();
             mInitialSuggestions = dictionaryBuilder.createInitialSuggestions();
-            if (mInitialSuggestions == null)
+            if (mInitialSuggestions == null) {
                 mInitialSuggestions = mDefaultInitialSuggestions;
+            }
 
-            mAbbreviationDictionary = new AbbreviationsDictionary(askContext, dictionaryBuilder.getLanguage());
+            mAbbreviationDictionary = new AbbreviationsDictionary(askContext,
+                    dictionaryBuilder.getLanguage());
             DictionaryASyncLoader loader = new DictionaryASyncLoader(null);
             loader.execute(mAbbreviationDictionary);
         }
@@ -173,16 +187,16 @@ public class Suggest implements Dictionary.WordCallback {
     }
 
     public void setAutoDictionary(Dictionary autoDictionary) {
-        if (mAutoDictionary != autoDictionary && mAutoDictionary != null)
+        if (mAutoDictionary != autoDictionary && mAutoDictionary != null) {
             mAutoDictionary.close();
+        }
         mAutoDictionary = autoDictionary;
     }
 
     /**
-     * Number of suggestions to generate from the input key sequence. This has
-     * to be a number between 1 and 100 (inclusive).
+     * Number of suggestions to generate from the input key sequence. This has to be a number
+     * between 1 and 100 (inclusive).
      *
-     * @param maxSuggestions
      * @throws IllegalArgumentException if the number is out of range
      */
     public void setMaxSuggestions(int maxSuggestions) {
@@ -200,7 +214,7 @@ public class Suggest implements Dictionary.WordCallback {
     }
 
     private boolean haveSufficientCommonality(String original,
-                                              CharSequence suggestion) {
+            CharSequence suggestion) {
         final int originalLength = original.length();
         final int suggestionLength = suggestion.length();
         final int lengthDiff = suggestionLength - originalLength;
@@ -219,16 +233,16 @@ public class Suggest implements Dictionary.WordCallback {
     }
 
     /**
-     * Returns a list of words that match the list of character codes passed in.
-     * This list will be overwritten the next time this function is called.
+     * Returns a list of words that match the list of character codes passed in. This list will be
+     * overwritten the next time this function is called.
      *
      * @return list of suggestions.
      */
     public List<CharSequence> getSuggestions(
             /* View view, */WordComposer wordComposer,
             boolean includeTypedWordIfValid) {
-	    mExplodedAbbreviations.clear();
-	    mHaveCorrection = false;
+        mExplodedAbbreviations.clear();
+        mHaveCorrection = false;
         mIsFirstCharCapitalized = wordComposer.isFirstCharCapitalized();
         mIsAllUpperCase = wordComposer.isAllUpperCase();
         collectGarbage();
@@ -280,14 +294,16 @@ public class Suggest implements Dictionary.WordCallback {
         }
         if (mExplodedAbbreviations.size() > 0) {
             //typed at zero, exploded at 1 index.
-	        for(String explodedWord : mExplodedAbbreviations)
+            for (String explodedWord : mExplodedAbbreviations) {
                 mSuggestions.add(1, explodedWord);
+            }
 
             mHaveCorrection = true;//so the exploded text will be auto-committed.
         }
         // Check if the first suggestion has a minimum number of characters in
         // common
-        if (mMainDictionaryEnabled && mSuggestions.size() > 1 && mExplodedAbbreviations.size() == 0) {
+        if (mMainDictionaryEnabled && mSuggestions.size() > 1
+                && mExplodedAbbreviations.size() == 0) {
             if (!haveSufficientCommonality(mLowerOriginalWord,
                     mSuggestions.get(1))) {
                 mHaveCorrection = false;
@@ -297,8 +313,9 @@ public class Suggest implements Dictionary.WordCallback {
         int i = 0;
         int max = 6;
         // Don't autotext the suggestions from the dictionaries
-        if (!mMainDictionaryEnabled && mAutoTextEnabled)
+        if (!mMainDictionaryEnabled && mAutoTextEnabled) {
             max = 1;
+        }
         while (i < mSuggestions.size() && i < max) {
             String suggestedWord = mSuggestions.get(i).toString().toLowerCase();
 
@@ -346,10 +363,10 @@ public class Suggest implements Dictionary.WordCallback {
     }
 
     public boolean addWord(final char[] word, final int offset,
-                           final int length, final int freq, final Dictionary from) {
+            final int length, final int freq, final Dictionary from) {
         Log.v(TAG, "Suggest::addWord");
         if (from == mAbbreviationDictionary) {
-	        mExplodedAbbreviations.add(new String(word, offset, length));
+            mExplodedAbbreviations.add(new String(word, offset, length));
             return true;
         }
         int pos = 0;
@@ -361,8 +378,9 @@ public class Suggest implements Dictionary.WordCallback {
             pos = 0;
         } else {
             // Check the last one's priority and bail
-            if (priorities[prefMaxSuggestions - 1] >= freq)
+            if (priorities[prefMaxSuggestions - 1] >= freq) {
                 return true;
+            }
             while (pos < prefMaxSuggestions) {
                 if (priorities[pos] < freq
                         || (priorities[pos] == freq && length < mSuggestions
@@ -408,15 +426,21 @@ public class Suggest implements Dictionary.WordCallback {
             return false;
         }
 
-        Log.v(TAG, "Suggest::isValidWord(%s) mMainDictionaryEnabled:%s mAutoTextEnabled: %s user-dictionary-enabled: %s contacts-dictionary-enabled: %s",
-                word, mMainDictionaryEnabled, mAutoTextEnabled, mUserDictionary != null, mContactsDictionary != null);
+        Log.v(TAG,
+                "Suggest::isValidWord(%s) mMainDictionaryEnabled:%s mAutoTextEnabled: %s user-dictionary-enabled: %s contacts-dictionary-enabled: %s",
+                word, mMainDictionaryEnabled, mAutoTextEnabled, mUserDictionary != null,
+                mContactsDictionary != null);
 
         if (mMainDictionaryEnabled || mAutoTextEnabled) {
-            final boolean validFromMain = (mMainDictionaryEnabled && mMainDict != null && mMainDict.isValidWord(word));
-            final boolean validFromUser = (mUserDictionary != null && mUserDictionary.isValidWord(word));
-            final boolean validFromContacts = (mContactsDictionary != null && mContactsDictionary.isValidWord(word));
+            final boolean validFromMain = (mMainDictionaryEnabled && mMainDict != null && mMainDict
+                    .isValidWord(word));
+            final boolean validFromUser = (mUserDictionary != null && mUserDictionary
+                    .isValidWord(word));
+            final boolean validFromContacts = (mContactsDictionary != null && mContactsDictionary
+                    .isValidWord(word));
 
-            Log.v(TAG, "Suggest::isValidWord(%s)validFromMain: %s validFromUser: %s validFromContacts: %s",
+            Log.v(TAG,
+                    "Suggest::isValidWord(%s)validFromMain: %s validFromUser: %s validFromContacts: %s",
                     word, validFromMain, validFromUser, validFromContacts);
             return validFromMain || validFromUser
                     || /* validFromAuto || */validFromContacts;

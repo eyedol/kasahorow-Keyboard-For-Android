@@ -16,13 +16,13 @@
 
 package com.anysoftkeyboard.dictionaries;
 
-import android.content.Context;
-import android.text.format.DateFormat;
-
 import com.anysoftkeyboard.keyboards.Keyboard.Key;
 import com.anysoftkeyboard.utils.Log;
 import com.menny.android.anysoftkeyboard.BuildConfig;
 import com.menny.android.anysoftkeyboard.FeaturesSet;
+
+import android.content.Context;
+import android.text.format.DateFormat;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -70,6 +70,7 @@ public class TextEntryState {
     private static State sState = State.UNKNOWN;
 
     private static FileOutputStream sKeyLocationFile;
+
     private static FileOutputStream sUserActionFile;
 
     public static void newSession(Context context) {
@@ -121,7 +122,9 @@ public class TextEntryState {
     }
 
     public static void acceptedDefault(CharSequence typedWord, CharSequence actualWord) {
-        if (typedWord == null) return;
+        if (typedWord == null) {
+            return;
+        }
         if (!typedWord.equals(actualWord)) {
             sAutoSuggestCount++;
         }
@@ -136,7 +139,9 @@ public class TextEntryState {
     // (see "case ACCEPTED_DEFAULT" in typedCharacter() below),
     // and should be restored back to State.ACCEPTED_DEFAULT after processing for each sub-state.
     public static void backToAcceptedDefault(CharSequence typedWord) {
-        if (typedWord == null) return;
+        if (typedWord == null) {
+            return;
+        }
         switch (sState) {
             case SPACE_AFTER_ACCEPTED:
             case PUNCTUATION_AFTER_ACCEPTED:

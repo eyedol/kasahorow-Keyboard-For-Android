@@ -16,6 +16,10 @@
 
 package com.anysoftkeyboard.dictionaries.content;
 
+import com.anysoftkeyboard.dictionaries.BTreeDictionary;
+import com.anysoftkeyboard.dictionaries.WordsCursor;
+import com.anysoftkeyboard.utils.Log;
+
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
@@ -24,13 +28,11 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.UserDictionary.Words;
 import android.text.TextUtils;
-import com.anysoftkeyboard.dictionaries.BTreeDictionary;
-import com.anysoftkeyboard.dictionaries.WordsCursor;
-import com.anysoftkeyboard.utils.Log;
 
 public class AndroidUserDictionary extends BTreeDictionary {
 
     private static final String[] PROJECTION = {Words._ID, Words.WORD, Words.FREQUENCY};
+
     private final String mLocale;
 
     public AndroidUserDictionary(Context context, String locale) {
@@ -39,16 +41,24 @@ public class AndroidUserDictionary extends BTreeDictionary {
     }
 
     @Override
-    protected void registerObserver(ContentObserver dictionaryContentObserver, ContentResolver contentResolver) {
-        contentResolver.registerContentObserver(Words.CONTENT_URI, false, dictionaryContentObserver);
+    protected void registerObserver(ContentObserver dictionaryContentObserver,
+            ContentResolver contentResolver) {
+        contentResolver
+                .registerContentObserver(Words.CONTENT_URI, false, dictionaryContentObserver);
     }
 
     public WordsCursor getWordsCursor() {
         Cursor cursor = TextUtils.isEmpty(mLocale) ?
-                mContext.getContentResolver().query(Words.CONTENT_URI, PROJECTION, "(" + Words.LOCALE + " IS NULL)", null, null) :
-                mContext.getContentResolver().query(Words.CONTENT_URI, PROJECTION, "(" + Words.LOCALE + " IS NULL) or (" + Words.LOCALE + "=?)", new String[]{mLocale}, null);
+                mContext.getContentResolver()
+                        .query(Words.CONTENT_URI, PROJECTION, "(" + Words.LOCALE + " IS NULL)",
+                                null, null) :
+                mContext.getContentResolver().query(Words.CONTENT_URI, PROJECTION,
+                        "(" + Words.LOCALE + " IS NULL) or (" + Words.LOCALE + "=?)",
+                        new String[]{mLocale}, null);
 
-        if (cursor == null) throw new RuntimeException("No built-in Android dictionary!");
+        if (cursor == null) {
+            throw new RuntimeException("No built-in Android dictionary!");
+        }
 
         return new WordsCursor(cursor);
     }
@@ -59,8 +69,12 @@ public class AndroidUserDictionary extends BTreeDictionary {
             return;
         }
 
-        if (frequency < 1) frequency = 1;
-        if (frequency > 255) frequency = 255;
+        if (frequency < 1) {
+            frequency = 1;
+        }
+        if (frequency > 255) {
+            frequency = 255;
+        }
 
         ContentValues values = new ContentValues(4);
         values.put(Words.WORD, word);
@@ -69,12 +83,14 @@ public class AndroidUserDictionary extends BTreeDictionary {
         values.put(Words.APP_ID, 0); // TODO: Get App UID
 
         Uri result = mContext.getContentResolver().insert(Words.CONTENT_URI, values);
-        Log.i(TAG, "Added the word '" + word + "' at locale " + mLocale + " into Android's user dictionary. Result " + result);
+        Log.i(TAG, "Added the word '" + word + "' at locale " + mLocale
+                + " into Android's user dictionary. Result " + result);
     }
 
     @Override
     protected final void deleteWordFromStorage(String word) {
-        mContext.getContentResolver().delete(Words.CONTENT_URI, Words.WORD + "=?", new String[]{word});
+        mContext.getContentResolver()
+                .delete(Words.CONTENT_URI, Words.WORD + "=?", new String[]{word});
     }
 
     @Override

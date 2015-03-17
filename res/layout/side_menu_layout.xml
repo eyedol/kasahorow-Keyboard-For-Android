@@ -113,6 +113,11 @@
         <View android:layout_width="1dp"
             android:layout_height="0px"
             android:layout_weight="1"/>
+        <TextView
+                style="@style/Ask.Menu.Item"
+                android:layout_marginTop="24dp"
+                android:text="@string/buy_dictionary"
+                android:onClick="onNavigateToBuyDictionary" />
 
         <TextView
             style="@style/Ask.Menu.Item"

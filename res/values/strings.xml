@@ -642,6 +642,7 @@
     <string name="select_keyboard_popup_title">Select keyboard</string>
     <!-- dictionaries -->
     <string name="eng_dictionary">English</string>
+    <string name="aka_dictionary">Akan</string>
 
     <string name="simley_key_name">Smiley key</string>
     <string name="default_quick_text_key_name">Simple Emoticons</string>

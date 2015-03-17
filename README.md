@@ -70,6 +70,7 @@ KEY_PASSWORD=android
 **local.extra.properties**
 ```
 CRASH_REPORT_EMAIL=crashreportemail@example.com
+PUBLIC_LICENSE_KEY=base64 string from google play store's in app purchase
 ```
 
 Then in the project's root directory, issue

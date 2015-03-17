@@ -19,11 +19,10 @@ package com.anysoftkeyboard.dictionaries;
 import android.net.Uri;
 
 /**
- * User: menny
- * Date: 3/10/13
- * Time: 11:48 PM
+ * User: menny Date: 3/10/13 Time: 11:48 PM
  */
 public class DictionaryContentObserverAPI16 extends DictionaryContentObserver {
+
     public DictionaryContentObserverAPI16(DictionaryContentObserverDiagram diagram) {
         super(diagram);
     }

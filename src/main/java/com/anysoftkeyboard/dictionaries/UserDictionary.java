@@ -16,19 +16,22 @@
 
 package com.anysoftkeyboard.dictionaries;
 
-import android.content.Context;
 import com.anysoftkeyboard.WordComposer;
 import com.anysoftkeyboard.dictionaries.content.AndroidUserDictionary;
 import com.anysoftkeyboard.dictionaries.sqlite.FallbackUserDictionary;
 import com.anysoftkeyboard.utils.Log;
 import com.menny.android.anysoftkeyboard.AnyApplication;
 
+import android.content.Context;
+
 public class UserDictionary extends EditableDictionary {
 
     private static final String TAG = "ASK_SUD";
+
     private volatile BTreeDictionary mActualDictionary;
 
     private final Context mContext;
+
     private final String mLocale;
 
     public UserDictionary(Context context, String locale) {
@@ -39,23 +42,26 @@ public class UserDictionary extends EditableDictionary {
 
     @Override
     public final void getWords(WordComposer composer,
-                                      WordCallback callback) {
-        if (mActualDictionary != null)
+            WordCallback callback) {
+        if (mActualDictionary != null) {
             mActualDictionary.getWords(composer, callback);
+        }
     }
 
     @Override
     public final boolean isValidWord(CharSequence word) {
-        if (mActualDictionary != null)
+        if (mActualDictionary != null) {
             return mActualDictionary.isValidWord(word);
-        else
+        } else {
             return false;
+        }
     }
 
     @Override
     protected final void closeAllResources() {
-        if (mActualDictionary != null)
+        if (mActualDictionary != null) {
             mActualDictionary.close();
+        }
     }
 
     @Override
@@ -63,15 +69,18 @@ public class UserDictionary extends EditableDictionary {
         AndroidUserDictionary androidBuiltIn = null;
         try {
             //The only reason I see someone uses this, is for development or debugging.
-            if (AnyApplication.getConfig().alwaysUseFallBackUserDictionary())
-                throw new RuntimeException("User requested to always use fall-back user-dictionary.");
+            if (AnyApplication.getConfig().alwaysUseFallBackUserDictionary()) {
+                throw new RuntimeException(
+                        "User requested to always use fall-back user-dictionary.");
+            }
 
             androidBuiltIn = new AndroidUserDictionary(mContext, mLocale);
             androidBuiltIn.loadDictionary();
             mActualDictionary = androidBuiltIn;
         } catch (Exception e) {
             Log.w(TAG,
-                    "Can not load Android's built-in user dictionary (since '"+e.getMessage()+"'). FallbackUserDictionary to the rescue!");
+                    "Can not load Android's built-in user dictionary (since '" + e.getMessage()
+                            + "'). FallbackUserDictionary to the rescue!");
             if (androidBuiltIn != null) {
                 try {
                     androidBuiltIn.close();
@@ -101,16 +110,18 @@ public class UserDictionary extends EditableDictionary {
 
     @Override
     public final WordsCursor getWordsCursor() {
-        if (mActualDictionary != null)
+        if (mActualDictionary != null) {
             return mActualDictionary.getWordsCursor();
+        }
 
         return null;
     }
 
     @Override
     public final void deleteWord(String word) {
-        if (mActualDictionary != null)
+        if (mActualDictionary != null) {
             mActualDictionary.deleteWord(word);
+        }
     }
 
 }
