@@ -594,8 +594,8 @@
     <string name="created_mem_dump_file">Created memory dump file at:<xliff:g id="file_path">%s</xliff:g></string>
     <string name="ak_keyboard">Akan keyboard</string>
     <string name="ak_desc">Akan keyboard layout.</string>
-    <string name="ga_keyboard">Ga keyboard</string>
-    <string name="ga_desc">Ga keyboard layout.</string>
+    <string name="ge_keyboard">Ga keyboard</string>
+    <string name="ge_desc">Ga keyboard layout.</string>
     <string name="ee_keyboard">Gbe keyboard</string>
     <string name="ee_desc">Gbe keyboard layout.</string>
     <string name="ak_dictionary">Akan</string>

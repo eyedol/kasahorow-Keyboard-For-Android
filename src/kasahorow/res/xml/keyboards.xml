@@ -59,13 +59,13 @@
 
     <Keyboard
             id="5e8ea8c4-a287-42af-9781-55e7c6f4d53a"
-            defaultDictionaryLocale="gaa"
-            description="@string/ga_desc"
-            iconResId="@drawable/ga"
+	    defaultDictionaryLocale="ge"
+	    description="@string/ge_desc"
+	    iconResId="@drawable/ge"
             index="6"
-            landscapeResId="@xml/ga_qwerty"
-            layoutResId="@xml/ga_qwerty"
-            nameResId="@string/ga_keyboard"/>
+            landscapeResId="@xml/ge_qwerty"
+            layoutResId="@xml/ge_qwerty"
+            nameResId="@string/ge_keyboard"/>
 
     <Keyboard
             id="153987e5-0919-4a00-9326-87d23891e70d"
