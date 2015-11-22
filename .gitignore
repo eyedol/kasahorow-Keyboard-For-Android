@@ -1,3 +1,14 @@
+# image files
+*.png
+*.jpeg
+
+# compiled files
+*.jar
+*.res
+
+# swp files from vim
+*.swp
+
 # built application files
 *.apk
 *.ap_

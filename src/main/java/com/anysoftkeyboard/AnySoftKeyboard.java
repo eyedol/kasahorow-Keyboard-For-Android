@@ -165,7 +165,7 @@ public class AnySoftKeyboard extends InputMethodService implements
 	 */
     private boolean mCompletionOn;
     private boolean mAutoSpace;
-    private boolean mAutoCorrectOn;
+    private boolean mAutoCorrectOn = false;
     private boolean mAllowSuggestionsRestart = true;
     private boolean mCurrentlyAllowSuggestionRestart = true;
     private boolean mJustAutoAddedWord = false;
@@ -3094,7 +3094,7 @@ public class AnySoftKeyboard extends InputMethodService implements
 
         setDictionariesForCurrentKeyboard();
 
-        mAutoComplete = sp.getBoolean("auto_complete", true)
+        mAutoComplete = sp.getBoolean("auto_complete", false)
                 && mShowSuggestions;
 
         mQuickFixes = sp.getBoolean("quick_fix", true);
