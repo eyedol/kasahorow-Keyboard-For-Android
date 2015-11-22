@@ -35,7 +35,7 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        versionCode 10301
+        versionCode 10306
         versionName project.version
 
         minSdkVersion 7
