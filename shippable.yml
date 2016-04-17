@@ -13,4 +13,4 @@ after_script:
 notifications:
     email:
         recipients:
-            - mennyed@gmail.com
+            - code@kasahorow.com
