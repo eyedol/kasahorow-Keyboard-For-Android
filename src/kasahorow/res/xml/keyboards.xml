@@ -99,13 +99,13 @@
 
     <Keyboard
             id="fdf0c017-150e-44d1-b567-7e2fef208b24"
-            defaultDictionaryLocale="wol"
-            description="@string/wol_desc"
-            iconResId="@drawable/wol"
+            defaultDictionaryLocale="wo"
+            description="@string/wo_desc"
+            iconResId="@drawable/wo"
             index="10"
-            landscapeResId="@xml/wol_qwerty"
-            layoutResId="@xml/wol_qwerty"
-            nameResId="@string/wol_keyboard"/>
+            landscapeResId="@xml/wo_qwerty"
+            layoutResId="@xml/wo_qwerty"
+            nameResId="@string/wo_keyboard"/>
 
     <Keyboard
             id="89297ca8-549a-4344-9d9b-0d137f0d2179"
