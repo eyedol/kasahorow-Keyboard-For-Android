@@ -79,13 +79,13 @@
 
     <Keyboard
             id="0f70c4df-7f03-4647-a8f9-70b7715a377f"
-            defaultDictionaryLocale="ibo"
-            description="@string/ibo_desc"
-            iconResId="@drawable/ibo"
+            defaultDictionaryLocale="ig"
+            description="@string/ig_desc"
+            iconResId="@drawable/ig"
             index="8"
-            landscapeResId="@xml/ibo_qwerty"
-            layoutResId="@xml/ibo_qwerty"
-            nameResId="@string/ibo_keyboard"/>
+            landscapeResId="@xml/ig_qwerty"
+            layoutResId="@xml/ig_qwerty"
+            nameResId="@string/ig_keyboard"/>
 
     <Keyboard
             id="cdbdf63d-5e32-4ca1-87f0-c797e1a3fbec"

@@ -614,8 +614,8 @@
     <string name="fr_desc">French keyboard layout</string>
     <string name="kik_keyboard">Gikuyu</string>
     <string name="kik_desc">Write Gikuyu for Kikuyu speakers.</string>
-    <string name="ibo_keyboard">Igbo</string>
-    <string name="ibo_desc">Write Igbo.</string>
+    <string name="ig_keyboard">Igbo</string>
+    <string name="ig_desc">Write Igbo.</string>
     <string name="wo_keyboard">Wolof</string>
     <string name="wo_desc">Write Wolof.</string>
     <string name="not_configured_with_click_here">kasahorow is not fully set-up for use. Click here to set up.</string>
