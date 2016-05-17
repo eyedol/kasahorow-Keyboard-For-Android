@@ -12,16 +12,14 @@
             nameResId="@string/ak_keyboard"/>
 
     <Keyboard
-            id="c7535083-4fe6-49dc-81aa-c5438a1a343a"
-            defaultDictionaryLocale="en"
-            defaultEnabled="false"
-            description="QWERTY Latin keyboard"
-            iconResId="@drawable/ic_stat_en"
-            index="3"
-            layoutResId="@xml/qwerty"
-            nameResId="@string/eng_keyboard"
-            physicalKeyboardMappingResId="@xml/physical"
-            screenshotResId="@drawable/english_qwerty_screenshot"/>
+            id="f1533ec2-f971-42ed-9908-686b9426bf3f"
+            defaultDictionaryLocale="ewe"
+            description="@string/ee_desc"
+            iconResId="@drawable/ee"
+            index="2"
+            landscapeResId="@xml/ee_qwerty"
+            layoutResId="@xml/ee_qwerty"
+            nameResId="@string/ee_keyboard"/>
 
     <Keyboard
             nameResId="@string/eng_keyboard"
@@ -31,7 +29,7 @@
             id="34CC76A3-91B3-4204-BB1B-421BA8FC8430"
             defaultDictionaryLocale="en"
             description="QWERTY Latin keyboard with symbols (on long press)"
-            index="4"
+            index="3"
             defaultEnabled="false"
             physicalKeyboardMappingResId="@xml/physical"
             screenshotResId="@drawable/english_qwerty_with_symbols_screenshot"
@@ -41,7 +39,7 @@
             id="362b0871-f09a-411b-9a2a-3eb6034a18ea"
             defaultDictionaryLocale="fr"
             description="@string/fr_desc"
-            index="5"
+            index="4"
             layoutResId="@xml/azerty"
             nameResId="@string/azerty_keyboard"
             sentenceSeparators=".,)" />
@@ -52,7 +50,7 @@
 	    defaultDictionaryLocale="ge"
 	    description="@string/ge_desc"
 	    iconResId="@drawable/ge"
-            index="6"
+            index="5"
             landscapeResId="@xml/ge_qwerty"
             layoutResId="@xml/ge_qwerty"
             nameResId="@string/ge_keyboard"/>
@@ -62,7 +60,7 @@
             defaultDictionaryLocale="hau"
             description="@string/ha_desc"
             iconResId="@drawable/ha"
-            index="7"
+            index="6"
             landscapeResId="@xml/ha_qwerty"
             layoutResId="@xml/ha_qwerty"
             nameResId="@string/ha_keyboard"/>
@@ -72,7 +70,7 @@
             defaultDictionaryLocale="ig"
             description="@string/ig_desc"
             iconResId="@drawable/ig"
-            index="8"
+            index="7"
             landscapeResId="@xml/ig_qwerty"
             layoutResId="@xml/ig_qwerty"
             nameResId="@string/ig_keyboard"/>
@@ -82,7 +80,7 @@
             defaultDictionaryLocale="kik"
             description="@string/kik_desc"
             iconResId="@drawable/kik"
-            index="9"
+            index="8"
             landscapeResId="@xml/kik_qwerty"
             layoutResId="@xml/kik_qwerty"
             nameResId="@string/kik_keyboard"/>
@@ -92,7 +90,7 @@
             defaultDictionaryLocale="wo"
             description="@string/wo_desc"
             iconResId="@drawable/wo"
-            index="10"
+            index="9"
             landscapeResId="@xml/wo_qwerty"
             layoutResId="@xml/wo_qwerty"
             nameResId="@string/wo_keyboard"/>
@@ -102,7 +100,7 @@
             defaultDictionaryLocale="yor"
             description="@string/yo_desc"
             iconResId="@drawable/yo"
-            index="11"
+            index="10"
             landscapeResId="@xml/yo_qwerty"
             layoutResId="@xml/yo_qwerty"
             nameResId="@string/yo_keyboard"/>
