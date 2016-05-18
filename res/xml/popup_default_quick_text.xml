@@ -7,8 +7,8 @@
     <Row android:rowEdgeFlags="top">
         <Key
                 android:keyEdgeFlags="left"
-                android:keyLabel="\\m/"
-                android:keyOutputText="\\m/\u0020"/>
+                android:keyLabel=":)"
+                android:keyOutputText="\u263a\u0020"/>
         <Key
                 android:keyLabel="O_Q"
                 android:keyOutputText="O_Q\u0020"
