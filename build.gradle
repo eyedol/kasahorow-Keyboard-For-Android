@@ -8,14 +8,14 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.14.1'
-        classpath 'org.robolectric:robolectric-gradle-plugin:0.12.0'
-        classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.10.+'
+//        classpath 'org.robolectric:robolectric-gradle-plugin:0.12.0'
+//        classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.10.+'
     }
 }
 
-apply plugin: 'android-sdk-manager'
+// apply plugin: 'android-sdk-manager'
 apply plugin: 'com.android.application'
-apply plugin: 'robolectric'
+//apply plugin: 'robolectric'
 
 version utils.Utils.buildVersionName(1, 3, false)
 group 'net.evendanan'
@@ -35,7 +35,7 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        versionCode 10312
+        versionCode 10313
         versionName project.version
 
         minSdkVersion 7
@@ -101,9 +101,9 @@ android {
             manifest.srcFile 'AndroidManifest.xml'
             res.srcDirs = ['res']
         }
-        robolectric {
-            setRoot('src/test')
-        }
+//        robolectric {
+//            setRoot('src/test')
+//        }
     }
 
     productFlavors {
@@ -113,13 +113,13 @@ android {
     }
 }
 
-robolectric {
-    include '**/*Test.class'
-    exclude '**/espresso/**/*.class'
+//robolectric {
+//    include '**/*Test.class'
+//    exclude '**/espresso/**/*.class'
 
     // configure max heap size of the test JVM
-    maxHeapSize = "2048m"
-}
+//    maxHeapSize = "2048m"
+//}
 
 dependencies {
     repositories {
@@ -155,7 +155,7 @@ dependencies {
         exclude module: 'wagon-provider-api'
     }
     androidTestCompile 'org.mockito:mockito-core:1.9.5'
-    androidTestCompile 'com.squareup:fest-android:1.0.+'
+//    androidTestCompile 'com.squareup:fest-android:1.0.+'
 }
 
 apply plugin: 'idea'
