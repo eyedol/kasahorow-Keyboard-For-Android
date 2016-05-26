@@ -60,8 +60,8 @@
                 android:keyLabel="\u26ea"
                 android:keyOutputText="\u26ea\u0020"/>
         <Key
-                android:keyLabel=";-)"
-                android:keyOutputText=";-)\u0020"/>
+                android:keyLabel="\u1F602"
+                android:keyOutputText="\u1F602\u0020"/>
         <Key
                 android:keyLabel="\u261d"
                 android:keyOutputText="\u261d\u0020"/>
