@@ -898,6 +898,8 @@ public class AnyKeyboardBaseView extends View implements
                     // file
                     String txtStyle = remoteTypedArray.getString(remoteTypedArrayIndex);
                     Typeface tf = FontUtil.getFont(getContext(), txtStyle);
+                    Log.d(TAG, "AnySoftKeyboardTheme_typeface " + tf);
+                    Log.d(TAG, "AnySoftKeyboardTheme_font " + txtStyle);
                     if (tf != null) {
                         mKeyTextStyle = tf;
                     } else {
