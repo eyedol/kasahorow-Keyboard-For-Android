@@ -25,7 +25,8 @@ public class FontUtil {
                         return ref.get();
                     }
                 }
-
+                //Hack to include new font that supports emoji
+              //  name = "OpenSansEmoji.ttf";
                 Typeface typeface = Typeface.createFromAsset(
                         c.getAssets(),"fonts/" + name);
                 fontCache.put(name, new SoftReference<Typeface>(typeface));
