@@ -473,14 +473,16 @@ public class AnyKeyboardBaseView extends View implements
                                                 long eventTime) {
             LinkedList<PointerTracker> queue = mQueue;
             int oldestPos = 0;
-            for (PointerTracker t = queue.get(oldestPos); t != tracker; t = queue
-                    .get(oldestPos)) {
-                if (t.isModifier()) {
-                    oldestPos++;
-                } else {
-                    t.onUpEvent(t.getLastX(), t.getLastY(), eventTime);
-                    t.setAlreadyProcessed();
-                    queue.remove(oldestPos);
+            if(queue.size() > 0) {
+                for (PointerTracker t = queue.get(oldestPos); t != tracker; t = queue
+                        .get(oldestPos)) {
+                    if (t.isModifier()) {
+                        oldestPos++;
+                    } else {
+                        t.onUpEvent(t.getLastX(), t.getLastY(), eventTime);
+                        t.setAlreadyProcessed();
+                        queue.remove(oldestPos);
+                    }
                 }
             }
         }
