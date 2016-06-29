@@ -267,7 +267,9 @@ public class IMEUtil {
         final int tl = t.length();
         int[][] dp = new int[sl + 1][tl + 1];
         for (int i = 0; i <= sl; i++) {
+          if (dp[i] != null) {
             dp[i][0] = i;
+          }
         }
         for (int j = 0; j <= tl; j++) {
             dp[0][j] = j;
