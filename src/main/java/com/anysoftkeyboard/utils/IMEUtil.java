@@ -272,7 +272,9 @@ public class IMEUtil {
           }
         }
         for (int j = 0; j <= tl; j++) {
+          if(j < dp[0].size()) {
             dp[0][j] = j;
+          }
         }
         for (int i = 0; i < sl; ++i) {
             for (int j = 0; j < tl; ++j) {
