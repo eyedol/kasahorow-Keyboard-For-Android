@@ -601,8 +601,8 @@
     <string name="ak_dictionary">Akan</string>
     <string name="ha_keyboard">Hausa</string>
     <string name="ha_desc">Write Hausa.</string>
-    <string name="yo_keyboard">Yoruba</string>
-    <string name="yo_desc">Write Yoruba.</string>
+    <string name="yo_keyboard">Yorùbá</string>
+    <string name="yo_desc">Write Yorùbá.</string>
     <string name="plain_afro_theme_name">Afro Theme</string>
     <string name="plain_afro_theme_description">Afro colors, simple graphics</string>
     <string name="akan_dictionary">Akan Dictionary</string>
@@ -612,8 +612,8 @@
     <string name="azerty_keyboard">Fronsei</string>
     <string name="french_dictionary">Fronsei Dictionary</string>
     <string name="fr_desc">Ecrivez Français</string>
-    <string name="kik_keyboard">Gikuyu</string>
-    <string name="kik_desc">Write Gikuyu for Kikuyu speakers.</string>
+    <string name="kik_keyboard">Gĩkũyũ</string>
+    <string name="kik_desc">Write Gĩkũyũ for Kikuyu speakers.</string>
     <string name="ig_keyboard">Igbo</string>
     <string name="ig_desc">Write Igbo.</string>
     <string name="wo_keyboard">Wolof</string>
